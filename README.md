@@ -1,3 +1,5 @@
+
+<body>
 <h1>About Me</h1>
 Hello, there. My name is Manar Ajhar. I am a game developer with more than 7 years of experience in game development. I am highly skills in using Unity and Unreal Engine (4 and 5). I also develop various types of games, such as adventure-platforming games, augmented reality games, virtual reality games for phones, and first-person shooter games. I also have more skills, such as web-development and graphics design.
 
@@ -36,13 +38,15 @@ Hello, there. My name is Manar Ajhar. I am a game developer with more than 7 yea
 <li>Problem-Solving Skills</li>
 </ul>
 
-# Projects
-## University Zombie Crisis
+<h1>Projects</h1>
 
-## mARbles
+<h2>University Zombie Crisis</h2>
 
-## Mixed Reality Trial
+<h2>mARbles</h2>
 
-# Skills
+<h2>Mixed Reality Trial</h2>
 
-# Contact me
+
+<h1>Contact Me</h1>
+
+</body>
