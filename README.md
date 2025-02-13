@@ -4,11 +4,12 @@ Hello, there. My name is Manar Ajhar. I am a game developer with more than 7 yea
 <h1>Skills</h1>
 
 <h2>Programs</h2>
-
--   Unity
--   Unreal Engine
--   Photoshop
--   Visual Studio
+<ul>
+<li>Unity</li>
+<li>Unreal Engine</li>
+<li>Photoshop</li>
+<li>Visual Studio</li>
+</ul>
 
 <h2>Programming Languages</h2>
 -   C++
