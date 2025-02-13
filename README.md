@@ -12,21 +12,29 @@ Hello, there. My name is Manar Ajhar. I am a game developer with more than 7 yea
 </ul>
 
 <h2>Programming Languages</h2>
--   C++
--   C#
--   Java
--   Python
--   HTML
--   CSS
+<ul>
+<li>C++</li>
+<li>C#</li>
+<li>Java</li>
+<li>Python</li>
+<li>HTML</li>
+<li>Java</li>
+</ul>
+
 
 <h2>Languages</h2>
--   English
--   Arabic
+<ul>
+<li>English</li>
+<li>Arabic</li>
+</ul>
 
-<h2>Languages</h2>
--Communication Skills
--3D Math Skills
--Problem-Solving Skills
+<h2>Other Skills</h2>
+
+<ul>
+<li>Communication Skills</li>
+<li>3D Math Skills</li>
+<li>Problem-Solving Skills</li>
+</ul>
 
 # Projects
 ## University Zombie Crisis
