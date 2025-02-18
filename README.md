@@ -1,5 +1,5 @@
 <head>
-<tile>Manar Ajhar's Portfolio</title>
+<title>Manar Ajhar's Portfolio</title>
 </head>
 
 <body>
