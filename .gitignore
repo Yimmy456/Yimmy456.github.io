@@ -1,11 +1,9 @@
 # This .gitignore file should be placed at the root of your Unity project directory
 #
-# Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 
-/Assets/css/
-index.html
-index2.html
+Yimmy456.github.io/Assets/css/
+Yimmy456.github.io/Ignore Folder/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
