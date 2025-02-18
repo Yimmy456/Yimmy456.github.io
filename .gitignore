@@ -3,9 +3,9 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 
-Yimmy456.github.io/Assets/css
-Yimmy456.github.io/index.html
-Yimmy456.github.io/index2.html
+/Assets/css/
+index.html
+index2.html
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
