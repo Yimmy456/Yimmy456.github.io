@@ -920,6 +920,8 @@ textarea.contact-input {
 
   --darker-meter-gradient: linear-gradient(rgb(128, 0, 0) 0%, rgb(128, 128, 0) 50%, rgb(0, 128, 0) 100%);
 
+  --nav-height: 250px;
+
 
   --default-font: 'Impact';
 
@@ -2065,6 +2067,21 @@ textarea.contact-input {
 #About_Me
 {
   height: 700px;
+  scroll-margin-top: var(--nav-height);
+}
+
+#Experiences{
+  scroll-margin-top: var(--nav-height);
+}
+
+#Skills
+{
+  scroll-margin-top: var(--nav-height);
+}
+
+#Contact_Div
+{
+  scroll-margin-top: var(--nav-height);
 }
 
 #Education_Div .Education_Panel
@@ -2075,14 +2092,10 @@ textarea.contact-input {
   border-radius: var(--radius-10);
   border-style: solid;
   width: 95%;
-  height: 500px;
-  margin: auto;
-}
-
-#Education_Div .Education_Panel
-{
+  height: 700px;
+  margin: auto;  
+  paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
-  paint-order: stroke fill;
 }
 
 #Education_Div .Education_Panel h3
@@ -2104,7 +2117,7 @@ textarea.contact-input {
 
 #Education_Div .Education_Panel .Upper_Part
 {
-  height: 400px;
+  height: 500px;
   border-bottom: 3px;
   border-bottom-style: solid;
   border-bottom-color: hsl(39, 97%, 30%);
@@ -2166,23 +2179,66 @@ textarea.contact-input {
   margin: auto;
 }
 
+
+nav{
+  position: fixed;
+  background-color: hsl(0, 0%, 25%);
+  width: 100%;
+  height: var(--nav-height);
+  z-index: 1000;
+  overflow: hidden;
+  top: 0;
+}
+
+#Main
+{
+  margin-top: var(--nav-height);
+}
+
 #Education_Div .Education_Panel .Group_2 .Row .Icon
 {
-  width: 70px;
   float: left;
+  width: 100px;
   height: 100%;
-  margin: auto;
-  justify-items: center;
-  vertical-align: auto;
+  align-items: center;
 }
+
+#Education_Div .Education_Panel .Group_2 .Row .Icon .Icon_Container
+{
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  background-color: aqua;
+}
+
+#Education_Div .Education_Panel .Group_2 #Location_Row .Section_2 .Icon_Container
+{
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  background-color: aqua;
+}
+
 
 
 
 #Education_Div .Education_Panel .Group_2 .Row .Section_1
 {
   float: left;
-  width: 80%;
+  width: 70%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #Education_Div .Education_Panel .Group_2 .Row .Section_2
@@ -2195,8 +2251,8 @@ textarea.contact-input {
   height: 100%;
 }
 
-#Education_Div .Education_Panel .Group_2 #Location,
-#Education_Div .Education_Panel .Group_2 #Major
+#Education_Div .Education_Panel .Group_2 #Location_Row,
+#Education_Div .Education_Panel .Group_2 #Major_Row
 {
   background-color: rgba(0, 0, 0, 0.25);
 }
@@ -2222,12 +2278,6 @@ textarea.contact-input {
   justify-content: center;
 }
 
-#Education_Div .Icon
-{
-  margin: auto;
-  vertical-align: middle;  
-  justify-content: center;
-}
 
 /*
 
