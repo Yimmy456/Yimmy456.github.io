@@ -17,6 +17,27 @@
   -->
   <link rel="stylesheet" href="./assets/css/style3.css">
 
+  <script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+  </script>
+
   <!-- 
     - google font link
   -->
@@ -179,22 +200,23 @@
         </div>
     </div>
 
-    <div id="Experiences">
+    <div id="Experiences" class="Orange_Section">
       <h1 class="Orange_Section" style="-webkit-text-stroke-color: var(--orange-border);">My Experiences</h1>
       <div id="Education_Div">
         <h2 style="color: var(--orange); -webkit-text-stroke-color: var(--orange-border);">Education</h2>
-        <div class="Education_Table">
+        <div class="Table">
           <ul>
-            <li class=".skills-item">
+            <li class=".Experience_Item">
               <div class="Education_Panel">
                 <div class="Upper_Part">
                 <div class="Group_1">
+                  <div id="Index" style="position: absolute;"><div class="Container">1.</div></div>                  
+                  <div class="Name"><h3>Queen's University</h3></div>
                   <div class="Logo">
                     <div class="Container">
                       <img src="Assets/images/QueensLogo_sRGB.png" width="324.88066825775656324582338902148px" height="225px">
                     </div>
                   </div>
-                  <div class="Name"><h3>Queen's University</h3></div>
                 </div>
                 <div class="Group_2">
                   <div class="Row" id="Duration">
@@ -250,8 +272,8 @@
                       </div>
                     </div>
                     <div class="Section_1">
-                      <div class="skills-progress-box" style="width: 100%; vertical-align: middle;">
-                        <div class="skills-progress" style="width: 87.5%; background-color: hsl(105, 100%, 50%); border-right-color: hsl(105, 100%, 25%)"></div>
+                      <div class="Progress_Meter_Box" style="width: 100%; vertical-align: middle;">
+                        <div class="Progress_Meter" style="width: 87.5%; background-color: hsl(105, 100%, 50%); border-right-color: hsl(105, 100%, 25%)"></div>
                       </div>
                     </div>
                     <div class="Section_2" style="text-align: right; margin-right: 10px; width: 60px; vertical-align: middle;">
@@ -261,20 +283,21 @@
 
                 </div>
                 </div>
-                <div class="Description">Description</div>
+                <div class="Description"><h4>Description</h4></div>
               </div>
             </li>
             
-            <li class=".skills-item">
+            <li class=".Experience_Item">
               <div class="Education_Panel">
                 <div class="Upper_Part">
-                <div class="Group_1">
+                <div class="Group_1">                  
+                  <div id="Index" style="position: absolute;"><div class="Container">2.</div></div>                   
+                  <div class="Name"><h3>Sheridan College</h3></div>
                   <div class="Logo">
                     <div class="Container">
                       <img src="Assets/images/Sheridan_College_2013_logo.png" width="515.42553191489361702127659574468px" height="112.5px">
                     </div>
                   </div>
-                  <div class="Name"><h3>Sheridan College</h3></div>
                 </div>
                 <div class="Group_2">
                   <div class="Row" id="Duration">
@@ -330,8 +353,8 @@
                       </div>
                     </div>
                     <div class="Section_1">
-                      <div class="skills-progress-box" style="width: 100%; vertical-align: middle;">
-                        <div class="skills-progress" style="width: 79.5%; background-color: hsl(95.4, 100%, 50%); border-right-color: hsl(95.4, 100%, 25%)"></div>
+                      <div class="Progress_Meter_Box" style="width: 100%; vertical-align: middle;">
+                        <div class="Progress_Meter" style="width: 79.5%; background-color: hsl(95.4, 100%, 50%); border-right-color: hsl(95.4, 100%, 25%)"></div>
                       </div>
                     </div>
                     <div class="Section_2" style="text-align: right; margin-right: 10px; width: 60px; vertical-align: middle;">
@@ -341,20 +364,21 @@
 
                 </div>
                 </div>
-                <div class="Description">Description</div>
+                <div class="Description"><h4>Description</h4></div>
               </div>
             </li>
             
-            <li class=".skills-item">
+            <li class=".Experience_Item">
               <div class="Education_Panel">
                 <div class="Upper_Part">
-                <div class="Group_1">
+                <div class="Group_1">                  
+                  <div id="Index" style="position: absolute;"><div class="Container">3.</div></div>                   
+                  <div class="Name"><h3>University of Sharjah</h3></div>
                   <div class="Logo">
                     <div class="Container">
                       <img src="Assets/images/UoS Logo.png" width="538.89406779661016949152542372881px" height="146.25px">
                     </div>
                   </div>
-                  <div class="Name"><h3>University of Sharjah</h3></div>
                 </div>
                 <div class="Group_2">
                   <div class="Row" id="Duration">
@@ -410,8 +434,8 @@
                       </div>
                     </div>
                     <div class="Section_1">
-                      <div class="skills-progress-box" style="width: 100%; vertical-align: middle;">
-                        <div class="skills-progress" style="width: 80.75%; background-color: hsl(96.9, 100%, 50%); border-right-color: hsl(96.9, 100%, 25%)"></div>
+                      <div class="Progress_Meter_Box" style="width: 100%; vertical-align: middle;">
+                        <div class="Progress_Meter" style="width: 80.75%; background-color: hsl(96.9, 100%, 50%); border-right-color: hsl(96.9, 100%, 25%)"></div>
                       </div>
                     </div>
                     <div class="Section_2" style="text-align: right; margin-right: 10px; width: 60px; vertical-align: middle;">
@@ -421,7 +445,7 @@
 
                 </div>
                 </div>
-                <div class="Description">Description</div>
+                <div class="Description"><h4>Description</h4></div>
               </div>
             </li>  
         </ul>
@@ -433,31 +457,87 @@
           <li class=".skills-item">
             <div class="Project_Panel">
               <div class="Upper_Part">
-                <div class="Group_1">
+                <div class="Group_1">                  
+                  <div id="Index" style="position: absolute;"><div class="Container">1.</div></div>   
                   <h3>University Zombie Crisis</h3>
                 </div>
                 <div class="Group_2">
-                  <div class="Row" id="Duration">
+                  <div class="Row" id="Duration_Row">
                     <div class="Icon">
                       <div class="Icon_Container">
                         <img src="Assets/images/Calendar Icon.png" width="60px" height="60px" alt="Duration">
                       </div>
                     </div>
                     <div class="Section_1">
-                      September 2017 - October 2018
+                      September 2015 - May 2016
                     </div>
+                  </div>
+                  <div class="Row" id="Location_Row">
+                    <div class="Icon">
+                      <div class="Icon_Container">
+                        <img src="Assets/images/Location Icon (Orange).png" width="42.588726513569937369519832985386px" height="60px" alt="Location">
+                      </div>
+                    </div>
+                    <div class="Section_1">
+                      Sharjah, the United Arab Emirates
+                    </div>
+                    <div class="Section_2">
+                      <div class="Icon_Container">
+                        <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UAE.png" width="60px" height="60px">
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="Row" id="Category_Row">
+                    <div class="Icon">
+                      <div class="Icon_Container">
+                        <img src="Assets/images/Category Icon.png" width="60px" height="60px" alt="Project Category">
+                      </div>
+                    </div>
+                    <div class="Section_1">
+                      Video Game
+                    </div>
+                  </div>
+                  <div class="Row" id="Company_Row">
+                    <div class="Icon">
+                      <div class="Icon_Container">
+                        <img src="Assets/images/Company Icon.png" width="60px" height="60px" alt="Company">
+                      </div>
+                    </div>
+                    <div class="Section_1">
+                      University of Sharjah
+                    </div>
+                    <div class="Section_2">
+                      <div class="Icon_Container">
+                        <img src="Assets/images/UoS Logo.png" width="221.08474576271186440677966101695px" height="60px">
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
               <div class="Description">
                 <div class="Container">
-                  Description
+                  <h4>Description</h4>
                 </div>
               </div>
-              <div class="Slideshow">
-                <div class="Container">
-                  Slideshow
-                </div>
+              <div class="Slideshow">                
+                <h4>Slideshow</h4>
+                  <div class="Upper_Part">
+                    <div id="Display_Div"><img src="Assets/images/Book Icon.png"></div>
+                    <div id="Display_Description_Div"><h5>Description</h5><div class="Text_Container">Hello there</div></div>
+                  </div>
+                  <div class="Footer">
+                    <div id="Previous_Button_Div">
+                      <button>Previous</button>
+                    </div>
+                    <div id="Counter_Div">
+                      <p>1 / 5</p>
+                    </div>
+                    <div id="Next_Button_Div">
+                      <button>Next</button>
+                    </div>
+                  </div>
               </div>
             </div>
           </li>

@@ -920,7 +920,7 @@ textarea.contact-input {
 
   --darker-meter-gradient: linear-gradient(rgb(128, 0, 0) 0%, rgb(128, 128, 0) 50%, rgb(0, 128, 0) 100%);
 
-  --nav-height: 250px;
+  --nav-height: 200px;
 
 
   --default-font: 'Impact';
@@ -977,6 +977,22 @@ h3{
   -webkit-text-stroke-color: rgb(128, 128, 128);
 }
 
+h4{
+  font-weight: normal;
+  margin-left: 10px;
+  paint-order: stroke fill;
+  -webkit-text-stroke-width: 4px;  
+  -webkit-text-stroke-color: rgb(128, 128, 128);
+}
+
+h5{
+  font-weight: normal;
+  margin-left: 10px;
+  paint-order: stroke fill;
+  -webkit-text-stroke-width: 3px;  
+  -webkit-text-stroke-color: rgb(128, 128, 128);
+}
+
 *,
 *::before,
 *::after {
@@ -1012,6 +1028,11 @@ header li a:hover
   color: var(--white);
 }
 
+#Header_Div #Professions_Div
+{
+  font-size: 30px;
+}
+
 #Header_Div nav{
   size: 50%;
   text-align: center;
@@ -1019,7 +1040,7 @@ header li a:hover
 }
 
 #Header_Div #Name_Div{
-  font-size: 80px;
+  font-size: 50px;
 }
 
 #header #container{
@@ -1491,6 +1512,13 @@ body {
   gap: 25px;
 }
 
+.Experience_Item .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 10px;
+}
+
 .skills-item .wrapper {
   display: flex;
   justify-content: space-between;
@@ -1533,6 +1561,25 @@ body {
   margin-right: 2.5%;
   margin-left: 2.5%;
 }
+
+.Progress_Meter_Box {
+  border-radius: var(--radius-10);
+  background-color: var(--white);
+  height: 16px;
+  border-color: hsl(0, 0%, 40%);
+  border-style: solid;  
+  border-width: 2px;
+}
+
+.Progress_Meter {
+  background-color: var(--yellow);
+  height: 100%;
+  border-radius: inherit;
+  border-right-color: var(--yellow-border);
+  border-right-style: solid;
+  border-right-width: 3px;
+}
+
 
 .contact-card {
   background-color: var(--midnight-blue);
@@ -2116,6 +2163,7 @@ textarea.contact-input {
   scroll-margin-top: var(--nav-height);
 }
 
+
 #Skills
 {
   scroll-margin-top: var(--nav-height);
@@ -2125,6 +2173,18 @@ textarea.contact-input {
 {
   scroll-margin-top: var(--nav-height);
 }
+
+
+/*
+  Experiences Div
+*/
+
+#Experiences .Education_Panel,
+#Experiences .Project_Panel
+{
+  color: var(--white);
+}
+
 
 /*
   Education Div
@@ -2142,9 +2202,13 @@ textarea.contact-input {
   margin: auto;  
   paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
+
+  overflow: hidden;
 }
 
-#Education_Div .Education_Panel h3
+#Experiences h3,
+#Experiences h4,
+#Experiences h5
 {
   text-align: center;
   -webkit-text-stroke-color: hsl(39, 97%, 30%);
@@ -2185,6 +2249,26 @@ textarea.contact-input {
   margin: auto;
 }
 
+#Education_Div .Education_Panel #Index
+{
+  position: absolute;
+  width: 60px;
+  height: 40px;
+}
+
+#Education_Div .Education_Panel #Index .Container
+{
+  width: 80%;
+  height: 90%;
+  margin: auto;
+
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  display: flex;
+}
+
+
 #Education_Div .Education_Panel .Group_1 .Logo
 {
   height: 75%;
@@ -2204,6 +2288,10 @@ textarea.contact-input {
 {
   height: 25%;
   width: 100%;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 
@@ -2321,7 +2409,7 @@ textarea.contact-input {
   border-radius: var(--radius-10);
   border-style: solid;
   width: 95%;
-  height: 700px;
+  height: 1430px;
   margin: auto;  
   paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
@@ -2352,26 +2440,13 @@ textarea.contact-input {
 #Projects_Div .Project_Panel .Description
 {
   margin: auto;
-  height: 25%;
+  height: 375px;
   border-bottom: 3px;
   border-bottom-style: solid;
   border-bottom-color: hsl(39, 97%, 30%);
 }
 
 #Projects_Div .Project_Panel .Description .Container
-{
-  margin: auto;
-  width: 99.5%;
-  height: 100%;
-}
-
-#Projects_Div .Project_Panel .Slideshow
-{  
-  margin: auto;
-  height: 25%;
-}
-
-#Projects_Div .Project_Panel .Slideshow .Container
 {
   margin: auto;
   width: 99.5%;
@@ -2420,10 +2495,178 @@ textarea.contact-input {
   align-items: center;
 }
 
+#Projects_Div .Project_Panel .Group_2 #Company_Row .Section_1
+{
+  float: left;
+  width: 42%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#Projects_Div .Project_Panel .Group_2 #Company_Row .Section_2
+{
+  float: right;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Projects_Div .Project_Panel #Index
+{
+  position: absolute;
+  width: 60px;
+  height: 40px;
+}
+
+#Projects_Div .Project_Panel #Index .Container
+{
+  width: 80%;
+  height: 90%;
+  margin: auto;
+
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  display: flex;
+}
+
+#Projects_Div .Project_Panel .Group_2 #Location_Row,
+#Projects_Div .Project_Panel .Group_2 #Company_Row
+{
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#Projects_Div .Project_Panel .Slideshow
+{  
+  margin: auto;
+  height: 675px;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Container
+{
+  margin: auto;
+  width: 99.5%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Upper_Part
+{
+  height: 555.75px;
+  width: 100%;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Upper_Part #Display_Div img
+{
+  height: 100%;
+}
+
+
+#Projects_Div .Project_Panel .Slideshow .Upper_Part #Display_Div
+{
+  height: 100%;
+  width: 50%;
+  float: left;
+
+  border-right-color: hsla(39, 97%, 30%, 0.75);
+  border-right-width: 2px;
+  border-right-style: solid;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Upper_Part #Display_Div img
+{
+  height: 80%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Upper_Part #Display_Description_Div
+{
+  height: 100%;
+  width: 50%;
+  float: right;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Upper_Part #Display_Description_Div .Text_Container
+{
+  width: 99%;
+  height: 92%;
+  margin: auto;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Footer
+{
+  height: 90px;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Footer #Previous_Button_Div
+{
+  height: 100%;
+  width: 33.33%;
+  width: calc(100% / 3);
+  float: left;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Footer #Previous_Button_Div button
+{
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Footer #Counter_Div
+{
+  height: 100%;
+  width: 33.33%;
+  width: calc(100% / 3);
+  float: left;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Footer #Counter_Div p
+{  
+  width: auto;
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Footer #Next_Button_Div
+{
+  height: 100%;
+  width: 33.33%;
+  width: calc(100% / 3);
+  float: left;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Footer #Next_Button_Div button
+{
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
 
 nav{
   position: fixed;
-  background-color: hsl(0, 0%, 25%);
+  /*background-color: hsl(0, 0%, 25%);*/  
+  background-color: hsla(0, 0%, 25%, 0.9);
   width: 100%;
   height: var(--nav-height);
   z-index: 1000;
