@@ -2409,7 +2409,7 @@ textarea.contact-input {
   border-radius: var(--radius-10);
   border-style: solid;
   width: 95%;
-  height: 1430px;
+  height: 1300px;
   margin: auto;  
   paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
@@ -2417,7 +2417,7 @@ textarea.contact-input {
 
 #Projects_Div .Project_Panel .Upper_Part
 {
-  height: 350px;
+  height: 27.34375%;
   border-bottom: 3px;
   border-bottom-style: solid;
   border-bottom-color: hsl(39, 97%, 30%);
@@ -2426,21 +2426,22 @@ textarea.contact-input {
 #Projects_Div .Project_Panel .Group_1
 {
   float: left;
-  width: 50%;
+  width: 40%;
   height: 100%;
 }
 
 #Projects_Div .Project_Panel .Group_2
 {
   float: left;
-  width: 50%;
+  width: 60%;
   height: 100%;
 }
 
 #Projects_Div .Project_Panel .Description
 {
   margin: auto;
-  height: 375px;
+  height: 29.296875%;
+  width: 100%;
   border-bottom: 3px;
   border-bottom-style: solid;
   border-bottom-color: hsl(39, 97%, 30%);
@@ -2534,7 +2535,7 @@ textarea.contact-input {
 }
 
 #Projects_Div .Project_Panel .Group_2 #Location_Row,
-#Projects_Div .Project_Panel .Group_2 #Company_Row
+#Projects_Div .Project_Panel .Group_2 #Duration_Row
 {
   background-color: rgba(0, 0, 0, 0.25);
 }
@@ -2542,61 +2543,54 @@ textarea.contact-input {
 #Projects_Div .Project_Panel .Slideshow
 {  
   margin: auto;
-  height: 675px;
+  height: 43.359375%;
 }
 
 #Projects_Div .Project_Panel .Slideshow .Container
 {
   margin: auto;
-  width: 99.5%;
+  width: 99%;
   height: 100%;
   overflow: hidden;
-  margin-top: 50px;
 }
 
-#Projects_Div .Project_Panel .Slideshow .Upper_Part
+#Projects_Div .Project_Panel .Slideshow .Header_Div_L4
 {
-  height: 555.75px;
+  height: 10%;
   width: 100%;
 }
 
-#Projects_Div .Project_Panel .Slideshow .Upper_Part #Display_Div img
+#Projects_Div .Project_Panel .Slideshow .Upper_Part_2
 {
-  height: 100%;
+  height: 75%;
+  width: 100%;
+
+  border-top: 2px solid hsla(0, 0%, 0%, 0.25);
+
+  border-bottom: 2px solid hsla(0, 0%, 0%, 0.25);
 }
 
 
-#Projects_Div .Project_Panel .Slideshow .Upper_Part #Display_Div
+#Projects_Div .Project_Panel .Slideshow .Upper_Part_2 #Display_Div
 {
   height: 100%;
-  width: 50%;
+  width: 35%;
   float: left;
 
-  border-right-color: hsla(39, 97%, 30%, 0.75);
-  border-right-width: 2px;
-  border-right-style: solid;
+  border-right: 2px solid hsla(0, 0%, 0%, 0.25);
 }
 
-#Projects_Div .Project_Panel .Slideshow .Upper_Part #Display_Div img
-{
-  height: 80%;
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
-  position: relative;
-}
-
-#Projects_Div .Project_Panel .Slideshow .Upper_Part #Display_Description_Div
+#Projects_Div .Project_Panel .Slideshow .Upper_Part_2 #Display_Description_Div
 {
   height: 100%;
-  width: 50%;
+  width: 65%;
   float: right;
 
   align-items: center;
   justify-content: center;
 }
 
-#Projects_Div .Project_Panel .Slideshow .Upper_Part #Display_Description_Div .Text_Container
+#Projects_Div .Project_Panel .Slideshow .Upper_Part_2 #Display_Description_Div .Text_Container
 {
   width: 99%;
   height: 92%;
@@ -2605,7 +2599,7 @@ textarea.contact-input {
 
 #Projects_Div .Project_Panel .Slideshow .Footer
 {
-  height: 90px;
+  height: 15%;
   width: 100%;
 
   align-items: center;
@@ -2614,12 +2608,11 @@ textarea.contact-input {
 
 #Projects_Div .Project_Panel .Slideshow .Footer #Previous_Button_Div
 {
-  height: 100%;
+  float: left;
   width: 33.33%;
   width: calc(100% / 3);
-  float: left;
+  height: 100%;
 }
-
 #Projects_Div .Project_Panel .Slideshow .Footer #Previous_Button_Div button
 {
   margin: auto;
@@ -2630,36 +2623,61 @@ textarea.contact-input {
 
 #Projects_Div .Project_Panel .Slideshow .Footer #Counter_Div
 {
-  height: 100%;
+  float: left;
   width: 33.33%;
   width: calc(100% / 3);
-  float: left;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
 }
 
 #Projects_Div .Project_Panel .Slideshow .Footer #Counter_Div p
-{  
-  width: auto;
+{
+  position: relative;
   margin: auto;
-  text-align: center;
   top: 50%;
   transform: translateY(-50%);
-  position: relative;
 }
 
 #Projects_Div .Project_Panel .Slideshow .Footer #Next_Button_Div
 {
-  height: 100%;
+  float: left;
   width: 33.33%;
   width: calc(100% / 3);
-  float: left;
+  height: 100%;
 }
-
 #Projects_Div .Project_Panel .Slideshow .Footer #Next_Button_Div button
 {
   margin: auto;
   top: 50%;
   transform: translateY(-50%);
   position: relative;
+}
+
+#Projects_Div .Slideshow #Display_Div .Slides_Project_1
+{
+  height: 90%;
+  display: none;
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#Projects_Div .Slideshow #Display_Div .Slides_Project_1 img
+{
+  height: 100%;
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#Projects_Div .Slideshow #Display_Div .Slides_Project_1 iframe
+{
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 
 

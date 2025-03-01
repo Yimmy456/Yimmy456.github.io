@@ -17,25 +17,47 @@
   -->
   <link rel="stylesheet" href="./assets/css/style3.css">
 
+  <!-- <script type="text/javascript" src="Assets/Slideshow Function.js">
+
+  </script> -->
+
   <script>
-    var slideIndex = 1;
-showDivs(slideIndex);
+    let slideIndex = 1;
+showSlides(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let name = "Slides_Project_1";
+  let slides = document.getElementsByClassName(name);
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
+
+  var elemets = "#Experiences #Projects_Div #Projects_List #Project_1 .Project_Panel .Slideshow #Footer #Counter_Div #Counter_P"
+
+  document.getElements(elements).innerText = "1";
 }
 
+function SetDescription()
+{
+
+}
+
+function SetCounter()
+{
+    document.getElementByTagName("Counter_P").textContent = "1";
+}
   </script>
 
   <!-- 
@@ -453,41 +475,21 @@ function showDivs(n) {
       </div>
       <div id="Projects_Div">
         <h2 style="color: var(--orange); -webkit-text-stroke-color: var(--orange-border);">Projects</h2>  
-        <ul>
-          <li class=".skills-item">
+        <ul id="Projects_List">
+          <li class="Project_Item" id="Project_1">
             <div class="Project_Panel">
               <div class="Upper_Part">
                 <div class="Group_1">                  
-                  <div id="Index" style="position: absolute;"><div class="Container">1.</div></div>   
-                  <h3>University Zombie Crisis</h3>
+                  <div id="Index" style="position: absolute;">
+                    <div class="Container">
+                      1.
+                    </div>
+                  </div>   
+                  <div class="Header_Div">
+                    <h3>University Zombie Crisis</h3>
+                  </div>
                 </div>
                 <div class="Group_2">
-                  <div class="Row" id="Duration_Row">
-                    <div class="Icon">
-                      <div class="Icon_Container">
-                        <img src="Assets/images/Calendar Icon.png" width="60px" height="60px" alt="Duration">
-                      </div>
-                    </div>
-                    <div class="Section_1">
-                      September 2015 - May 2016
-                    </div>
-                  </div>
-                  <div class="Row" id="Location_Row">
-                    <div class="Icon">
-                      <div class="Icon_Container">
-                        <img src="Assets/images/Location Icon (Orange).png" width="42.588726513569937369519832985386px" height="60px" alt="Location">
-                      </div>
-                    </div>
-                    <div class="Section_1">
-                      Sharjah, the United Arab Emirates
-                    </div>
-                    <div class="Section_2">
-                      <div class="Icon_Container">
-                        <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UAE.png" width="60px" height="60px">
-                      </div>
-                    </div>
-
-                  </div>
                   <div class="Row" id="Category_Row">
                     <div class="Icon">
                       <div class="Icon_Container">
@@ -496,6 +498,16 @@ function showDivs(n) {
                     </div>
                     <div class="Section_1">
                       Video Game
+                    </div>
+                  </div>
+                  <div class="Row" id="Duration_Row">
+                    <div class="Icon">
+                      <div class="Icon_Container">
+                        <img src="Assets/images/Calendar Icon.png" width="60px" height="60px" alt="Duration">
+                      </div>
+                    </div>
+                    <div class="Section_1">
+                      September 2015 - May 2016
                     </div>
                   </div>
                   <div class="Row" id="Company_Row">
@@ -514,30 +526,74 @@ function showDivs(n) {
                     </div>
 
                   </div>
+                  <div class="Row" id="Location_Row">
+                    <div class="Icon">
+                      <div class="Icon_Container">
+                        <img src="Assets/images/Location Icon (Orange).png" width="42.588726513569937369519832985386px" height="60px" alt="Location">
+                      </div>
+                    </div>
+                    <div class="Section_1">
+                      Sharjah, the United Arab Emirates
+                    </div>
+                    <div class="Section_2">
+                      <div class="Icon_Container">
+                        <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UAE.png" width="60px" height="60px">
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
               <div class="Description">
                 <div class="Container">
-                  <h4>Description</h4>
+                  <div class="Header_Div_L4">
+                    <h4>Description</h4>
+                    Hello, there.
+                  </div>
                 </div>
               </div>
-              <div class="Slideshow">                
-                <h4>Slideshow</h4>
-                  <div class="Upper_Part">
-                    <div id="Display_Div"><img src="Assets/images/Book Icon.png"></div>
-                    <div id="Display_Description_Div"><h5>Description</h5><div class="Text_Container">Hello there</div></div>
+              <div class="Slideshow">
+                <div class="Header_Div_L4">
+                  <h4>Slideshow</h4>
+                </div>
+                <div class="Upper_Part_2">
+                  <div id="Display_Div">
+                    <div class="Container" style="height: 100%;">
+                      <div class="Slides_Project_1" style="display: block;">
+                        <img src="Assets/images/About Me Icon.png"/>
+                      </div>
+                      <div class="Slides_Project_1">
+                        <img src="Assets/images/Location Icon (Red).png"/>
+                      </div>
+                      <div class="Slides_Project_1">
+                        <img src="Assets/images/Birthday Cake Icon.png"/>
+                      </div>
+                      <div class="Slides_Project_1">
+                        <iframe  width="640px" height="480px"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                      </div>
+                    </div>
                   </div>
-                  <div class="Footer">
-                    <div id="Previous_Button_Div">
-                      <button>Previous</button>
+                  <div id="Display_Description_Div">
+                    <div class="Header_Div_L5">
+                      <h4>Content Description</h4>
                     </div>
-                    <div id="Counter_Div">
-                      <p>1 / 5</p>
-                    </div>
-                    <div id="Next_Button_Div">
-                      <button>Next</button>
+                    <div class="Text_Container">
+                      Hello, there!
                     </div>
                   </div>
+                </div>
+                <div class="Footer">
+                  <div id="Previous_Button_Div">
+                    <button onclick="plusSlides(-1)">Previous</button>
+                  </div>
+                  <div id="Counter_Div">
+                    <p id="Counter_P">1 / 5</p>
+                  </div>
+                  <div id="Next_Button_Div">
+                    <button onclick="plusSlides(1)">Next</button>
+                  </div>
+                </div>
               </div>
             </div>
           </li>
