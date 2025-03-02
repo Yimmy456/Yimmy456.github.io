@@ -2437,7 +2437,7 @@ textarea.contact-input {
   height: 100%;
 }
 
-#Projects_Div .Project_Panel .Description
+#Projects_Div .Project_Panel .Description_Area
 {
   margin: auto;
   height: 29.296875%;
@@ -2445,6 +2445,19 @@ textarea.contact-input {
   border-bottom: 3px;
   border-bottom-style: solid;
   border-bottom-color: hsl(39, 97%, 30%);
+}
+
+#Projects_Div .Project_Panel .Slides_Project_1 p
+{
+  display: none;
+}
+
+
+#Projects_Div .Project_Panel .Description .Textbox
+{
+  margin: auto;
+  height: 100%;
+  width: 99%;
 }
 
 #Projects_Div .Project_Panel .Description .Container
@@ -2540,6 +2553,25 @@ textarea.contact-input {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
+.Header_Div_L3,
+.Header_Div_L4,
+.Header_Div_L5
+{  
+  align-content: center;
+}
+
+#Projects_Div .Project_Panel .Description_Area .Header_Div_L4
+{  
+  height: 15%;
+}
+
+#Projects_Div .Project_Panel .Description_Area .Text_Container
+{  
+  width: 99.5%;
+  margin: auto;
+  height: 85%;
+}
+
 #Projects_Div .Project_Panel .Slideshow
 {  
   margin: auto;
@@ -2556,13 +2588,15 @@ textarea.contact-input {
 
 #Projects_Div .Project_Panel .Slideshow .Header_Div_L4
 {
-  height: 10%;
+  height: 15%;
   width: 100%;
+  margin: auto;
+
 }
 
 #Projects_Div .Project_Panel .Slideshow .Upper_Part_2
 {
-  height: 75%;
+  height: 70%;
   width: 100%;
 
   border-top: 2px solid hsla(0, 0%, 0%, 0.25);
@@ -2580,7 +2614,7 @@ textarea.contact-input {
   border-right: 2px solid hsla(0, 0%, 0%, 0.25);
 }
 
-#Projects_Div .Project_Panel .Slideshow .Upper_Part_2 #Display_Description_Div
+#Projects_Div .Project_Panel .Slideshow .Upper_Part_2 .Slideshow_Description_Area
 {
   height: 100%;
   width: 65%;
@@ -2590,10 +2624,15 @@ textarea.contact-input {
   justify-content: center;
 }
 
-#Projects_Div .Project_Panel .Slideshow .Upper_Part_2 #Display_Description_Div .Text_Container
+#Projects_Div .Project_Panel .Slideshow .Upper_Part_2 .Slideshow_Description_Area .Header_Div_L5
+{
+  height: 15%;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Upper_Part_2 .Slideshow_Description_Area .Text_Container
 {
   width: 99%;
-  height: 92%;
+  height: 85%;
   margin: auto;
 }
 
@@ -2621,7 +2660,7 @@ textarea.contact-input {
   position: relative;
 }
 
-#Projects_Div .Project_Panel .Slideshow .Footer #Counter_Div
+#Projects_Div .Project_Panel .Slideshow .Footer #Slideshow_Counter_Div
 {
   float: left;
   width: 33.33%;
@@ -2631,7 +2670,7 @@ textarea.contact-input {
   vertical-align: middle;
 }
 
-#Projects_Div .Project_Panel .Slideshow .Footer #Counter_Div p
+#Projects_Div .Project_Panel .Slideshow .Footer #Slideshow_Counter_Div p
 {
   position: relative;
   margin: auto;
@@ -2680,6 +2719,10 @@ textarea.contact-input {
   margin: auto;
 }
 
+#Projects_Div .Project_Panel .Slideshow .Slides_Project_1 .Slideshow_Description_1
+{
+  display: none;
+}
 
 nav{
   position: fixed;
@@ -2695,6 +2738,35 @@ nav{
 #Main
 {
   margin-top: var(--nav-height);
+}
+
+#Previous_Button_Div button img,
+#Next_Button_Div button img
+{
+  height: 80px;
+}
+
+.Span_Hover
+{
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: relative;
+  z-index: 1000;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+#Info_Div .Row1 img:hover .Span_Hover
+{
+  visibility: visible;
 }
 
 /*

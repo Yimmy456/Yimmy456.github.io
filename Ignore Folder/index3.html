@@ -20,49 +20,47 @@
   <!-- <script type="text/javascript" src="Assets/Slideshow Function.js">
 
   </script> -->
-
-  <script>
-    let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let name = "Slides_Project_1";
-  let slides = document.getElementsByClassName(name);
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";
-
-  var elemets = "#Experiences #Projects_Div #Projects_List #Project_1 .Project_Panel .Slideshow #Footer #Counter_Div #Counter_P"
-
-  document.getElements(elements).innerText = "1";
-}
-
-function SetDescription()
-{
-
-}
-
-function SetCounter()
-{
-    document.getElementByTagName("Counter_P").textContent = "1";
-}
-  </script>
-
   <!-- 
     - google font link
   -->
+
+  <script>
+
+    
+window.onload= function()
+  {
+    showDivs(1, 0);
+  }
+
+var slideIndex = 1;
+showDivs(slideIndex, 0);
+
+function plusDivs(n, SGII) {
+  showDivs(slideIndex += n, SGII);
+}
+
+function showDivs(n, SGII) {
+  var i;
+  var _name = "Slides_Project_" + (SGII + 1);
+  var x = document.getElementsByClassName(_name);
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex - 1].style.display = "block";
+
+  var _name2 = "Project_" + (SGII + 1);
+
+  var _text = x[slideIndex - 1].getElementsByClassName("Slideshow_Description")[0].innerText;
+
+  document.getElementById(_name2).getElementsByClassName("Slideshow_Counter_P")[0].innerText = "" + (slideIndex) + " / " + x.length;
+
+  document.getElementById(_name2).getElementsByClassName("Slideshow_Description_Area")[0].getElementsByClassName("Textbox")[0].innerText = _text;
+}
+
+    </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -176,7 +174,8 @@ function SetCounter()
             <div class="Table" style="overflow: hidden;">
               <div class="Column" id="Location">
                 <div class="Row1">
-                  <img src="Assets/images/Location Icon (Red).png" width="35.490605427974947807933194154489px" height="50px" alt="Location">
+                <img src="Assets/images/Location Icon (Red).png" width="35.490605427974947807933194154489px" height="50px" alt="Location"/>
+                  <span class="Span_Hover">Location</span>
                 </div>
                 <div class="Row2">
                   Sharjah,<br>the United Arab Emirates<br>
@@ -233,7 +232,7 @@ function SetCounter()
                 <div class="Upper_Part">
                 <div class="Group_1">
                   <div id="Index" style="position: absolute;"><div class="Container">1.</div></div>                  
-                  <div class="Name"><h3>Queen's University</h3></div>
+                  <div class="Name"><div class="Header_Div_L3"><h3>Queen's University</h3></div></div>
                   <div class="Logo">
                     <div class="Container">
                       <img src="Assets/images/QueensLogo_sRGB.png" width="324.88066825775656324582338902148px" height="225px">
@@ -305,7 +304,11 @@ function SetCounter()
 
                 </div>
                 </div>
-                <div class="Description"><h4>Description</h4></div>
+                <div class="Description"><div class="Header_Div_L4"><h4>Description</h4></div>
+                <div class="Text_Container">
+                  Hello, there.
+                </div>
+                </div>
               </div>
             </li>
             
@@ -314,7 +317,7 @@ function SetCounter()
                 <div class="Upper_Part">
                 <div class="Group_1">                  
                   <div id="Index" style="position: absolute;"><div class="Container">2.</div></div>                   
-                  <div class="Name"><h3>Sheridan College</h3></div>
+                  <div class="Name"><div class="Header_Div_L3"><h3>Sheridan College</h3></div></div>
                   <div class="Logo">
                     <div class="Container">
                       <img src="Assets/images/Sheridan_College_2013_logo.png" width="515.42553191489361702127659574468px" height="112.5px">
@@ -386,7 +389,11 @@ function SetCounter()
 
                 </div>
                 </div>
-                <div class="Description"><h4>Description</h4></div>
+                <div class="Description"><div class="Header_Div_L4"><h4>Description</h4></div>
+                <div class="Text_Container">
+                  Hello, there.
+                </div>                
+                </div>
               </div>
             </li>
             
@@ -395,7 +402,7 @@ function SetCounter()
                 <div class="Upper_Part">
                 <div class="Group_1">                  
                   <div id="Index" style="position: absolute;"><div class="Container">3.</div></div>                   
-                  <div class="Name"><h3>University of Sharjah</h3></div>
+                  <div class="Name"><div class="Header_Div_L3"><h3>University of Sharjah</h3></div></div>
                   <div class="Logo">
                     <div class="Container">
                       <img src="Assets/images/UoS Logo.png" width="538.89406779661016949152542372881px" height="146.25px">
@@ -467,7 +474,11 @@ function SetCounter()
 
                 </div>
                 </div>
-                <div class="Description"><h4>Description</h4></div>
+                <div class="Description"><div class="Header_Div_L4"><h4>Description</h4></div>
+                <div class="Text_Container">
+                  Hello, there.
+                </div>
+              </div>
               </div>
             </li>  
         </ul>
@@ -485,7 +496,7 @@ function SetCounter()
                       1.
                     </div>
                   </div>   
-                  <div class="Header_Div">
+                  <div class="Header_Div_L3">
                     <h3>University Zombie Crisis</h3>
                   </div>
                 </div>
@@ -544,12 +555,12 @@ function SetCounter()
                   </div>
                 </div>
               </div>
-              <div class="Description">
-                <div class="Container">
-                  <div class="Header_Div_L4">
-                    <h4>Description</h4>
-                    Hello, there.
-                  </div>
+              <div class="Description_Area">
+                <div class="Header_Div_L4">
+                  <h4>Description</h4>
+                </div> 
+                <div class="Text_Container">                 
+                  <p class="Textbox">Hello, there.</p>
                 </div>
               </div>
               <div class="Slideshow">
@@ -561,37 +572,41 @@ function SetCounter()
                     <div class="Container" style="height: 100%;">
                       <div class="Slides_Project_1" style="display: block;">
                         <img src="Assets/images/About Me Icon.png"/>
+                        <p class="Slideshow_Description">Content 1</p>
                       </div>
                       <div class="Slides_Project_1">
-                        <img src="Assets/images/Location Icon (Red).png"/>
+                        <img src="Assets/images/Location Icon (Red).png"/>                        
+                        <p class="Slideshow_Description">Content 2</p>
                       </div>
                       <div class="Slides_Project_1">
-                        <img src="Assets/images/Birthday Cake Icon.png"/>
+                        <img src="Assets/images/Birthday Cake Icon.png"/>                        
+                        <p class="Slideshow_Description">Content 3</p>
                       </div>
                       <div class="Slides_Project_1">
                         <iframe  width="640px" height="480px"
-                        src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>                        
+                        <p class="Slideshow_Description">Content 4</p>
                       </div>
                     </div>
                   </div>
-                  <div id="Display_Description_Div">
+                  <div class="Slideshow_Description_Area">
                     <div class="Header_Div_L5">
-                      <h4>Content Description</h4>
+                      <h5>Content Description</h5>
                     </div>
-                    <div class="Text_Container">
-                      Hello, there!
+                    <div class="Text_Container">                                        
+                    <p class="Textbox">Hello, there.</p>
                     </div>
                   </div>
                 </div>
                 <div class="Footer">
                   <div id="Previous_Button_Div">
-                    <button onclick="plusSlides(-1)">Previous</button>
+                    <button onclick="plusDivs(-1, 0)"><img src="Assets/images/Previous Button.png" alt="Previous Button"/></button>
                   </div>
-                  <div id="Counter_Div">
-                    <p id="Counter_P">1 / 5</p>
+                  <div id="Slideshow_Counter_Div">
+                    <p class="Slideshow_Counter_P">1 / 4</p>
                   </div>
                   <div id="Next_Button_Div">
-                    <button onclick="plusSlides(1)">Next</button>
+                    <button onclick="plusDivs(1, 0)"><img src="Assets/images/Next Button.png" alt="Next Button"/></button>
                   </div>
                 </div>
               </div>
