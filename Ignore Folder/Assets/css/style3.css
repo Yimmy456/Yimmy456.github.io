@@ -2770,6 +2770,91 @@ nav{
 }
 
 /*
+  Skills
+*/
+
+.Skill_Panel
+{
+  height: 200px;
+
+  background-color: hsl(60, 100%, 60%);
+
+  border-radius: var(--radius-10);
+
+  border-color: hsl(60, 100%, 30%);
+
+  border-width: 3px;
+
+  border-style: solid;
+}
+
+.Skill_Panel .Upper_Part,
+.Skill_Panel .Middle_Part
+{
+  width: 100%;
+}
+
+.Skill_Panel .Container
+{
+  height: 100%;
+  width: 99%;
+  margin: auto;
+}
+
+.Skill_Panel .Upper_Part
+{
+  height: 75%;
+}
+
+.Skill_Panel .Upper_Part .Skill_Name
+{
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+
+.Skill_Panel .Upper_Part .Skill_Name p,
+.Skill_Panel .Upper_Part .Skill_Data p
+{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Skill_Panel .Upper_Part .Skill_Data p
+{    
+  paint-order: stroke fill;  
+  /*-webkit-text-stroke: hsl(39, 97%, 30%) 3px;*/
+
+  -webkit-text-stroke: hsl(0, 0%, 20%) 5px;
+  font-size: 60px;
+}
+
+.Skill_Panel .Upper_Part .Skill_Data
+{
+  width: 30%;
+  height: 100%;
+  float: right;
+
+}
+
+.Skill_Panel .Upper_Part .Skill_Data p
+{
+  text-align: right;
+  vertical-align: middle;
+}
+
+.Skill_Panel .Middle_Part
+{
+  float: left;
+}
+
+#Skills ul li
+{
+  margin-bottom: 100px;
+}
+
+/*
 
   :root{
   --red: rgb(255, 0, 0);
