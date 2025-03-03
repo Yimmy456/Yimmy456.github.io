@@ -964,7 +964,9 @@ textarea.contact-input {
 
 @font-face {
   font-family: "Impact";
-  src: url("Assets/impact.ttf");
+  src: url("Assets/impact.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
