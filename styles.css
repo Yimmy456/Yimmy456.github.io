@@ -964,7 +964,7 @@ textarea.contact-input {
 
 @font-face {
   font-family: "Impact";
-  src: url("Assets/impact.ttf") format('truetype');
+  src: url("Assets/Fonts/Roboto Fonts/Roboto-Regular.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -2110,7 +2110,7 @@ textarea.contact-input {
   align-items: center;
   text-align: center;
   margin-inline: auto;
-  height: 250px;
+  height: 350px;
   background-color: rgb(255, 100, 100);
 
   border: hsl(0, 100%, 35%) 3px;
