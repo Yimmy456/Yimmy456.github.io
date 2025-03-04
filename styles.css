@@ -2173,22 +2173,25 @@ textarea.contact-input {
 
 #About_Me
 {
-  height: 700px;
+  height: auto;
   scroll-margin-top: var(--nav-height);
 }
 
 #Experiences{
+  height: auto;
   scroll-margin-top: var(--nav-height);
 }
 
 
 #Skills
 {
+  height: auto;
   scroll-margin-top: var(--nav-height);
 }
 
 #Contact_Div
 {
+  height: auto;
   scroll-margin-top: var(--nav-height);
 }
 
@@ -2392,6 +2395,11 @@ textarea.contact-input {
   text-align: center;
   right: 50%;
   transform: translateX(-50%);
+}
+
+#Education_Div .Education_Panel .Group_2 .Section_1
+{
+  width: auto;
 }
 
 #Education_Div .Education_Panel .Group_2 #Location_Row,
