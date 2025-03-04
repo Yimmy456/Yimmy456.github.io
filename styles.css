@@ -1044,21 +1044,25 @@ header li a:hover
   size: 50%;
   text-align: center;
   color: var(--white);
+  height: auto;
 }
 
 #Header_Div #Professions_Div
 {
   font-size: 30px;
+  height: auto;
 }
 
 #Header_Div nav{
   size: 50%;
   text-align: center;
   color: var(--white);
+  height: auto;
 }
 
 #Header_Div #Name_Div{
   font-size: 50px;
+  height: auto;
 }
 
 #header #container{
