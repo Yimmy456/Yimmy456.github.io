@@ -963,8 +963,8 @@ textarea.contact-input {
 */
 
 @font-face {
-  font-family: "Impact";
-  src: url("Assets/Fonts/Roboto Fonts/Roboto-Regular.ttf") format('truetype');
+  font-family: "impact";
+  src: url("Assets/Fonts/Roboto_Fonts/Roboto-Medium.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
