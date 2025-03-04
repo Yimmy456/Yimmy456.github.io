@@ -1089,6 +1089,13 @@ header li a:hover
   border-radius: var(--radius-10);
 }
 
+
+#Header_Div > .subnavbar_container .navbar-list li a
+{  
+  float: left;
+  overflow: hidden;
+}
+
 /*Red Color*/
 .Red_Section
 {
@@ -2151,13 +2158,13 @@ textarea.contact-input {
 #Info_Div .Table .Column .Row1
 {
   width: 100%;
-  height: 30%;
+  height: 40%;
 }
 
 #Info_Div .Table .Column .Row2
 {
   width: 100%;
-  height: 40%;
+  height: 30%;
   font-size: 25px;
 }
 #Info_Div .Table .Column .Row3
@@ -2440,7 +2447,7 @@ textarea.contact-input {
   border-radius: var(--radius-10);
   border-style: solid;
   width: 95%;
-  height: 1200px;
+  height: 1110px;
   margin: auto;  
   paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
@@ -2448,7 +2455,7 @@ textarea.contact-input {
 
 #Projects_Div .Project_Panel .Upper_Part
 {
-  height: 25%;
+  height: 280px;
   border-bottom: 3px;
   border-bottom-style: solid;
   border-bottom-color: hsl(39, 97%, 30%);
@@ -2471,7 +2478,7 @@ textarea.contact-input {
 #Projects_Div .Project_Panel .Description_Area
 {
   margin: auto;
-  height: 28.287760416666666666666666666667%;
+  height: 339px;
   width: 100%;
   border-bottom: 3px;
   border-bottom-style: solid;
@@ -2622,7 +2629,7 @@ textarea.contact-input {
 #Projects_Div .Project_Panel .Slideshow
 {  
   margin: auto;
-  height: 46.712239583333333333333333333333%;
+  height: 471px;
 }
 
 #Projects_Div .Project_Panel .Slideshow .Container
@@ -2635,7 +2642,7 @@ textarea.contact-input {
 
 #Projects_Div .Project_Panel .Slideshow .Header_Div_L4
 {
-  height: 10%;
+  height: 56px;
   width: 100%;
   margin: auto;
 
@@ -2643,7 +2650,7 @@ textarea.contact-input {
 
 #Projects_Div .Project_Panel .Slideshow .Upper_Part_2
 {
-  height: 59.624624624624624624624624624625%;
+  height: 334px;
   width: 100%;
 
   border-top: 2px solid hsla(0, 0%, 0%, 0.25);
@@ -2685,12 +2692,11 @@ textarea.contact-input {
 
 #Projects_Div .Project_Panel .Slideshow .Footer
 {
-  height: 15%;
+  height: 101px;
   width: 100%;
 
   align-items: center;
   justify-content: center;
-  background-color: aqua;
 }
 
 #Projects_Div .Project_Panel .Slideshow .Footer #Previous_Button_Div
@@ -2724,6 +2730,7 @@ textarea.contact-input {
   margin: auto;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 60px;
 }
 
 #Projects_Div .Project_Panel .Slideshow .Footer #Next_Button_Div
@@ -2816,6 +2823,92 @@ nav{
 {
   visibility: visible;
 }
+
+/*
+  Award
+*/
+
+#Awards_Div .Award_Panel
+{
+  background-color: rgb(252, 181, 48);
+  border-color: hsl(39, 97%, 30%);
+  border-width: 3px;
+  border-radius: var(--radius-10);
+  border-style: solid;
+  width: 95%;
+  height: 600px;
+  margin: auto;  
+  paint-order: stroke fill;  
+  -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
+  overflow: hidden;
+  color: var(--white);
+}
+
+#Awards_Div .Award_Panel .Upper_Part
+{
+  width: 100%;
+  height: 60%;  
+  border-bottom: 3px hsl(39, 97%, 30%) solid;
+}
+
+#Awards_Div .Award_Panel .Upper_Part .Left_Side
+{
+  width: 35%;
+  height: 100%;
+  float: left;
+}
+
+#Awards_Div .Award_Panel .Upper_Part .Right_Side
+{
+  width: 65%;
+  height: 100%;
+  float: right;
+}
+
+#Awards_Div .Award_Panel .Upper_Part .Right_Side .Row
+{
+  float: left;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+}
+
+#Awards_Div .Award_Panel .Right_Side .Row .Section_1
+{
+  float: left;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+#Awards_Div .Award_Panel .Upper_Part .Right_Side .Row .Icon
+{
+  float: left;
+  width: 100px;
+  height: 100%;
+  align-items: center;
+}
+
+#Awards_Div .Award_Panel .Upper_Part .Right_Side .Row .Icon .Icon_Container
+{
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+#Awards_Div .Award_Panel .Upper_Part .Right_Side #Time_Row,
+#Awards_Div .Award_Panel .Upper_Part .Right_Side #Location_Row
+{
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 
 /*
   Skills
