@@ -2121,7 +2121,7 @@ textarea.contact-input {
   align-items: center;
   text-align: center;
   margin-inline: auto;
-  height: 350px;
+  height: 355px;
   background-color: rgb(255, 100, 100);
 
   border: hsl(0, 100%, 35%) 3px;
@@ -2159,19 +2159,52 @@ textarea.contact-input {
 #Info_Div .Table .Column .Row1
 {
   width: 100%;
-  height: 40%;
+  height: 140px;
+}
+
+#Info_Div .Table .Column .Row1 .Span_Hover
+{
+  visibility: hidden;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  /*padding: 0 -500px; */
+  
+  /* Position the tooltip */
+  position: relative;
+  z-index: 1000;
+  overflow: visible;
+  display: block;
+  border: 3px rgba(255, 0, 0, 1) solid;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+@keyframes effect {
+  0% {
+    visibility: visible;
+  }
+}
+
+#Info_Div .Table .Column .Row1 img:hover + .Span_Hover
+{
+  animation: effect 1s infinite 1s;
 }
 
 #Info_Div .Table .Column .Row2
 {
   width: 100%;
-  height: 30%;
+  height: 105px;
   font-size: 25px;
+  margin-top: 5px;
 }
 #Info_Div .Table .Column .Row3
 {
   width: 100%;
-  height: 30%;
+  height: 105px;
 }
 
 #Info_Div .Table img{
@@ -2827,29 +2860,6 @@ nav{
 #Next_Button_Div button img
 {
   height: 80px;
-}
-
-.Span_Hover
-{
-  visibility: hidden;
-  width: 120px;
-  background-color: rgba(0, 0, 0, 0.25);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  
-  /* Position the tooltip */
-  position: relative;
-  z-index: 1000;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-#Info_Div .Row1 img:hover .Span_Hover
-{
-  visibility: visible;
 }
 
 /*
