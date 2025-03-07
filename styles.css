@@ -951,6 +951,8 @@ textarea.contact-input {
   --transition-2: 0.25s ease;
   --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
 
+  --Span-Hover-Translate-Y: -55px;
+
 }
 
 /*@font-face {
@@ -1020,6 +1022,30 @@ h5{
 }
 
 li { list-style: none; }
+
+.Span_Hover
+{
+  visibility: hidden;
+  overflow: visible;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  border-width: 3px;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-10);
+  transform: translateY(-15px);
+  text-align: center;
+  -webkit-text-stroke-width: 3px;
+  paint-order: stroke fill;
+}
+
+@keyframes effect {
+  0% {
+    visibility: visible;
+  }
+}
+
 
 /*
 header #container{
@@ -2131,6 +2157,7 @@ textarea.contact-input {
   width: 90%;
   
   border-radius: var(--radius-10);
+  overflow: hidden;
 }
 
 #Info_Div img
@@ -2162,32 +2189,29 @@ textarea.contact-input {
   height: 140px;
 }
 
+/*
+#Info_Div .Table .Column .Row1 img[title]:hover:after
+{
+  content: attr(title);
+  padding: 4px 8px;
+  color: rgba(0,0,0,0.5);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  z-index: 2;
+  border-radius: 5px ;
+  background: rgba(0,0,0,0.5);
+}
+*/
+
 #Info_Div .Table .Column .Row1 .Span_Hover
 {
-  visibility: hidden;
-  width: 150px;
-  height: 50px;
-  color: #fff;
-  text-align: center;
-  border-radius: 10px;
-  /*padding: 0 -500px; */
-  
-  /* Position the tooltip */
-  position: relative;
-  z-index: 1000;
-  overflow: visible;
-  display: block;
-  border: 3px rgba(255, 0, 0, 1) solid;
-  background-color: rgba(255, 255, 255, 0.5);
-  margin: auto;
-  margin-bottom: 100px;
+  border-color: var(--red);
+  color: var(--red);
+  -webkit-text-stroke-color: var(--red-border);
 }
 
-@keyframes effect {
-  0% {
-    visibility: visible;
-  }
-}
 
 #Info_Div .Table .Column .Row1 img:hover + .Span_Hover
 {
@@ -2250,6 +2274,18 @@ textarea.contact-input {
 #Experiences .Project_Panel
 {
   color: var(--white);
+}
+
+#Experiences .Span_Hover
+{
+  border-color: var(--orange);
+  color: var(--orange);
+  -webkit-text-stroke-color: var(--orange-border);
+}
+
+#Experiences .Icon_Container img:hover + .Span_Hover
+{
+  animation: effect 1s infinite 1s;
 }
 
 
@@ -3087,6 +3123,23 @@ nav{
   Skills
 */
 
+#Skills .Skill_Name .Span_Hover
+{
+  border-color: var(--yellow);
+  color: var(--yellow);
+  -webkit-text-stroke-color: var(--yellow-border);
+}
+
+#Skills .Skill_Name p:hover + .Span_Hover
+{
+  animation: effect 1s infinite 1s;
+}
+
+#Skills .Skill_Name p img:hover + .Span_Hover
+{
+  animation: effect 1s infinite 1s;
+}
+
 .Skill_Panel
 {
   height: 200px;
@@ -3171,6 +3224,25 @@ nav{
 #Skills ul li
 {
   margin-bottom: 100px;
+}
+
+/*Contact Div*/
+
+#Contact_Div a img
+{
+  max-height: 60px;
+}
+
+#Contact_Div .Span_Hover
+{
+  border-color: var(--purple);
+  color: var(--purple);
+  -webkit-text-stroke-color: var(--purple-border);
+}
+
+#Contact_Div a:hover .Span_Hover
+{
+  animation: effect 1s infinite 1s;
 }
 
 /*
