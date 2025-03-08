@@ -64,6 +64,18 @@ function showDivs(n, SGII) {
   document.getElementById(_name2).getElementsByClassName("Slideshow_Description_Area")[0].getElementsByClassName("Textbox")[0].innerText = _text;
 }
 
+function SetSubnavToVisible(input)
+{
+  var element = document.getElementById(input);
+
+  element.style.visibility = "visible";
+}
+
+function SetSubnavToHidden(input)
+{
+
+}
+
     </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -117,12 +129,92 @@ function showDivs(n, SGII) {
 
   <nav id="Header_Div">
 
-    <div id="Name_Div"><a href="#">Manar Ajhar</a>
+    <div id="Name_Div" style="background-color: hsla(0, 0%, 25%, 0.9);"><a href="#">Manar Ajhar</a>
     </div>
-    <div id="Professions_Div">Game Developer <text class="Red_Section" style="-webkit-text-stroke: var(--red-border) 3px; paint-order: stroke fill;">|</text> Programmer <text class="Orange_Section" style="-webkit-text-stroke: var(--orange-border) 3px; paint-order: stroke fill;">|</text> Website Designer <text class="Yellow_Section" style="-webkit-text-stroke: var(--yellow-border) 3px; paint-order: stroke fill;">|</text> Multimedia Editor
+    <div id="Professions_Div" style="background-color: hsla(0, 0%, 25%, 0.9);">Game Developer <text class="Red_Section" style="-webkit-text-stroke: var(--red-border) 3px; paint-order: stroke fill;">|</text> Programmer <text class="Orange_Section" style="-webkit-text-stroke: var(--orange-border) 3px; paint-order: stroke fill;">|</text> Website Designer <text class="Yellow_Section" style="-webkit-text-stroke: var(--yellow-border) 3px; paint-order: stroke fill;">|</text> Multimedia Editor
     </div>
 
-    <div class="navbar_container">
+    <div class="navbar" style="background-color: hsla(0, 0%, 25%, 0.9);">
+      <ul>
+        <li class="Red_Section">
+          <a>About Me</a>
+        </li>
+        <!--<li onmouseover="SetSubnavToVisible('Experiences_Subnav_Div')" onmouseout="SetSubnavToHidden('Experiences_Subnav_Div')">
+          <a onmouseover="SetSubnavToVisible('Experiences_Subnav_Div')" onmouseout="SetSubnavToHidden('Experiences_Subnav_Div')">Experiences</a> -->
+          <li class="Orange_Section">
+            <a>Experiences</a>
+            <div class="subnavbar" style="width: 100%; position: absolute;">
+              <ul>
+                <li>
+                  <a>Education</a>
+                </li>
+                <li>
+                  <a>Projects</a>
+                </li>
+                <li>
+                  <a>Award</a>
+                </li>
+                <li>
+                  <a>Other Experiences</a>
+                </li>
+              </ul>
+        
+            </div>
+          </li>
+        <li class="Yellow_Section">
+          <a>Skills</a>
+          <!--<div>
+            <ul>
+              <li>
+                Programs
+              </li>
+              <li>
+                Programming Languages
+              </li>
+              <li>
+                Programming Skills
+              </li>
+              <li>
+                Languages
+              </li>
+              <li>
+                Other Skills
+              </li>
+            </ul>
+          </div> -->
+          <div class="subnavbar" style="color: var(--yellow); -webkit-text-stroke: var(--yellow-border) 3px; paint-order: stroke fill;">
+            <ul>
+              <li>
+                <a>Programs</a>
+              </li>
+              <li>
+                <a>Programming Languages</a>
+              </li>
+              <li>
+                <a>Programming Skills</a>
+              </li>
+              <li>
+                <a>Languages</a>
+              </li>
+              <li>
+                <a>Other Skills</a>
+              </li>
+            </ul>
+      
+          </div>
+        </li>
+        <li class="Purple_Section">
+          <a>Contact Me</a>
+        </li>
+        <li style="margin-left: 150px; color: white; background-color: hsl(203, 100%, 50%); border-color: hsl(203, 100%, 25%); border-width: 2px; border-style: solid;">
+          <a style="-webkit-text-stroke: hsl(203, 100%, 25%) 3px; paint-order: stroke fill;" href="Assets/Manar Ajhar Resume.pdf" class="navbar-link" download data-nav-link>Download My CV</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <!--
+    <div class="navbar_container" style="background-color: aqua;">
       <ul class="navbar-list">
 
         <li class="Red_Section">
@@ -131,13 +223,13 @@ function showDivs(n, SGII) {
 
         <li class="Orange_Section">
           <a href="#Experiences" class="navbar-link" data-nav-link>Experiences</a>
-          <!--<div class="Subnav-List">
+          <div class="Subnav-List">
             <ul>
               <li>Option 1</li>
               <li>Option 2</li>
               <li>Option 3</li>
             </ul>
-          </div>-->
+          </div>
         </li>
 
         <li class="Yellow_Section">
@@ -148,11 +240,15 @@ function showDivs(n, SGII) {
           <a href="#Contact_Div" class="navbar-link" data-nav-link>Contact Me</a>
         </li>
 
+        <li>
+          <a href="Assets/Manar Ajhar Resume.pdf" class="navbar-link" download data-nav-link style="width: auto;">Download My CV</a>
+        </li>
+
         <li style="margin-left: 60px; width: 260px; color: white; background-color: hsl(203, 100%, 50%); border-radius: 10px; border-color: hsl(203, 100%, 25%); border-width: 2px; border-style: solid;">
           <a style="-webkit-text-stroke: hsl(203, 100%, 25%) 3px; width: auto; paint-order: stroke fill;" href="Assets/Manar Ajhar Resume.pdf" class="navbar-link" download data-nav-link>Download My CV</a>
         </li>
 
-      </ul>
+      </ul> -->
 
 
       <!--
@@ -205,11 +301,7 @@ function showDivs(n, SGII) {
   
         </div>
       </div> -->
-
-      <div style="height: 10px;">
-      </div>
     </div>
-
   </nav>
 
 <!-- <div id="MainContainer"> -->
