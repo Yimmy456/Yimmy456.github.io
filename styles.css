@@ -28,7 +28,7 @@
 
   --darker-meter-gradient: linear-gradient(rgb(128, 0, 0) 0%, rgb(128, 128, 0) 50%, rgb(0, 128, 0) 100%);
 
-  --nav-height: 250px;
+  --nav-height: 265px;
 
 
   --default-font: 'Impact';
@@ -87,6 +87,7 @@ h1{
   paint-order: stroke fill;
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: rgb(128, 128, 128);
+  margin-top: 25px;
 }
 
 h2{
@@ -95,6 +96,7 @@ h2{
   paint-order: stroke fill;
   -webkit-text-stroke-width: 4px;  
   -webkit-text-stroke-color: rgb(128, 128, 128);
+  text-align: center;
 }
 
 h3{
@@ -121,6 +123,21 @@ h5{
   -webkit-text-stroke-color: rgb(128, 128, 128);
 }
 
+.Header_Div_L2
+.Header_Div_L3,
+.Header_Div_L4,
+.Header_Div_L5
+{  
+  align-content: center;
+}
+
+.Header_Div_L2
+{
+  margin-top: 100px;
+  width: 100%;
+}
+
+
 *,
 *::before,
 *::after {
@@ -146,6 +163,9 @@ li { list-style: none; }
   text-align: center;
   -webkit-text-stroke-width: 3px;
   paint-order: stroke fill;
+  width: auto;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 @keyframes effect {
@@ -157,7 +177,7 @@ li { list-style: none; }
 #Header_Div{
   text-align: center;
   color: var(--white);
-  height: 250px;
+  height: var(--nav-height);
 
   position: fixed;
   /*background-color: hsl(0, 0%, 25%);*/
@@ -205,6 +225,9 @@ li { list-style: none; }
   right: 0;
   text-align: center;
   margin-top: 10px;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #Header_Div .navbar ul li:hover .subnavbar
@@ -216,6 +239,7 @@ li { list-style: none; }
 {
   margin-left: 37.5px;
   margin-right: 37.5px;
+  width: auto;
 }
 
 /*Red Color*/
@@ -238,6 +262,8 @@ li { list-style: none; }
   border-width: 2px;
   paint-order: stroke fill;
   border-style: solid;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -271,6 +297,8 @@ li { list-style: none; }
   border-width: 2px;
   paint-order: stroke fill;
   border-style: solid;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -303,6 +331,8 @@ li { list-style: none; }
   paint-order: stroke fill;  
   border-width: 2px;
   border-style: solid;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -336,6 +366,8 @@ li { list-style: none; }
   border-width: 2px;
   paint-order: stroke fill;
   border-style: solid;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -399,18 +431,6 @@ body {
   overflow-x: hidden;
 }
 
-.h2,
-.h3 {
-  color: var(--white);
-  font-family: var(--ff-barlow);
-  font-weight: var(--fw-600);
-  line-height: 1.3;
-}
-
-.h2 { font-size: var(--fs-2); }
-
-.h3 { font-size: var(--fs-3); }
-
 
 
 .navbar{
@@ -425,8 +445,7 @@ body {
   margin-left: 37.5px;
   margin-right: 37.5px;
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  width: auto;
 }
 
 
@@ -434,8 +453,7 @@ body {
   -webkit-text-stroke-width: 3px;
   paint-order: stroke fill;
   border-radius: var(--radius-10);
-  padding-left: 10px;
-  padding-right: 10px;
+  width: auto;
 }
 
 .navbar ul li:hover{
@@ -596,11 +614,27 @@ About Me Div
   scroll-margin-top: var(--nav-height);
 }
 
+#Experiences #Education_Div,
+#Experiences #Projects_Div,
+#Experiences #Awards_Div,
+#Experiences #Professional_Experiences_Div{
+  height: auto;
+  scroll-margin-top: var(--nav-height);
+}
+
 
 #Skills
 {
   height: auto;
   scroll-margin-top: var(--nav-height);
+}
+
+#Skills #Skills_Programs,
+#Skills #Skills_PLs,
+#Skills #Skills_Languages
+{
+  height: auto;
+  scroll-margin-top: 265px;
 }
 
 #Contact_Div
@@ -876,6 +910,12 @@ About Me Div
   Projects Div
 */
 
+#Projects_Div li
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 #Projects_Div .Project_Panel
 {
   background-color: rgb(252, 181, 48);
@@ -1055,12 +1095,6 @@ About Me Div
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-.Header_Div_L3,
-.Header_Div_L4,
-.Header_Div_L5
-{  
-  align-content: center;
-}
 
 #Projects_Div .Project_Panel .Description_Area .Header_Div_L4
 {  
@@ -1237,6 +1271,12 @@ About Me Div
   Award
 */
 
+#Awards_Div li
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 #Awards_Div .Award_Panel
 {
   background-color: rgb(252, 181, 48);
@@ -1343,6 +1383,12 @@ About Me Div
 /*
   Professional Experience Div
 */
+
+#Professional_Experiences_Div li
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 #Professional_Experiences_Div .PE_Panel
 {
@@ -1457,6 +1503,12 @@ About Me Div
 /*
   Skills
 */
+
+#Skills .Header_Div_L2
+{
+  width: 100%;
+  margin-bottom: 50px;
+}
 
 .skills-item .wrapper {
   display: flex;
