@@ -230,6 +230,17 @@ li { list-style: none; }
   padding-bottom: 5px;
 }
 
+#Header_Div .navbar .Yellow_Section .subnavbar
+{  
+  background-color: hsla(60, 100%, 13%, 0.9);
+}
+
+#Header_Div .navbar .Orange_Section .subnavbar
+{  
+  background-color: hsla(30, 100%, 13%, 0.9);
+}
+
+
 #Header_Div .navbar ul li:hover .subnavbar
 {  
   visibility: visible;
@@ -320,6 +331,11 @@ li { list-style: none; }
 .Yellow_Section a
 {
   color: var(--yellow);
+}
+
+#Header_Div .Yellow_Section a .subnavbar li
+{
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 #Header_Div .Yellow_Section a
