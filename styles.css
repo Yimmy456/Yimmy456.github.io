@@ -72,33 +72,53 @@
 }
 */
 
+@media screen and (max-width: 1300px) {
+
+  #Header_Div .navbar li
+  {
+    margin-left: 15.0px;
+    margin-right: 15.0px;
+    width: auto;
+    font-size: 25px;
+  }
+
+  #Experiences .Education_Panel,
+  #Experiences .Project_Panel
+  #Experiences .Award_Panel,
+  #Experiences .PE_Panel
+  {
+    font-size: 10px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  #Header_Div .navbar li
+  {
+    margin-left: 10.0px;
+    margin-right: 10.0px;
+    width: auto;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 537px) {
+
+  #Header_Div .navbar li
+  {
+    margin-left: 5.0px;
+    margin-right: 5.0px;
+    width: auto;
+    font-size: 10px;
+  }
+}
+
 @font-face {
   font-family: "impact";
   src: url("Assets/Fonts/Roboto_Fonts/Roboto-Medium.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-
-@media screen and (orientation: portrait) {
-  html {
-    /* Rotate the content container */
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    /* Set content width to viewport height */
-    width: 100vh;
-    /* Set content height to viewport width */
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-}
-
-#MainContainer
-{
-  overflow: scroll;
-  width: 100%;
 }
 
 
@@ -169,6 +189,40 @@ h5{
 
 li { list-style: none; }
 
+#Blue_Button
+{
+  margin-left: 150px;
+  color: white;
+  background-color: hsl(203, 100%, 50%);
+  border-color: hsl(203, 100%, 25%);
+  border-width: 2px;
+  border-style: solid;
+}
+
+#Blue_Button a
+{
+  -webkit-text-stroke: hsl(203, 100%, 25%) 3px;
+  paint-order: stroke fill;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 780px) {
+
+  #Header_Div .navbar #Blue_Button
+  {
+    margin-left: 0.0px;
+  }
+}
+
+@media screen and (max-width: 537px) {
+
+  #Header_Div .navbar #Blue_Button
+  {
+    margin-left: 0.0px;
+  }
+}
+
 .Span_Hover
 {
   visibility: hidden;
@@ -206,6 +260,13 @@ li { list-style: none; }
   z-index: 1000;
   overflow: hidden;
   top: 0;
+}
+
+@media screen and (max-width: 537px) {
+
+  #Header_Div{
+    height: 400px;
+  }
 }
 
 
@@ -252,13 +313,21 @@ li { list-style: none; }
 }
 
 #Header_Div .navbar .Yellow_Section .subnavbar
-{  
-  background-color: hsla(60, 100%, 13%, 0.9);
+{
+  background-color: hsla(0, 0%, 25%, 0.0);
+
+  /*background-image: linear-gradient(180deg, hsla(0, 0%, 25%, 0.9) 0%, hsla(60, 100%, 13%, 0.9) 100%);*/
+
+  background-image: linear-gradient(180deg, hsla(0, 0%, 25%, 0.9) 0%, hsla(0, 0%, 25%, 0.9) 20%, hsla(60, 100%, 18%, 0.9) 100%);
 }
 
 #Header_Div .navbar .Orange_Section .subnavbar
 {  
-  background-color: hsla(30, 100%, 13%, 0.9);
+  background-color: hsla(0, 0%, 25%, 0.0);
+
+  /*background-image: linear-gradient(180deg, hsla(0, 0%, 25%, 0.9) 0%, hsla(30, 100%, 13%, 0.9) 100%);*/
+
+  background-image: linear-gradient(180deg, hsla(0, 0%, 25%, 0.9) 0%, hsla(0, 0%, 25%, 0.9) 20%, hsla(30, 100%, 18%, 0.9) 100%);
 }
 
 
@@ -1725,7 +1794,7 @@ About Me Div
 #Contact_Div .Table .Column
 {
   height: 100%;
-  width: 25%;
+  width: 20%;
   float: left;
   text-align: center;
 }
@@ -1741,7 +1810,7 @@ About Me Div
 #Contact_Div .Table
 {
   margin: auto;
-  width: 50%;
+  width: 60%;
   height: 100px;
   background-color: hsl(278, 91%, 70%);
   border-color: hsl(278, 91%, 35%);
@@ -1753,4 +1822,59 @@ About Me Div
 #Contact_Div
 {
   height: 400px;
+}
+
+#Contact_Div #Email_Div
+{
+  background-color: rgb(162, 0, 255);
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  border: hsl(278, 100%, 25%) 3px solid;
+  border-radius: var(--radius-10);
+  overflow: hidden;
+  justify-content: center;
+  justify-items: center;
+}
+
+#Contact_Div #Email_Div #Text_Area
+{
+  width: 50%;
+  height: 100%;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  border-right: hsl(278, 100%, 25%) 1px solid;
+}
+
+#Contact_Div #Email_Div #Text_Area textarea
+{
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  margin: auto;
+  resize: none;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#Contact_Div #Email_Div #Context_Area
+{
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+#Contact_Div #Email_Div #Context_Area input
+{
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
 }
