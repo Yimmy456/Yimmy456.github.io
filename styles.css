@@ -82,6 +82,7 @@
 #MainContainer
 {
   overflow: scroll;
+  width: 100%;
 }
 
 
@@ -519,6 +520,7 @@ About Me Div
 #Main
 {
   margin-top: var(--nav-height);
+  width: 100%;
 }
 
 
