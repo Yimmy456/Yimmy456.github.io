@@ -94,6 +94,7 @@
   {
     font-size: 10px;
     width: auto;
+    overflow: hidden;
   }
 
   #Experiences .Project_Panel .Footer #Slideshow_Counter_Div .Slideshow_Counter_P
@@ -155,11 +156,6 @@
     margin-left: 10.0px;
   }
 
-
-  #Skills .Skill_Name img {
-    transform: scale(0.25);
-  }
-
   #Info_Div .Table .Row2 text
   {
     font-size: 10px;
@@ -175,9 +171,30 @@
     -webkit-text-stroke-width: 2px;
   }
 
-  #Contact_Div .Table a img
+  #Contact_Div .Table a img,
+  #Info_Div .Table .Row1 img,
+  #Experiences ul li .Icon .Icon_Container img,
+  #Experiences ul li .Section_2 img
   {
     transform: scale(0.5);
+  }
+
+  #Experiences .Table ul li .Education_Panel .Right_Side .Section_1
+  {
+    width: 65%;
+    margin-left: 6%;
+  }
+
+  #Experiences .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_2
+  {
+    width: 13%;
+    margin-right: 2%;
+  }
+
+  #Skills .Skill_Name p img
+  {
+    max-width: 150px;
+    max-height: 50px;
   }
 }
 
@@ -196,6 +213,17 @@
     margin-left: 5.0px;
   }
 
+  #Experiences .Table ul li .Education_Panel .Right_Side .Section_1
+  {
+    width: 65%;
+    margin-left: 10%;
+  }
+
+  #Experiences ul li .Award_Panel .Upper_Part .Right_Side .Section_1
+  {
+    width: 60%;
+    margin-left: 5%;
+  }
 }
 
 @font-face {
@@ -310,7 +338,7 @@ li { list-style: none; }
   width: auto;
   padding-left: 5px;
   padding-right: 5px;
-  z-index: 1000;
+  z-index: 500;
 }
 
 @keyframes effect {
@@ -850,6 +878,19 @@ About Me Div
   animation: effect 1s infinite 1s;
 }
 
+#Experiences .Table ul li .Description_Area
+{
+  background-color: blue;
+}
+
+#Experiences .Table ul li .Description_Area .Text_Container
+{
+  width: 99.5%;
+  height: 87%;
+  margin: auto;
+  background-color: aqua;
+  overflow-y: auto;
+}
 
 /*
   Education Div
@@ -863,7 +904,7 @@ About Me Div
   border-radius: var(--radius-10);
   border-style: solid;
   width: 95%;
-  height: 700px;
+  height: 1000px;
   margin: auto;  
   paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
@@ -892,21 +933,13 @@ About Me Div
 
 #Education_Div .Education_Panel .Upper_Part
 {
-  height: 500px;
+  height: 50%;
   border-bottom: 3px;
   border-bottom-style: solid;
   border-bottom-color: hsl(39, 97%, 30%);
 }
 
-#Education_Div .Education_Panel .Logo
-{
-  width: 40%;
-  height: 100%;
-  margin: auto;
-  float: left;
-}
-
-#Education_Div .Education_Panel .Group_1
+#Education_Div .Education_Panel .Left_Side
 {
   width: 40%;
   height: 100%;
@@ -914,14 +947,14 @@ About Me Div
   margin: auto;
 }
 
-#Education_Div .Education_Panel #Index
+#Education_Div .Education_Panel .Left_Side #Index
 {
   position: absolute;
   width: 60px;
   height: 40px;
 }
 
-#Education_Div .Education_Panel #Index .Container
+#Education_Div .Education_Panel .Left_Side #Index .Container
 {
   width: 80%;
   height: 90%;
@@ -934,22 +967,24 @@ About Me Div
 }
 
 
-#Education_Div .Education_Panel .Group_1 .Logo
+#Education_Div .Education_Panel .Left_Side .Logo
 {
   height: 75%;
   width: 100%;
   align-items: center;
   justify-content: center;
   display: flex;
+  margin: auto;
+  float: left;
 }
 
-#Education_Div .Education_Panel .Group_1 .Logo .Container
+#Education_Div .Education_Panel .Left_Side .Logo .Container
 {
   align-items: center;
   justify-content: center;
 }
 
-#Education_Div .Education_Panel .Group_1 .Name
+#Education_Div .Education_Panel .Left_Side .Name
 {
   height: 25%;
   width: 100%;
@@ -960,7 +995,7 @@ About Me Div
 }
 
 
-#Education_Div .Education_Panel .Group_2
+#Education_Div .Education_Panel .Right_Side
 {
   width: 60%;
   height: 100%;
@@ -970,7 +1005,7 @@ About Me Div
   justify-content: center;
 }
 
-#Education_Div .Education_Panel .Group_2 .Row
+#Education_Div .Education_Panel .Right_Side .Row
 {
   width: 100%;
   height: 20%;
@@ -979,7 +1014,7 @@ About Me Div
 }
 
 
-#Education_Div .Education_Panel .Group_2 .Row .Icon
+#Education_Div .Education_Panel .Right_Side .Row .Icon
 {
   width: 10%;
   float: left;
@@ -989,7 +1024,7 @@ About Me Div
   height: 100%;
 }
 
-#Education_Div .Education_Panel .Group_2 .Row .Icon .Icon_Container
+#Education_Div .Education_Panel .Right_Side .Row .Icon .Icon_Container
 {
   width: auto;
   height: auto;
@@ -1001,12 +1036,12 @@ About Me Div
   display: inline-block;
 }
 
-#Education_Div .Education_Panel .Group_2 .Row .Icon .Icon_Container img
+#Education_Div .Education_Panel .Right_Side .Row .Icon .Icon_Container img
 {
   max-height: 60px;
 }
 
-#Education_Div .Education_Panel .Group_2 .Row .Section_1
+#Education_Div .Education_Panel .Right_Side .Row .Section_1
 {
   float: left;
   width: 74%;
@@ -1016,7 +1051,7 @@ About Me Div
   margin-left: 1%;
 }
 
-#Education_Div .Education_Panel .Group_2 .Row .Section_2
+#Education_Div .Education_Panel .Right_Side .Row .Section_2
 {
   width: 15%;
   float: right;
@@ -1026,7 +1061,7 @@ About Me Div
   height: 100%;
 }
 
-#Education_Div .Education_Panel .Group_2 #Location_Row .Section_2 .Icon_Container
+#Education_Div .Education_Panel .Right_Side #Location_Row .Section_2 .Icon_Container
 {
   width: auto;
   height: auto;
@@ -1038,13 +1073,13 @@ About Me Div
   display: inline-block;
 }
 
-#Education_Div .Education_Panel .Group_2 #Location_Row .Section_2 .Icon_Container img
+#Education_Div .Education_Panel .Right_Side #Location_Row .Section_2 .Icon_Container img
 {
   max-height: 60px;
 }
 
 
-#Education_Div .Education_Panel .Group_2 #GPA_Row .Section_2
+#Education_Div .Education_Panel .Right_Side #GPA_Row .Section_2
 {
   align-items: center;
   margin: 0;
@@ -1052,27 +1087,36 @@ About Me Div
   text-align: center;
 }
 
-#Education_Div .Education_Panel .Group_2 #GPA_Row .Section_2 img
+
+#Experiences .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_2
+{
+  width: 14%;
+  margin-right: 1%;
+  text-align: right;
+  justify-content: right;
+}
+
+#Education_Div .Education_Panel .Right_Side #GPA_Row .Section_2 img
 {
   max-height: 60px;
 }
 
-#Education_Div .Education_Panel .Group_2 .Section_1
+
+#Education_Div .Education_Panel .Right_Side .Section_1
 {
   width: auto;
 }
 
-#Education_Div .Education_Panel .Group_2 #Location_Row,
-#Education_Div .Education_Panel .Group_2 #Major_Row
+#Education_Div .Education_Panel .Right_Side #Location_Row,
+#Education_Div .Education_Panel .Right_Side #Major_Row
 {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
 
-#Education_Div .Education_Panel .Description
+#Education_Div .Education_Panel .Description_Area
 {
-  width: 99%;
-  margin: auto;
+  width: 100%;
   height: 50%;
 }
 
@@ -1115,14 +1159,14 @@ About Me Div
   border-bottom-color: hsl(39, 97%, 30%);
 }
 
-#Projects_Div .Project_Panel .Group_1
+#Projects_Div .Project_Panel .Upper_Part .Left_Side
 {
   float: left;
   width: 40%;
   height: 100%;
 }
 
-#Projects_Div .Project_Panel .Group_2
+#Projects_Div .Project_Panel .Upper_Part .Right_Side
 {
   float: left;
   width: 60%;
@@ -1145,21 +1189,21 @@ About Me Div
 }
 
 
-#Projects_Div .Project_Panel .Description .Textbox
+#Projects_Div .Project_Panel .Description_Area .Textbox
 {
   margin: auto;
   height: 100%;
   width: 99%;
 }
 
-#Projects_Div .Project_Panel .Description .Container
+#Projects_Div .Project_Panel .Description_Area .Container
 {
   margin: auto;
   width: 99.5%;
   height: 100%;
 }
 
-#Projects_Div .Project_Panel .Group_2 .Row
+#Projects_Div .Project_Panel .Right_Side .Row
 {
   width: 100%;
   height: 25%;  
@@ -1172,7 +1216,7 @@ About Me Div
   -webkit-text-stroke-color: hsl(39, 97%, 30%);
 }
 
-#Projects_Div .Project_Panel .Group_2 .Row .Icon
+#Projects_Div .Project_Panel .Right_Side .Row .Icon
 {
   float: left;
   width: 13%;
@@ -1180,7 +1224,7 @@ About Me Div
   align-items: center;
 }
 
-#Projects_Div .Project_Panel .Group_2 .Row .Icon .Icon_Container
+#Projects_Div .Project_Panel .Right_Side .Row .Icon .Icon_Container
 {
   width: auto;
   height: auto;
@@ -1192,12 +1236,12 @@ About Me Div
   display: inline-block;
 }
 
-#Projects_Div .Project_Panel .Group_2 .Row .Icon .Icon_Container img
+#Projects_Div .Project_Panel .Right_Side .Row .Icon .Icon_Container img
 {
   max-height: 60px;
 }
 
-#Projects_Div .Project_Panel .Group_2 .Row .Section_1
+#Projects_Div .Project_Panel .Right_Side .Row .Section_1
 {
   float: left;
   width: 66%;
@@ -1207,7 +1251,7 @@ About Me Div
   margin-left: 1%;
 }
 
-#Projects_Div .Project_Panel .Group_2 #Company_Row .Section_1
+#Projects_Div .Project_Panel .Right_Side #Company_Row .Section_1
 {
   float: left;
   width: 51%;
@@ -1216,12 +1260,12 @@ About Me Div
   align-items: center;
 }
 
-#Projects_Div .Project_Panel .Group_2 .Section_2
+#Projects_Div .Project_Panel .Right_Side .Section_2
 {
   width: 20%;
 }
 
-#Projects_Div .Project_Panel .Group_2 #Company_Row .Section_2
+#Projects_Div .Project_Panel .Right_Side #Company_Row .Section_2
 {
   float: right;
   width: 35%;
@@ -1231,17 +1275,17 @@ About Me Div
   justify-content: center;
 }
 
-#Projects_Div .Project_Panel .Group_2 .Row .Section_2 img
+#Projects_Div .Project_Panel .Right_Side .Row .Section_2 img
 {
   max-height: 60px;
 }
 
-#Projects_Div .Project_Panel .Group_2 #Location_Row .Section_1
+#Projects_Div .Project_Panel .Right_Side #Location_Row .Section_1
 {
   float: left;
 }
 
-#Projects_Div .Project_Panel .Group_2 #Location_Row .Section_2
+#Projects_Div .Project_Panel .Right_Side #Location_Row .Section_2
 {
   float: right;
   height: 100%;
@@ -1269,8 +1313,8 @@ About Me Div
   display: flex;
 }
 
-#Projects_Div .Project_Panel .Group_2 #Location_Row,
-#Projects_Div .Project_Panel .Group_2 #Duration_Row
+#Projects_Div .Project_Panel .Right_Side #Location_Row,
+#Projects_Div .Project_Panel .Right_Side #Duration_Row
 {
   background-color: rgba(0, 0, 0, 0.25);
 }
@@ -1281,12 +1325,12 @@ About Me Div
   height: 15%;
 }
 
-#Projects_Div .Project_Panel .Description_Area .Text_Container
+/*#Projects_Div .Project_Panel .Description_Area .Text_Container
 {  
   width: 99.5%;
   margin: auto;
   height: 85%;
-}
+}*/
 
 #Projects_Div .Project_Panel .Slideshow
 {  
@@ -1348,7 +1392,7 @@ About Me Div
 #Projects_Div .Project_Panel .Slideshow .Upper_Part_2 .Slideshow_Description_Area .Text_Container
 {
   width: 99%;
-  height: 85%;
+  height: 95%;
   margin: auto;
 }
 
@@ -1673,12 +1717,6 @@ About Me Div
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-#Professional_Experiences_Div .PE_Panel .Lower_Part
-{
-  width: 100%;
-  height: 45%;
-}
-
 
 /*
   Skills
@@ -1764,7 +1802,7 @@ About Me Div
 
 #Skills .Skill_Name p img
 {
-  max-width: 100px;
+  max-height: 100px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -1825,11 +1863,7 @@ About Me Div
   transform: translateY(-50%);
 }
 
-.Skill_Panel .Upper_Part .Skill_Name p img
-{
-  max-height: 100px;
-  float: left;
-}
+
 
 .Skill_Panel .Upper_Part .Skill_Data p
 {    
