@@ -87,16 +87,6 @@
     margin-left: 15.0px;
   }
 
-  #Experiences .Education_Panel,
-  #Experiences .Project_Panel,
-  #Experiences .Award_Panel,
-  #Experiences .PE_Panel
-  {
-    font-size: 10px;
-    width: auto;
-    overflow: hidden;
-  }
-
   #Experiences .Project_Panel .Footer #Slideshow_Counter_Div .Slideshow_Counter_P
   {
     font-size: 30px;
@@ -166,6 +156,20 @@
     max-width: 50px;
   }
 
+  #Experiences .Education_Panel,
+  #Experiences .Project_Panel,
+  #Experiences .Award_Panel,
+  #Experiences .PE_Panel
+  {
+    font-size: 10px;
+  }
+
+  #Experiences #Awards_Div .Award_Panel .Row .Section_1
+  {
+    width: auto;
+    margin-left: 4%;
+  }
+
   #Skills .skills-item .Skill_Panel .Skill_Data p {
     font-size: 20px;    
     -webkit-text-stroke-width: 2px;
@@ -181,8 +185,27 @@
 
   #Experiences .Table ul li .Education_Panel .Right_Side .Section_1
   {
-    width: 65%;
+    width: auto;
+    max-width: 140px;
     margin-left: 6%;
+    background-color: aqua;
+  }
+
+  #Experiences .Table ul li .Education_Panel .Right_Side .Section_2
+  {
+    background-color: blue
+  }
+
+  #Experiences .Table ul li .Education_Panel .Right_Side .Section_2 img
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #Experiences .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_1
+  {
+    width: 65%;
   }
 
   #Experiences .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_2
@@ -213,11 +236,6 @@
     margin-left: 5.0px;
   }
 
-  #Experiences .Table ul li .Education_Panel .Right_Side .Section_1
-  {
-    width: 65%;
-    margin-left: 10%;
-  }
 
   #Experiences ul li .Award_Panel .Upper_Part .Right_Side .Section_1
   {
@@ -303,7 +321,7 @@ li { list-style: none; }
 
 #Blue_Button
 {
-  margin-left: 150px;
+  margin-left: 100px;
   color: white;
   background-color: hsl(203, 100%, 50%);
   border-color: hsl(203, 100%, 25%);
@@ -866,6 +884,33 @@ About Me Div
   color: var(--white);
 }
 
+/*#Experiences .Education_Panel .Description_Area,
+#Experiences .Project_Panel .Description_Area,
+#Experiences .Award_Panel .Description_Area,
+#Experiences .PE_Panel .Description_Area
+{
+  background-color:blue;
+}*/
+
+#Experiences .Education_Panel .Description_Area .Header_Div_L4,
+#Experiences .Project_Panel .Description_Area .Header_Div_L4,
+#Experiences .Award_Panel .Description_Area .Header_Div_L4,
+#Experiences .PE_Panel .Description_Area .Header_Div_L4
+{
+  height: 20%;
+}
+
+#Experiences .Education_Panel .Description_Area .Text_Container,
+#Experiences .Project_Panel .Description_Area .Text_Container,
+#Experiences .Award_Panel .Description_Area .Text_Container,
+#Experiences .PE_Panel .Description_Area .Text_Container
+{
+  height: 80%;
+  width: 99%;
+  margin: auto;
+  overflow-y: auto;
+}
+
 #Experiences .Span_Hover
 {
   border-color: var(--orange);
@@ -876,20 +921,6 @@ About Me Div
 #Experiences .Icon_Container img:hover + .Span_Hover
 {
   animation: effect 1s infinite 1s;
-}
-
-#Experiences .Table ul li .Description_Area
-{
-  background-color: blue;
-}
-
-#Experiences .Table ul li .Description_Area .Text_Container
-{
-  width: 99.5%;
-  height: 87%;
-  margin: auto;
-  background-color: aqua;
-  overflow-y: auto;
 }
 
 /*
@@ -1016,12 +1047,13 @@ About Me Div
 
 #Education_Div .Education_Panel .Right_Side .Row .Icon
 {
-  width: 10%;
+  width: 15%;
   float: left;
   text-align: center;
   vertical-align: middle;  
   justify-content: space-between;
-  height: 100%;
+  height: 100%;  
+  background-color: blue;
 }
 
 #Education_Div .Education_Panel .Right_Side .Row .Icon .Icon_Container
@@ -1033,7 +1065,8 @@ About Me Div
   top: 50%;
   transform: translateY(-50%);
   align-items: center;
-  display: inline-block;
+  justify-content: center;
+  display: flex;
 }
 
 #Education_Div .Education_Panel .Right_Side .Row .Icon .Icon_Container img
@@ -1044,7 +1077,7 @@ About Me Div
 #Education_Div .Education_Panel .Right_Side .Row .Section_1
 {
   float: left;
-  width: 74%;
+  width: 69%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -1070,12 +1103,15 @@ About Me Div
   top: 50%;
   transform: translateY(-50%);
   align-items: center;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 #Education_Div .Education_Panel .Right_Side #Location_Row .Section_2 .Icon_Container img
 {
   max-height: 60px;
+  display: block;
+  margin: auto;
 }
 
 
@@ -1145,7 +1181,7 @@ About Me Div
   border-radius: var(--radius-10);
   border-style: solid;
   width: 95%;
-  height: 1110px;
+  height: 1120px;
   margin: auto;  
   paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
@@ -1154,6 +1190,7 @@ About Me Div
 #Projects_Div .Project_Panel .Upper_Part
 {
   height: 280px;
+  height: calc((280 * 100%) / 1120);
   border-bottom: 3px;
   border-bottom-style: solid;
   border-bottom-color: hsl(39, 97%, 30%);
@@ -1176,7 +1213,8 @@ About Me Div
 #Projects_Div .Project_Panel .Description_Area
 {
   margin: auto;
-  height: 339px;
+  height: 349px;  
+  height: calc((349 * 100%) / 1120);
   width: 100%;
   border-bottom: 3px;
   border-bottom-style: solid;
@@ -1186,21 +1224,6 @@ About Me Div
 #Projects_Div .Project_Panel .Slides_Project_1 p
 {
   display: none;
-}
-
-
-#Projects_Div .Project_Panel .Description_Area .Textbox
-{
-  margin: auto;
-  height: 100%;
-  width: 99%;
-}
-
-#Projects_Div .Project_Panel .Description_Area .Container
-{
-  margin: auto;
-  width: 99.5%;
-  height: 100%;
 }
 
 #Projects_Div .Project_Panel .Right_Side .Row
@@ -1319,23 +1342,11 @@ About Me Div
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-
-#Projects_Div .Project_Panel .Description_Area .Header_Div_L4
-{  
-  height: 15%;
-}
-
-/*#Projects_Div .Project_Panel .Description_Area .Text_Container
-{  
-  width: 99.5%;
-  margin: auto;
-  height: 85%;
-}*/
-
 #Projects_Div .Project_Panel .Slideshow
 {  
   margin: auto;
-  height: 471px;
+  height: 491px;  
+  height: calc((491 * 100%) / 1120);
 }
 
 #Projects_Div .Project_Panel .Slideshow .Container
@@ -1357,6 +1368,7 @@ About Me Div
 #Projects_Div .Project_Panel .Slideshow .Upper_Part_2
 {
   height: 334px;
+  height: calc((334 * 100%) / 491);
   width: 100%;
 
   border-top: 2px solid hsla(0, 0%, 0%, 0.25);
@@ -1399,10 +1411,12 @@ About Me Div
 #Projects_Div .Project_Panel .Slideshow .Footer
 {
   height: 101px;
+  height: calc((101 * 100%) / 491);
   width: 100%;
 
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 #Projects_Div .Project_Panel .Slideshow .Footer #Previous_Button_Div
@@ -1453,7 +1467,7 @@ About Me Div
   position: relative;
 }
 
-#Projects_Div .Slideshow #Display_Div .Slides_Project_1
+#Projects_Div .Project_Panel .Slideshow #Display_Div .Slides_Project_1
 {
   height: 90%;
   display: none;
@@ -1463,7 +1477,7 @@ About Me Div
   transform: translateY(-50%);
 }
 
-#Projects_Div .Slideshow #Display_Div .Slides_Project_1 img
+#Projects_Div .Project_Panel .Slideshow #Display_Div .Slides_Project_1 img
 {
   height: 100%;
   position: relative;
@@ -1472,7 +1486,7 @@ About Me Div
   transform: translateY(-50%);
 }
 
-#Projects_Div .Slideshow #Display_Div .Slides_Project_1 iframe
+#Projects_Div .Project_Panel .Slideshow #Display_Div .Slides_Project_1 iframe
 {
   width: 100%;
   height: 100%;
@@ -1508,7 +1522,7 @@ About Me Div
   border-radius: var(--radius-10);
   border-style: solid;
   width: 95%;
-  height: 600px;
+  height: 700px;
   margin: auto;  
   paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
@@ -1519,7 +1533,8 @@ About Me Div
 #Awards_Div .Award_Panel .Upper_Part
 {
   width: 100%;
-  height: 60%;  
+  height: 400px;
+  height: calc((400 * 100%) / 700); 
   border-bottom: 3px hsl(39, 97%, 30%) solid;
 }
 
@@ -1596,6 +1611,12 @@ About Me Div
   align-items: center;
   margin: auto;
   max-height: 60px;
+}
+
+#Awards_Div .Award_Panel .Description_Area
+{
+  height: 300px;
+  height: calc((300 * 100%) / 700); 
 }
 
 #Awards_Div .Award_Panel .Upper_Part .Right_Side #Time_Row,
@@ -1717,6 +1738,22 @@ About Me Div
   background-color: rgba(0, 0, 0, 0.25);
 }
 
+#Professional_Experiences_Div .PE_Panel .Description_Area
+{
+  height: 45%;
+}
+
+
+#Professional_Experiences_Div .PE_Panel .Description_Area .Header_Div_L4
+{
+  height: 20%;
+}
+
+#Professional_Experiences_Div .PE_Panel .Description_Area .Text_Container
+{
+  height: 80%;
+  overflow-y: auto;
+}
 
 /*
   Skills
