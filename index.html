@@ -100,9 +100,11 @@ function SetSubnavToHidden(input)
 
   <nav id="Header_Div">
 
-    <div id="Name_Div" style="background-color: hsla(0, 0%, 25%, 0.9);"><a href="#">Manar Ajhar</a>
-    </div>
-    <div id="Professions_Div" style="background-color: hsla(0, 0%, 25%, 0.9);">Game Developer <text class="Red_Section" style="-webkit-text-stroke: var(--red-border) 3px; paint-order: stroke fill;">|</text> Programmer <text class="Orange_Section" style="-webkit-text-stroke: var(--orange-border) 3px; paint-order: stroke fill;">|</text> Website Designer <text class="Yellow_Section" style="-webkit-text-stroke: var(--yellow-border) 3px; paint-order: stroke fill;">|</text> Multimedia Editor
+    <div id="Name_Div" style="background-color: hsla(0, 0%, 25%, 0.9);"><a href="#">Manar Ajhar</a></div>
+    <div id="Professions_Div" style="background-color: hsla(0, 0%, 25%, 0.9);">
+      <p>
+        Game Developer <text class="Red_Section" style="-webkit-text-stroke: var(--red-border) 3px; paint-order: stroke fill;">|</text> Programmer <text class="Orange_Section" style="-webkit-text-stroke: var(--orange-border) 3px; paint-order: stroke fill;">|</text> Website Designer <text class="Yellow_Section" style="-webkit-text-stroke: var(--yellow-border) 3px; paint-order: stroke fill;">|</text> Multimedia Editor
+      </p>
     </div>
 
     <div class="navbar" style="background-color: hsla(0, 0%, 25%, 0.9);">
@@ -190,20 +192,26 @@ function SetSubnavToHidden(input)
             <div class="Table">
               <div class="Column" id="Location">
                 <div class="Row1">
+                  <div class="Icon_Container">
                     <img src="Assets/images/Location Icon (Red).png" alt="Location" title="Location" class="Icon_Image" style="margin: auto;">
                     <span class="Span_Hover">Location</span>
+                  </div>
                 </div>
                 <div class="Row2">
                   <text style="color: var(--white);">Sharjah,<br>the United Arab Emirates<br></text>
                 </div>
                 <div class="Row3">
-                  <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UAE.png" alt="UAE" title="the United Arab Emirates"/>
+                  <div class="Icon_Container">
+                    <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UAE.png" alt="UAE" title="the United Arab Emirates"/>
+                  </div>
                 </div>
               </div>
               <div class="Column" id="Birthday">
                 <div class="Row1">
-                  <img src="Assets/images/Birthday Cake Icon 2.png" alt="Birthday" title="Birthday">
-                  <span class="Span_Hover">Birthday</span>
+                  <div class="Icon_Container">
+                    <img src="Assets/images/Birthday Cake Icon 2.png" alt="Birthday" title="Birthday">
+                    <span class="Span_Hover">Birthday</span>
+                  </div>
                 </div>
                 <div class="Row2">
                   <text style="color: var(--white);">10<sup>th</sup> May, 1993</text>
@@ -213,25 +221,34 @@ function SetSubnavToHidden(input)
               </div>
               <div class="Column" id="Nationality">
                 <div class="Row1">
-                  <img src="Assets/images/Passport Icon 2.png" alt="Nationality" title="Nationality">                  
-                  <span class="Span_Hover">Nationality</span>
+                  <div class="Icon_Container">
+                    <img src="Assets/images/Passport Icon 2.png" alt="Nationality" title="Nationality">                  
+                    <span class="Span_Hover">Nationality</span>
+                  </div>
                 </div>
                 <div class="Row2">
                   <text style="color: var(--white);">Canadian</text>
                 </div>
-                <div class="Row3"><img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/Canada.png" alt="Canada" title="Canada"/>
+                <div class="Row3">
+                  <div class="Icon_Container">
+                    <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/Canada.png" alt="Canada" title="Canada"/>
+                  </div>
                 </div>
               </div>
               <div class="Column" id="Visa">
                 <div class="Row1">
-                  <img src="Assets/images/Visa Icon 2.png" alt="Visa" title="Visa">
-                  <span class="Span_Hover">Visa</span>
+                  <div class="Icon_Container">
+                    <img src="Assets/images/Visa Icon 2.png" alt="Visa" title="Visa">
+                    <span class="Span_Hover">Visa</span>
+                  </div>
                 </div>
                 <div class="Row2">
                   <text style="color: var(--white);">Golden Visa,<br> the United Arab Emirates</text>
                 </div>
                 <div class="Row3">
-                  <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UAE.png" alt="UAE" title="the United Arab Emirates"/>
+                  <div class="Icon_Container">
+                    <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UAE.png" alt="UAE" title="the United Arab Emirates"/>
+                  </div>
                 </div>
               </div>
             </div>
@@ -253,8 +270,11 @@ function SetSubnavToHidden(input)
               <div class="Education_Panel">
                 <div class="Upper_Part">
                 <div class="Left_Side">
-                  <div id="Index" style="position: absolute;"><div class="Container">1.</div></div>                  
-                  <div class="Name"><div class="Header_Div_L3"><h3>Queen's University</h3></div></div>
+                  <div class = "Name_Table" style="background-color: aqua; height: 10%;">
+                    <div id="Index" style="float: left; text-align: center; vertical-align: middle; height: 100%; position: relative; width: 10%; background-color: blue; margin: auto;">1.</div>              
+                    <div class="Name" style="float: left; text-align: center; vertical-align: middle; height: 100%; position: relative; width: 80%;"><div class="Header_Div_L3"><h3>Queen's University</h3></div></div>
+                    <div style="float: left; text-align: center; vertical-align: middle; height: 100%; position: relative; width: 10%;"></div>
+                  </div>
                   <div class="Logo">
                     <div class="Container">
                       <img src="Assets/images/QueensLogo_sRGB.png" style="margin: auto; width: 70%; height: 70%;" alt="Queen's University" title="Queen's University">
@@ -262,11 +282,11 @@ function SetSubnavToHidden(input)
                   </div>
                 </div>
                 <div class="Right_Side">
-                  <div class="Row" id="Duration">
+                  <div class="Row" id="Duration_Row">
                     <div class="Icon">
                       <div class="Icon_Container">
                         <img src="Assets/images/Calendar Icon.png" alt="Duration" title="Duration">
-                        <span class="Span_Hover" style="transform: translate(75px, var(--Span-Hover-Translate-Y));">Duration</span>
+                        <span class="Span_Hover">Duration</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -277,7 +297,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                         <img src="Assets/images/Location Icon (Orange).png" alt="Location" title="Location">
-                        <span class="Span_Hover" style="transform: translate(45px, var(--Span-Hover-Translate-Y));">Location</span>
+                        <span class="Span_Hover">Location</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -294,7 +314,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                           <img src="Assets/images/Certificate Icon.png" alt="Degree" title="Degree">
-                          <span class="Span_Hover" style="transform: translate(65px, var(--Span-Hover-Translate-Y));">Degree</span>
+                          <span class="Span_Hover">Degree</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -305,7 +325,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                           <img src="Assets/images/Book Icon.png" alt="Major" title="Major">
-                          <span class="Span_Hover" style="transform: translate(70px, var(--Span-Hover-Translate-Y));">Major</span>
+                          <span class="Span_Hover">Major</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -316,12 +336,13 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                           <img src="Assets/images/GPA Icon.png" alt="GPA" title="GPA">
-                          <span class="Span_Hover" style="transform: translate(55px, var(--Span-Hover-Translate-Y));">GPA</span>
+                          <span class="Span_Hover">GPA</span>
                       </div>
                     </div>
                     <div class="Section_1">
                       <div class="Progress_Meter_Box" style="width: 100%; vertical-align: middle;">
-                        <div class="Progress_Meter" style="width: 87.5%; background-color: hsl(105, 100%, 50%); border-right-color: hsl(105, 100%, 25%)"></div>
+                        <!-- <div class="Progress_Meter" style="width: 87.5%; background-color: hsl(105, 100%, 50%); border-right-color: hsl(105, 100%, 25%)"></div> -->
+                        <div class="skills-progress" style="width: 87.5%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 87.5), hsl(105, 100%, 50%) 100%); border-right-color: hsl(105, 100%, 25%)"></div>
                       </div>
                     </div>
                     <div class="Section_2" style="text-align: right; vertical-align: middle;">
@@ -352,11 +373,11 @@ function SetSubnavToHidden(input)
                   </div>
                 </div>
                 <div class="Right_Side">
-                  <div class="Row" id="Duration">
+                  <div class="Row" id="Duration_Row">
                     <div class="Icon">
                       <div class="Icon_Container">
                         <img src="Assets/images/Calendar Icon.png" alt="Duration" title="Duration">
-                        <span class="Span_Hover" style="transform: translate(75px, var(--Span-Hover-Translate-Y));">Duration</span>
+                        <span class="Span_Hover">Duration</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -367,7 +388,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                         <img src="Assets/images/Location Icon (Orange).png" alt="Location" title="Location">                        
-                        <span class="Span_Hover" style="transform: translate(45px, var(--Span-Hover-Translate-Y));">Location</span>
+                        <span class="Span_Hover">Location</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -384,7 +405,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                           <img src="Assets/images/Certificate Icon.png" alt="Degree" title="Degree">                          
-                        <span class="Span_Hover" style="transform: translate(65px, var(--Span-Hover-Translate-Y));">Degree</span>
+                        <span class="Span_Hover">Degree</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -395,7 +416,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                           <img src="Assets/images/Book Icon.png" alt="Major" title="Major">                          
-                        <span class="Span_Hover" style="transform: translate(70px, var(--Span-Hover-Translate-Y));">Major</span>
+                        <span class="Span_Hover">Major</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -406,12 +427,12 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                           <img src="Assets/images/GPA Icon.png" alt="GPA" title="GPA">                          
-                        <span class="Span_Hover" style="transform: translate(55px, var(--Span-Hover-Translate-Y));">GPA</span>
+                        <span class="Span_Hover">GPA</span>
                       </div>
                     </div>
                     <div class="Section_1">
                       <div class="Progress_Meter_Box" style="width: 100%; vertical-align: middle;">
-                        <div class="Progress_Meter" style="width: 79.5%; background-color: hsl(95.4, 100%, 50%); border-right-color: hsl(95.4, 100%, 25%)"></div>
+                        <div class="skills-progress" style="width: 79.5%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 79.5), hsl(95.4, 100%, 50%) 100%); border-right-color: hsl(95.4, 100%, 25%)"></div>
                       </div>
                     </div>
                     <div class="Section_2" style="text-align: right; vertical-align: middle;">
@@ -442,11 +463,11 @@ function SetSubnavToHidden(input)
                   </div>
                 </div>
                 <div class="Right_Side">
-                  <div class="Row" id="Duration">
+                  <div class="Row" id="Duration_Row">
                     <div class="Icon">
                       <div class="Icon_Container">
                         <img src="Assets/images/Calendar Icon.png" alt="Duration" title="Duration">
-                        <span class="Span_Hover" style="transform: translate(75px, var(--Span-Hover-Translate-Y));">Duration</span>
+                        <span class="Span_Hover">Duration</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -457,7 +478,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                         <img src="Assets/images/Location Icon (Orange).png" alt="Location" title="Location">                        
-                        <span class="Span_Hover" style="transform: translate(45px, var(--Span-Hover-Translate-Y));">Location</span>
+                        <span class="Span_Hover">Location</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -474,7 +495,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                           <img src="Assets/images/Certificate Icon.png" alt="Degree" title="Degree">                                                  
-                          <span class="Span_Hover" style="transform: translate(65px, var(--Span-Hover-Translate-Y));">Degree</span>
+                          <span class="Span_Hover">Degree</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -485,7 +506,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                           <img src="Assets/images/Book Icon.png" alt="Major" title="Major">                                                  
-                        <span class="Span_Hover" style="transform: translate(70px, var(--Span-Hover-Translate-Y));">Major</span>
+                        <span class="Span_Hover">Major</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -496,12 +517,12 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                           <img src="Assets/images/GPA Icon.png" alt="GPA" title="GPA">                                                  
-                          <span class="Span_Hover" style="transform: translate(55px, var(--Span-Hover-Translate-Y));">GPA</span>
+                          <span class="Span_Hover">GPA</span>
                       </div>
                     </div>
                     <div class="Section_1">
                       <div class="Progress_Meter_Box" style="width: 100%; vertical-align: middle;">
-                        <div class="Progress_Meter" style="width: 80.75%; background-color: hsl(96.9, 100%, 50%); border-right-color: hsl(96.9, 100%, 25%)"></div>
+                        <div class="skills-progress" style="width: 80.75%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 80.75), hsl(96.9, 100%, 50%) 100%); border-right-color: hsl(96.9, 100%, 25%)"></div>
                       </div>
                     </div>
                     <div class="Section_2" style="text-align: right; vertical-align: middle;">
@@ -614,7 +635,7 @@ function SetSubnavToHidden(input)
                 <div class="Upper_Part_2">
                   <div id="Display_Div">
                     <div class="Container" style="height: 100%;">
-                      <div class="Slides_Project_1" style="display: block;">
+                      <div class="Slides_Project_1">
                         <img src="Assets/images/About Me Icon.png"/>
                         <p class="Slideshow_Description">Content 1</p>
                       </div>
@@ -627,8 +648,6 @@ function SetSubnavToHidden(input)
                         <p class="Slideshow_Description">Content 3</p>
                       </div>
                       <div class="Slides_Project_1">
-                        <!--<iframe  width="640px" height="480px"
-                        src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
                         <iframe  width="640px" height="480px"
                         src="https://youtube.com/embed/Hua2Oj3U7pw"></iframe>                           
                         <p class="Slideshow_Description">Content 4</p>
@@ -689,7 +708,7 @@ function SetSubnavToHidden(input)
                       <div class="Icon">
                         <div class="Icon_Container">
                           <img src="Assets/images/Event Icon 2.png" alt="Event" title="Event">                                                
-                          <span class="Span_Hover" style="transform: translate(80px, -55px);">Event</span>
+                          <span class="Span_Hover">Event</span>
                         </div>
                       </div>
                       <div class="Section_1">
@@ -700,7 +719,7 @@ function SetSubnavToHidden(input)
                       <div class="Icon">
                         <div class="Icon_Container">
                           <img src="Assets/images/Calendar Icon.png" alt="Time" title="Time">                                                                        
-                          <span class="Span_Hover" style="transform: translate(70px, -55px);">Time</span>
+                          <span class="Span_Hover">Time</span>
                         </div>
                       </div>
                       <div class="Section_1">
@@ -711,7 +730,7 @@ function SetSubnavToHidden(input)
                       <div class="Icon">
                         <div class="Icon_Container">
                           <img src="Assets/images/Company Icon.png" alt="Company" title="Company">                                                                        
-                          <span class="Span_Hover" style="transform: translate(70px, -55px);">Company</span>
+                          <span class="Span_Hover">Company</span>
                         </div>
                       </div>
                       <div class="Section_1">
@@ -727,7 +746,7 @@ function SetSubnavToHidden(input)
                       <div class="Icon">
                         <div class="Icon_Container">
                           <img src="Assets/images/Location Icon (Orange).png" alt="Location" title="Location">                                                                        
-                          <span class="Span_Hover" style="transform: translate(55px, -55px);">Location</span>
+                          <span class="Span_Hover">Location</span>
                         </div>
                       </div>
                       <div class="Section_1">
@@ -743,7 +762,7 @@ function SetSubnavToHidden(input)
                       <div class="Icon">
                         <div class="Icon_Container">
                           <img src="Assets/images/Ranking Stand Icon 2.png" alt="Ranking" title="Ranking">                                                                        
-                          <span class="Span_Hover" style="transform: translate(100px, -55px);">Ranking</span>
+                          <span class="Span_Hover">Ranking</span>
                         </div>
                       </div>
                       <div class="Section_1">
@@ -794,7 +813,7 @@ function SetSubnavToHidden(input)
                       <div class="Icon">
                         <div class="Icon_Container">
                           <img src="Assets/images/Calendar Icon.png" alt="Duration" title="Duration">                                                                                                                          
-                          <span class="Span_Hover" style="transform: translate(65px, -55px);">Duration</span>
+                          <span class="Span_Hover">Duration</span>
                         </div>
                       </div>
                       <div class="Section_1">
@@ -805,7 +824,7 @@ function SetSubnavToHidden(input)
                       <div class="Icon">
                         <div class="Icon_Container">
                           <img src="Assets/images/Company Icon.png" alt="Company" title="Company">                                                                                                
-                          <span class="Span_Hover" style="transform: translate(70px, -55px);">Company</span>
+                          <span class="Span_Hover">Company</span>
                         </div>
                       </div>
                       <div class="Section_1">
@@ -821,7 +840,7 @@ function SetSubnavToHidden(input)
                       <div class="Icon">
                         <div class="Icon_Container">
                           <img src="Assets/images/Location Icon (Orange).png" alt="Location" title="Location">                                                                                                
-                          <span class="Span_Hover" style="transform: translate(46px, -55px);">Location</span>
+                          <span class="Span_Hover">Location</span>
                         </div>
                       </div>
                       <div class="Section_1">
@@ -1107,34 +1126,44 @@ function SetSubnavToHidden(input)
       <h2 class="Purple_Section" style="-webkit-text-stroke: 5px var(--purple-border); paint-order: stroke fill;">Follow Me</h2>
       <div class="Table" style="overflow: hidden;">
         <div class="Column">
-          <a href="https://www.linkedin.com/in/manar-ajhar-823817b1/">
-            <img src="Assets/images/LinkedIn_icon.png" alt="LinkedIn" title="LinkedIn">                                                                                                                                                                                                          
-            <span class="Span_Hover">LinkedIn</span>
-          </a>
+          <div class="Icon_Container">
+            <a href="https://www.linkedin.com/in/manar-ajhar-823817b1/">
+              <img src="Assets/images/LinkedIn_icon.png" alt="LinkedIn" title="LinkedIn">                                                                                                                                                                                                          
+              <span class="Span_Hover">LinkedIn</span>
+            </a>
+          </div>
         </div>
         <div class="Column" style="background-color: rgba(0, 0, 0, 0.25);">
-          <a href="mailto:manarajhar93@gmail.com">
-            <img src="Assets/images/Email Icon.png" alt="Email" title="Email">                                                                                                                                                                                                                                  
-            <span class="Span_Hover">Email</span>
-          </a>
+          <div class="Icon_Container">
+            <a href="mailto:manarajhar93@gmail.com">
+              <img src="Assets/images/Email Icon.png" alt="Email" title="Email">                                                                                                                                                                                                                                  
+              <span class="Span_Hover">Email</span>
+            </a>
+          </div>
         </div>
         <div class="Column">
-          <a href="https://github.com/Yimmy456">
-            <img src="Assets/images/GitHub_Invertocat_Logo.png" alt="GitHub" title="GitHub">                                                                                                                                                                                                                      
-            <span class="Span_Hover">GitHub</span>
-          </a>
+          <div class="Icon_Container">
+            <a href="https://github.com/Yimmy456">
+              <img src="Assets/images/GitHub_Invertocat_Logo.png" alt="GitHub" title="GitHub">                                                                                                                                                                                                                      
+              <span class="Span_Hover">GitHub</span>
+            </a>
+          </div>
         </div>
         <div class="Column" style="background-color: rgba(0, 0, 0, 0.25);">
-          <a href="tel:+971509887983">
-            <img src="Assets/images/Phone Icon.png" alt="Phone" title="Phone">                                                                                                                                                                                                                                  
-            <span class="Span_Hover">Phone</span>
-          </a>
+          <div class="Icon_Container">
+            <a href="tel:+971509887983">
+              <img src="Assets/images/Phone Icon.png" alt="Phone" title="Phone">                                                                                                                                                                                                                                  
+              <span class="Span_Hover">Phone</span>
+            </a>
+          </div>
         </div>
         <div class="Column">
-          <a href="https://www.youtube.com/@manarajhar1029">
-            <img src="Assets/images/Downloaded Icons/Logos/youtube-logo-2431.png" alt="YouTube" title="YouTube">                                                                                                                                                                                                                                  
-            <span class="Span_Hover">YouTube</span>
-          </a>
+          <div class="Icon_Container">
+            <a href="https://www.youtube.com/@manarajhar1029">
+              <img src="Assets/images/Downloaded Icons/Logos/youtube-logo-2431.png" alt="YouTube" title="YouTube">                                                                                                                                                                                                                                  
+              <span class="Span_Hover">YouTube</span>
+            </a>
+          </div>
         </div>
       </div>
     

@@ -72,192 +72,6 @@
 }
 */
 
-@media screen and (max-width: 1300px) {
-
-  #Header_Div .navbar li
-  {
-    margin-left: 15.0px;
-    margin-right: 15.0px;
-    width: auto;
-    font-size: 25px;
-  }
-
-  #Header_Div .navbar #Blue_Button
-  {
-    margin-left: 15.0px;
-  }
-
-  #Experiences .Project_Panel .Footer #Slideshow_Counter_Div .Slideshow_Counter_P
-  {
-    font-size: 30px;
-  }
-
-  #Experiences .Project_Panel .Footer #Previous_Button_Div button img,
-  #Experiences .Project_Panel .Footer #Next_Button_Div button img
-  {
-    transform: scale(0.5);
-  }
-
-  #Info_Div .Table .Row2 text
-  {
-    font-size: 20px;
-  }
-
-  #Skills .skills-item .Skill_Panel .Skill_Data p {
-    font-size: 30px;
-    -webkit-text-stroke-width: 3px;
-  }
-
-  .Span_Hover
-  {
-    font-size: 20px;    
-    -webkit-text-stroke-width: 2px;
-  }
-
-  #Info_Div .Table .Span_Hover
-  {
-    transform: translate(110px, -15px);
-  }
-
-  #Skills .Skill_Panel .Span_Hover
-  {
-    transform: translate(110px, -15px);
-  }
-
-  #Contact_Div .Table .Column a .Span_Hover
-  {
-    transform: translate(65px, -50px);
-  }
-}
-
-@media screen and (max-width: 960px) {
-
-  #Header_Div .navbar li
-  {
-    margin-left: 10.0px;
-    margin-right: 10.0px;
-    width: auto;
-    font-size: 20px;
-  }
-
-  
-  #Header_Div .navbar #Blue_Button
-  {
-    margin-left: 10.0px;
-  }
-
-  #Info_Div .Table .Row2 text
-  {
-    font-size: 10px;
-  }
-
-
-  #Info_Div .Table img {
-    max-width: 50px;
-  }
-
-  #Experiences .Table
-  {
-    font-size: 10px;
-  }
-
-  #Experiences .Table .Upper_Part .Right_Side .Row .Section_2 .Icon_Container img
-  {
-    height: 20px;
-  }
-
-  #Experiences #Awards_Div .Award_Panel .Row .Section_1
-  {
-    width: auto;
-    margin-left: 4%;
-  }
-
-  #Skills .skills-item .Skill_Panel .Skill_Data p {
-    font-size: 20px;    
-    -webkit-text-stroke-width: 2px;
-  }
-
-  /*#Contact_Div .Table a img,
-  #Info_Div .Table .Row1 img,
-  #Experiences ul li .Icon .Icon_Container img,
-  #Experiences ul li .Section_2 img
-  {
-    transform: scale(0.5);
-  }*/
-
-  #Contact_Div .Table a img,
-  #Info_Div .Table .Row1 img,
-  #Experiences ul li .Icon .Icon_Container img
-  {
-    transform: scale(0.5);
-  }
-
-  #Experiences .Table ul li .Education_Panel .Right_Side .Section_1
-  {
-    width: auto;
-    max-width: 140px;
-    margin-left: 6%;
-  }
-
-  #Experiences .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_1
-  {
-    width: 65%;
-  }
-
-  #Experiences .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_2
-  {
-    width: 13%;
-    margin-right: 2%;
-  }
-
-  #Awards_Div .Table ul li .Award_Panel .Upper_Part .Right_Side .Section_1
-  {
-    width: auto;
-  }
-
-  #Professional_Experiences_Div .Table ul li .PE_Panel .Upper_Part .Right_Side .Section_1
-  {
-    width: auto;
-    max-width: 155px;
-  }
-
-  #Skills .Skill_Name p img
-  {
-    max-width: 150px;
-    max-height: 50px;
-  }
-}
-
-@media screen and (max-width: 537px) {
-
-  #Header_Div .navbar li
-  {
-    margin-left: 5.0px;
-    margin-right: 5.0px;
-    width: auto;
-    font-size: 10px;
-  }
-  
-  #Header_Div .navbar #Blue_Button
-  {
-    margin-left: 5.0px;
-  }
-
-
-  #Experiences ul li .Award_Panel .Upper_Part .Right_Side .Section_1
-  {
-    width: 60%;
-    margin-left: 5%;
-  }
-}
-
-@font-face {
-  font-family: "impact";
-  src: url("Assets/Fonts/Roboto_Fonts/Roboto-Medium.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 h1{
   font-weight: normal;
@@ -356,14 +170,15 @@ li { list-style: none; }
   border-style: solid;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: var(--radius-10);
-  transform: translate(200px, -15px);
+  /*transform: translate(200px, -15px);*/
   text-align: center;
   -webkit-text-stroke-width: 3px;
   paint-order: stroke fill;
   width: auto;
   padding-left: 5px;
   padding-right: 5px;
-  z-index: 500;
+  z-index: 1500;
+  font-size: 20px;
 }
 
 @keyframes effect {
@@ -752,16 +567,6 @@ About Me Div
   overflow: hidden;
 }
 
-#Info_Div img
-{
-  margin: 0;
-  position: relative;
-  display: inline-block;
-  top: 50%;
-  transform: translateY(-50%);
-  max-height: 100px;
-}
-
 
 #Info_Div .Table .Column
 {
@@ -779,6 +584,26 @@ About Me Div
 {
   width: 100%;
   height: 140px;
+}
+
+#Info_Div .Table .Column .Row1 .Icon_Container,
+#Info_Div .Table .Column .Row3 .Icon_Container
+{
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#Info_Div .Table .Column .Row1 .Icon_Container img,
+#Info_Div .Table .Column .Row3 .Icon_Container img
+{
+  max-height: 100px;
 }
 
 /*
@@ -951,6 +776,25 @@ About Me Div
   max-width: 60px;
 }
 
+#Experiences .Table .Upper_Part .Right_Side .Row .Icon .Icon_Container .Span_Hover
+{
+  margin-left: 140px;
+}
+
+#Experiences .Table .Upper_Part .Right_Side #Duration_Row .Icon .Icon_Container .Span_Hover,
+#Experiences .Table .Upper_Part .Right_Side #Location_Row .Icon .Icon_Container .Span_Hover,
+#Experiences .Table .Upper_Part .Right_Side #Ranking_Row .Icon .Icon_Container .Span_Hover
+{
+  margin-left: 155px;
+}
+
+#Experiences .Table .Upper_Part .Right_Side #Category_Row .Icon .Icon_Container .Span_Hover,
+#Experiences .Table .Upper_Part .Right_Side #Company_Row .Icon .Icon_Container .Span_Hover
+
+{
+  margin-left: 165px;
+}
+
 #Experiences .Table .Upper_Part .Right_Side .Row .Section_1
 {
   float: left;
@@ -1058,7 +902,7 @@ About Me Div
   margin: auto;
 }
 
-#Education_Div .Education_Panel .Left_Side #Index
+/*#Education_Div .Education_Panel .Left_Side #Index
 {
   position: absolute;
   width: 60px;
@@ -1075,7 +919,7 @@ About Me Div
   justify-content: left;
   text-align: left;
   display: flex;
-}
+}*/
 
 
 #Education_Div .Education_Panel .Left_Side .Logo
@@ -1242,7 +1086,7 @@ About Me Div
   -webkit-text-stroke-color: hsl(39, 97%, 30%);
 }
 
-#Projects_Div .Project_Panel #Index
+/*#Projects_Div .Project_Panel #Index
 {
   position: absolute;
   width: 60px;
@@ -1259,7 +1103,7 @@ About Me Div
   justify-content: left;
   text-align: left;
   display: flex;
-}
+}*/
 
 #Projects_Div .Project_Panel .Right_Side #Location_Row,
 #Projects_Div .Project_Panel .Right_Side #Duration_Row
@@ -1402,7 +1246,7 @@ About Me Div
   height: 100%;
 }
 
-#Projects_Div .Project_Panel .Slideshow #Display_Div .Slides_Project_1
+/*#Projects_Div .Project_Panel .Slideshow #Display_Div .Slides_Project_1
 {
   height: 90%;
   display: none;
@@ -1410,9 +1254,36 @@ About Me Div
   margin: auto;
   top: 50%;
   transform: translateY(-50%);
+}*/
+
+#Experiences #Projects_Div .Project_Panel .Slideshow .Upper_Part_2 #Display_Div .Container
+{
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
-#Projects_Div .Project_Panel .Slideshow #Display_Div .Slides_Project_1 img
+#Experiences #Projects_Div .Project_Panel .Slideshow .Upper_Part_2 #Display_Div .Container img
+{
+  max-width: 90%;
+  margin: auto;
+}
+
+#Experiences #Projects_Div .Project_Panel .Slideshow .Upper_Part_2 #Display_Div .Container iframe
+{
+  max-width: 100%;
+  max-height: 300px;
+  margin: auto;
+  z-index: 500;
+}
+
+/*#Projects_Div .Project_Panel .Slideshow #Display_Div .Slides_Project_1 img
 {
   height: 100%;
   position: relative;
@@ -1426,7 +1297,7 @@ About Me Div
   width: 100%;
   height: 100%;
   margin: auto;
-}
+}*/
 
 #Projects_Div .Project_Panel .Slideshow .Slides_Project_1 .Slideshow_Description_1
 {
@@ -1437,6 +1308,19 @@ About Me Div
 #Next_Button_Div button img
 {
   height: 80px;
+}
+
+#Experiences #Projects_Div .Project_Panel .Slideshow .Upper_Part_2 #Display_Div .Container
+{
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 /*
@@ -1796,14 +1680,6 @@ About Me Div
   text-align: center;
 }
 
-#Contact_Div .Table img{
-  margin: auto;
-  position: relative;
-  top: 50%;
-  transform: translateY(25%);
-  display: inline-block;
-}
-
 #Contact_Div .Table
 {
   margin: auto;
@@ -1814,6 +1690,19 @@ About Me Div
   border-width: 3px;
   border-style: solid;
   border-radius: var(--radius-10);
+}
+
+#Contact_Div .Table .Icon_Container
+{
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 #Contact_Div
@@ -1876,7 +1765,213 @@ About Me Div
   margin-top: 10px;
 }
 
-#Contact_Div .Table a .Span_Hover
+/*#Contact_Div .Table a .Span_Hover
 {
   transform: translate(130px, -50px);
+}*/
+
+@media screen and (min-width: 960px) {
+
+  #Header_Div .navbar #Blue_Button
+  {
+    margin-left: 125.0px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+
+  #Header_Div .navbar li
+  {
+    margin-left: 15.0px;
+    margin-right: 15.0px;
+    width: auto;
+    font-size: 25px;
+  }
+
+  #Experiences .Project_Panel .Footer #Slideshow_Counter_Div .Slideshow_Counter_P
+  {
+    font-size: 30px;
+  }
+
+  #Info_Div .Table .Row2 text
+  {
+    font-size: 20px;
+  }
+
+  #Skills .skills-item .Skill_Panel .Skill_Data p {
+    font-size: 30px;
+    -webkit-text-stroke-width: 3px;
+  }
+
+  /*#Info_Div .Table .Span_Hover
+  {
+    transform: translate(0px, 0px);
+  }
+
+  #Skills .Skill_Panel .Span_Hover
+  {
+    transform: translate(110px, -15px);
+  }
+
+  #Contact_Div .Table .Column a .Span_Hover
+  {
+    transform: translate(65px, -50px);
+  }*/
+}
+
+@media screen and (max-width: 960px) {
+
+  #Header_Div #Name_Div
+  {
+    font-size: 40px;
+  }
+
+  #Header_Div #Professions_Div
+  {
+    font-size: 15px;
+  }
+
+  #Header_Div .navbar li
+  {
+    margin-left: 0.0px;
+    margin-right: 0.0px;
+    width: auto;
+    font-size: 10px;
+  }
+
+  #Header_Div .navbar #Blue_Button
+  {
+    margin-left: 0.0px;
+  }
+
+  .Icon_Container .Span_Hover
+  {
+    font-size: 13px;
+  }
+
+  .Span_Hover
+  {
+    font-size: 13px;
+  }
+
+  #Info_Div .Table .Row2 text
+  {
+    font-size: 10px;
+  }
+
+
+  #Info_Div .Table img {
+    max-width: 50px;
+  }
+
+  #Experiences .Table
+  {
+    font-size: 10px;
+  }
+
+  #Experiences .Table .Upper_Part .Right_Side .Row .Section_2 .Icon_Container img
+  {
+    height: 20px;
+  }
+
+  #Experiences #Awards_Div .Award_Panel .Row .Section_1
+  {
+    width: auto;
+    margin-left: 4%;
+  }
+
+  #Skills .skills-item .Skill_Panel .Skill_Data p {
+    font-size: 20px;    
+    -webkit-text-stroke-width: 2px;
+  }
+
+  /*#Contact_Div .Table a img,
+  #Info_Div .Table .Row1 img,
+  #Experiences ul li .Icon .Icon_Container img,
+  #Experiences ul li .Section_2 img
+  {
+    transform: scale(0.5);
+  }*/
+
+  #Experiences .Project_Panel .Footer #Previous_Button_Div button img,
+  #Experiences .Project_Panel .Footer #Next_Button_Div button img
+  {
+    transform: scale(0.5);
+  }
+
+  #Contact_Div .Table a img,
+  #Info_Div .Table .Row1 img,
+  #Experiences ul li .Icon .Icon_Container img
+  {
+    transform: scale(0.5);
+  }
+
+  #Experiences .Table ul li .Education_Panel .Right_Side .Section_1
+  {
+    width: auto;
+    max-width: 140px;
+    margin-left: 6%;
+  }
+
+  #Experiences .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_1
+  {
+    width: 65%;
+  }
+
+  #Experiences .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_2
+  {
+    width: 13%;
+    margin-right: 2%;
+  }
+
+  #Awards_Div .Table ul li .Award_Panel .Upper_Part .Right_Side .Section_1
+  {
+    width: auto;
+  }
+
+  #Professional_Experiences_Div .Table ul li .PE_Panel .Upper_Part .Right_Side .Section_1
+  {
+    width: auto;
+    max-width: 155px;
+  }
+
+  #Skills .Skill_Name p img
+  {
+    max-width: 150px;
+    max-height: 50px;
+  }
+
+  #Experiences .Table .Upper_Part .Right_Side .Row .Icon .Icon_Container .Span_Hover
+  {
+    margin-right: 50px;
+  }
+
+  #Experiences .Table .Upper_Part .Right_Side #Company_Row .Icon .Icon_Container .Span_Hover,
+  #Experiences .Table .Upper_Part .Right_Side #Category_Row .Icon .Icon_Container .Span_Hover,
+  #Experiences .Table .Upper_Part .Right_Side #Time_Row .Icon .Icon_Container .Span_Hover,  
+  #Experiences .Table .Upper_Part .Right_Side #Event_Row .Icon .Icon_Container .Span_Hover
+  {
+    margin-right: 60px;
+  }
+
+  #Experiences .Table .Upper_Part .Right_Side #GPA_Row .Icon .Icon_Container .Span_Hover
+  {
+    margin-right: 65px;
+  }
+}
+
+@media screen and (max-width: 537px) {
+
+  #Experiences ul li .Award_Panel .Upper_Part .Right_Side .Section_1
+  {
+    width: 60%;
+    margin-left: 5%;
+  }
+}
+
+@font-face {
+  font-family: "impact";
+  src: url("Assets/Fonts/Roboto_Fonts/Roboto-Medium.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
