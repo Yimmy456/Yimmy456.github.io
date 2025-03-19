@@ -545,7 +545,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                         <img src="Assets/images/Category Icon.png" alt="Category" title="Category">                                                                          
-                        <span class="Span_Hover" style="transform: translate(75px, -55px);">Category</span>
+                        <span class="Span_Hover">Category</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -556,7 +556,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                         <img src="Assets/images/Calendar Icon.png" alt="Duration" title="Duration">                                                                                                  
-                        <span class="Span_Hover" style="transform: translate(70px, -55px);">Duration</span>
+                        <span class="Span_Hover">Duration</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -567,7 +567,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                         <img src="Assets/images/Company Icon.png" alt="Company" title="Company">                                                                                                                          
-                        <span class="Span_Hover" style="transform: translate(70px, -55px);">Company</span>
+                        <span class="Span_Hover">Company</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -584,7 +584,7 @@ function SetSubnavToHidden(input)
                     <div class="Icon">
                       <div class="Icon_Container">
                         <img src="Assets/images/Location Icon (Orange).png" alt="Location" title="Location">                                                
-                        <span class="Span_Hover" style="transform: translate(55px, -55px);">Location</span>
+                        <span class="Span_Hover">Location</span>
                       </div>
                     </div>
                     <div class="Section_1">
@@ -592,7 +592,7 @@ function SetSubnavToHidden(input)
                     </div>
                     <div class="Section_2">
                       <div class="Icon_Container">
-                        <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UAE.png" alt="UAE" title="the United Arab Emirates">
+                        <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UAE.png" alt="Canada" title="Canada">
                       </div>
                     </div>
 
@@ -646,13 +646,17 @@ function SetSubnavToHidden(input)
                 </div>
                 <div class="Footer">
                   <div id="Previous_Button_Div">
-                    <button onclick="plusDivs(-1, 0)"><img src="Assets/images/Previous Button 2.png" alt="Previous Button"/></button>
+                    <div class="Button_Container">
+                      <button onclick="plusDivs(-1, 0)"><img src="Assets/images/Previous Button 2.png" alt="Previous Button"/></button>
+                    </div>
                   </div>
                   <div id="Slideshow_Counter_Div">
                     <p class="Slideshow_Counter_P">1 / 4</p>
                   </div>
                   <div id="Next_Button_Div">
-                    <button onclick="plusDivs(1, 0)"><img src="Assets/images/Next Button 2.png" alt="Next Button"/></button>
+                    <div class="Button_Container">
+                      <button onclick="plusDivs(1, 0)"><img src="Assets/images/Next Button 2.png" alt="Next Button"/></button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -714,7 +718,9 @@ function SetSubnavToHidden(input)
                         University of Sharjah
                       </div>
                       <div class="Section_2">
-                        <img src="Assets/images/UoS Logo.png" alt="University of Sharjah" title="University of Sharjah">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/UoS Logo.png" alt="University of Sharjah" title="University of Sharjah">
+                        </div>
                       </div>
                     </div>
                     <div class="Row" id="Location_Row">
@@ -728,7 +734,9 @@ function SetSubnavToHidden(input)
                         Sharjah, the United Arab Emirates
                       </div>
                       <div class="Section_2">
-                        <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UAE.png" alt="UAE" title="the United Arab Emirates"/>
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UAE.png" alt="UAE" title="the United Arab Emirates"/>
+                        </div>
                       </div>
                     </div>
                     <div class="Row" id="Ranking_Row">
@@ -742,7 +750,9 @@ function SetSubnavToHidden(input)
                         Third Place
                       </div>
                       <div class="Section_2">
-                        <img src="Assets/images/Bronze Medal with Black Glow.png" alt="Third Place" title="Third Place">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Bronze Medal with Black Glow.png" alt="Third Place" title="Third Place">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -802,7 +812,9 @@ function SetSubnavToHidden(input)
                         Newcastle University
                       </div>
                       <div class="Section_2">
-                        <img src="Assets/images/Newcastle University Logo with Stroke.png" alt="Newcastle University" title="Newcastle University">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Newcastle University Logo with Stroke.png" alt="Newcastle University" title="Newcastle University">
+                        </div>
                       </div>
                     </div>
                     <div class="Row" id="Location_Row">
@@ -816,7 +828,9 @@ function SetSubnavToHidden(input)
                         Newcastle upon Tyne, England, the United Kingdom
                       </div>
                       <div class="Section_2">
-                        <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UK.png" alt="UK" title="the United Kingdom"/>
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UK.png" alt="UK" title="the United Kingdom"/>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -861,7 +875,8 @@ function SetSubnavToHidden(input)
             <div class="Middle_Part">
               <div class="Container">
                 <div class="skills-progress-box">
-                  <div class="skills-progress" style="width: 95%; background-color: hsl(114, 100%, 50%); border-right-color: hsl(114, 100%, 25%)"></div>
+                  <!-- <div class="skills-progress" style="width: 95%; background-color: hsl(114, 100%, 50%); border-right-color: hsl(114, 100%, 25%)"></div> -->
+                  <div class="skills-progress" style="width: 95%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 95), hsl(114, 100%, 50%) 100%); border-right-color: hsl(114, 100%, 25%)"></div>
                 </div>
               </div>
             </div>
@@ -882,7 +897,7 @@ function SetSubnavToHidden(input)
           <div class="Middle_Part">
             <div class="Container">
               <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 90%; background-color: hsl(108, 100%, 50%); border-right-color: hsl(108, 100%, 25%)"></div>
+                <div class="skills-progress" style="width: 90%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 90), hsl(108, 100%, 50%) 100%); border-right-color: hsl(108, 100%, 25%)"></div>
               </div>
             </div>
           </div>
@@ -903,8 +918,8 @@ function SetSubnavToHidden(input)
             </div>
           <div class="Middle_Part">
             <div class="Container">
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 85%; background-color: hsl(102, 100%, 50%); border-right-color: hsl(102, 100%, 25%)"></div>
+              <div class="skills-progress-box">                
+                <div class="skills-progress" style="width: 85%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 85), hsl(102, 100%, 50%) 100%); border-right-color: hsl(102, 100%, 25%)"></div>
               </div>
             </div>
           </div>
@@ -935,7 +950,8 @@ function SetSubnavToHidden(input)
             <div class="Middle_Part">
               <div class="Container">
                 <div class="skills-progress-box">
-                  <div class="skills-progress" style="width: 85%; background-color: hsl(102, 100%, 50%); border-right-color: hsl(102, 100%, 25%)"></div>
+                  
+                  <div class="skills-progress" style="width: 85%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 85), hsl(102, 100%, 50%) 100%); border-right-color: hsl(102, 100%, 25%)"></div>
                 </div>
               </div>
             </div>
@@ -955,8 +971,8 @@ function SetSubnavToHidden(input)
               </div>
             <div class="Middle_Part">
               <div class="Container">
-                <div class="skills-progress-box">
-                  <div class="skills-progress" style="width: 80%; background-color: hsl(96, 100%, 50%); border-right-color: hsl(96, 100%, 25%)"></div>
+                <div class="skills-progress-box">                  
+                  <div class="skills-progress" style="width: 80%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 80), hsl(96, 100%, 50%) 100%); border-right-color: hsl(96, 100%, 25%)"></div>
                 </div>
               </div>
             </div>
@@ -978,7 +994,7 @@ function SetSubnavToHidden(input)
             <div class="Middle_Part">
               <div class="Container">
                 <div class="skills-progress-box">
-                  <div class="skills-progress" style="width: 80%; background-color: hsl(96, 100%, 50%); border-right-color: hsl(96, 100%, 25%)"></div>
+                  <div class="skills-progress" style="width: 80%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 80), hsl(96, 100%, 50%) 100%); border-right-color: hsl(96, 100%, 25%)"></div>
                 </div>
               </div>
             </div>
@@ -1000,7 +1016,7 @@ function SetSubnavToHidden(input)
             <div class="Middle_Part">
               <div class="Container">
                 <div class="skills-progress-box">
-                  <div class="skills-progress" style="width: 70%; background-color: hsl(84, 100%, 50%); border-right-color: hsl(84, 100%, 25%)"></div>
+                  <div class="skills-progress" style="width: 70%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 70), hsl(84, 100%, 50%) 100%); border-right-color: hsl(84, 100%, 25%)"></div>
                 </div>
               </div>
             </div>
@@ -1030,7 +1046,7 @@ function SetSubnavToHidden(input)
             <div class="Middle_Part">
               <div class="Container">
                 <div class="skills-progress-box">
-                  <div class="skills-progress" style="width: 95%; background-color: hsl(114, 100%, 50%); border-right-color: hsl(114, 100%, 25%)"></div>
+                  <div class="skills-progress" style="width: 95%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 95), hsl(114, 100%, 50%) 100%); border-right-color: hsl(114, 100%, 25%)"></div>
                 </div>
               </div>
             </div>
@@ -1052,7 +1068,7 @@ function SetSubnavToHidden(input)
             <div class="Middle_Part">
               <div class="Container">
                 <div class="skills-progress-box">
-                  <div class="skills-progress" style="width: 80%; background-color: hsl(96, 100%, 50%); border-right-color: hsl(96, 100%, 25%)"></div>
+                  <div class="skills-progress" style="width: 80%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 80), hsl(96, 100%, 50%) 100%); border-right-color: hsl(96, 100%, 25%)"></div>
                 </div>
               </div>
             </div>

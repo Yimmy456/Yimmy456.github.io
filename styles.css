@@ -156,12 +156,14 @@
     max-width: 50px;
   }
 
-  #Experiences .Education_Panel,
-  #Experiences .Project_Panel,
-  #Experiences .Award_Panel,
-  #Experiences .PE_Panel
+  #Experiences .Table
   {
     font-size: 10px;
+  }
+
+  #Experiences .Table .Upper_Part .Right_Side .Row .Section_2 .Icon_Container img
+  {
+    height: 20px;
   }
 
   #Experiences #Awards_Div .Award_Panel .Row .Section_1
@@ -175,10 +177,17 @@
     -webkit-text-stroke-width: 2px;
   }
 
-  #Contact_Div .Table a img,
+  /*#Contact_Div .Table a img,
   #Info_Div .Table .Row1 img,
   #Experiences ul li .Icon .Icon_Container img,
   #Experiences ul li .Section_2 img
+  {
+    transform: scale(0.5);
+  }*/
+
+  #Contact_Div .Table a img,
+  #Info_Div .Table .Row1 img,
+  #Experiences ul li .Icon .Icon_Container img
   {
     transform: scale(0.5);
   }
@@ -188,19 +197,6 @@
     width: auto;
     max-width: 140px;
     margin-left: 6%;
-    background-color: aqua;
-  }
-
-  #Experiences .Table ul li .Education_Panel .Right_Side .Section_2
-  {
-    background-color: blue
-  }
-
-  #Experiences .Table ul li .Education_Panel .Right_Side .Section_2 img
-  {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   #Experiences .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_1
@@ -212,6 +208,17 @@
   {
     width: 13%;
     margin-right: 2%;
+  }
+
+  #Awards_Div .Table ul li .Award_Panel .Upper_Part .Right_Side .Section_1
+  {
+    width: auto;
+  }
+
+  #Professional_Experiences_Div .Table ul li .PE_Panel .Upper_Part .Right_Side .Section_1
+  {
+    width: auto;
+    max-width: 155px;
   }
 
   #Skills .Skill_Name p img
@@ -884,14 +891,6 @@ About Me Div
   color: var(--white);
 }
 
-/*#Experiences .Education_Panel .Description_Area,
-#Experiences .Project_Panel .Description_Area,
-#Experiences .Award_Panel .Description_Area,
-#Experiences .PE_Panel .Description_Area
-{
-  background-color:blue;
-}*/
-
 #Experiences .Education_Panel .Description_Area .Header_Div_L4,
 #Experiences .Project_Panel .Description_Area .Header_Div_L4,
 #Experiences .Award_Panel .Description_Area .Header_Div_L4,
@@ -921,6 +920,87 @@ About Me Div
 #Experiences .Icon_Container img:hover + .Span_Hover
 {
   animation: effect 1s infinite 1s;
+}
+
+
+#Experiences .Table .Upper_Part .Right_Side .Row .Icon
+{
+  width: 15%;
+  float: left;
+  text-align: center;
+  vertical-align: middle;  
+  justify-content: space-between;
+  height: 100%;
+}
+
+#Experiences .Table .Upper_Part .Right_Side .Row .Icon .Icon_Container
+{
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#Experiences .Table .Upper_Part .Right_Side .Row .Icon .Icon_Container img
+{
+  max-width: 60px;
+}
+
+#Experiences .Table .Upper_Part .Right_Side .Row .Section_1
+{
+  float: left;
+  width: auto;
+  max-width: 63%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
+}
+
+#Experiences .Table .Upper_Part .Right_Side .Row .Section_2
+{
+  width: 13%;
+  float: right;
+  text-align: center;
+  vertical-align: middle;  
+  justify-content: space-between;
+  height: 100%;
+  margin-right: 2%;
+}
+
+#Experiences .Table .Upper_Part .Right_Side .Row .Section_2 .Icon_Container
+{
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#Experiences .Table .Upper_Part .Right_Side .Row .Section_2 .Icon_Container img
+{
+  max-height: 50px;
+}
+
+#Projects_Div .Project_Panel .Right_Side #Company_Row .Section_2,
+#Awards_Div .Award_Panel .Right_Side #Company_Row .Section_2,
+#Professional_Experiences_Div .PE_Panel .Right_Side #Company_Row .Section_2
+{
+  float: right;
+  width: auto;
+  max-width: 46%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 /*
@@ -1044,103 +1124,26 @@ About Me Div
   margin: auto;
 }
 
-
-#Education_Div .Education_Panel .Right_Side .Row .Icon
+#Education_Div .Education_Panel .Right_Side #GPA_Row .Section_1
 {
-  width: 15%;
-  float: left;
-  text-align: center;
-  vertical-align: middle;  
-  justify-content: space-between;
-  height: 100%;  
-  background-color: blue;
-}
-
-#Education_Div .Education_Panel .Right_Side .Row .Icon .Icon_Container
-{
-  width: auto;
-  height: auto;
-  margin: 0;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-#Education_Div .Education_Panel .Right_Side .Row .Icon .Icon_Container img
-{
-  max-height: 60px;
-}
-
-#Education_Div .Education_Panel .Right_Side .Row .Section_1
-{
-  float: left;
   width: 69%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-left: 1%;
-}
-
-#Education_Div .Education_Panel .Right_Side .Row .Section_2
-{
-  width: 15%;
-  float: right;
-  text-align: center;
-  vertical-align: middle;  
-  justify-content: space-between;
-  height: 100%;
-}
-
-#Education_Div .Education_Panel .Right_Side #Location_Row .Section_2 .Icon_Container
-{
-  width: auto;
-  height: auto;
-  margin: 0;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-#Education_Div .Education_Panel .Right_Side #Location_Row .Section_2 .Icon_Container img
-{
-  max-height: 60px;
-  display: block;
-  margin: auto;
 }
 
 
-#Education_Div .Education_Panel .Right_Side #GPA_Row .Section_2
-{
-  align-items: center;
-  margin: 0;
-  display: flex;
-  text-align: center;
-}
-
-
-#Experiences .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_2
+#Experiences #Education_Div .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_2
 {
   width: 14%;
   margin-right: 1%;
-  text-align: right;
-  justify-content: right;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  display: flex;
 }
 
 #Education_Div .Education_Panel .Right_Side #GPA_Row .Section_2 img
 {
   max-height: 60px;
-}
-
-
-#Education_Div .Education_Panel .Right_Side .Section_1
-{
-  width: auto;
 }
 
 #Education_Div .Education_Panel .Right_Side #Location_Row,
@@ -1181,7 +1184,7 @@ About Me Div
   border-radius: var(--radius-10);
   border-style: solid;
   width: 95%;
-  height: 1120px;
+  height: 1600px;
   margin: auto;  
   paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
@@ -1189,8 +1192,8 @@ About Me Div
 
 #Projects_Div .Project_Panel .Upper_Part
 {
-  height: 280px;
-  height: calc((280 * 100%) / 1120);
+  height: 400px;
+  height: calc((400 * 100%) / 1600);
   border-bottom: 3px;
   border-bottom-style: solid;
   border-bottom-color: hsl(39, 97%, 30%);
@@ -1213,8 +1216,8 @@ About Me Div
 #Projects_Div .Project_Panel .Description_Area
 {
   margin: auto;
-  height: 349px;  
-  height: calc((349 * 100%) / 1120);
+  height: 500px;  
+  height: calc((500 * 100%) / 1600);
   width: 100%;
   border-bottom: 3px;
   border-bottom-style: solid;
@@ -1237,84 +1240,6 @@ About Me Div
 {
   text-align: center;
   -webkit-text-stroke-color: hsl(39, 97%, 30%);
-}
-
-#Projects_Div .Project_Panel .Right_Side .Row .Icon
-{
-  float: left;
-  width: 13%;
-  height: 100%;
-  align-items: center;
-}
-
-#Projects_Div .Project_Panel .Right_Side .Row .Icon .Icon_Container
-{
-  width: auto;
-  height: auto;
-  margin: 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-}
-
-#Projects_Div .Project_Panel .Right_Side .Row .Icon .Icon_Container img
-{
-  max-height: 60px;
-}
-
-#Projects_Div .Project_Panel .Right_Side .Row .Section_1
-{
-  float: left;
-  width: 66%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-left: 1%;
-}
-
-#Projects_Div .Project_Panel .Right_Side #Company_Row .Section_1
-{
-  float: left;
-  width: 51%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-#Projects_Div .Project_Panel .Right_Side .Section_2
-{
-  width: 20%;
-}
-
-#Projects_Div .Project_Panel .Right_Side #Company_Row .Section_2
-{
-  float: right;
-  width: 35%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#Projects_Div .Project_Panel .Right_Side .Row .Section_2 img
-{
-  max-height: 60px;
-}
-
-#Projects_Div .Project_Panel .Right_Side #Location_Row .Section_1
-{
-  float: left;
-}
-
-#Projects_Div .Project_Panel .Right_Side #Location_Row .Section_2
-{
-  float: right;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #Projects_Div .Project_Panel #Index
@@ -1345,8 +1270,8 @@ About Me Div
 #Projects_Div .Project_Panel .Slideshow
 {  
   margin: auto;
-  height: 491px;  
-  height: calc((491 * 100%) / 1120);
+  height: 700px;  
+  height: calc((700 * 100%) / 1600);
 }
 
 #Projects_Div .Project_Panel .Slideshow .Container
@@ -1359,7 +1284,8 @@ About Me Div
 
 #Projects_Div .Project_Panel .Slideshow .Header_Div_L4
 {
-  height: 56px;
+  height: 100px;  
+  height: calc((100 * 100%) / 700);
   width: 100%;
   margin: auto;
 
@@ -1367,8 +1293,8 @@ About Me Div
 
 #Projects_Div .Project_Panel .Slideshow .Upper_Part_2
 {
-  height: 334px;
-  height: calc((334 * 100%) / 491);
+  height: 500px;
+  height: calc((500 * 100%) / 700);
   width: 100%;
 
   border-top: 2px solid hsla(0, 0%, 0%, 0.25);
@@ -1410,8 +1336,8 @@ About Me Div
 
 #Projects_Div .Project_Panel .Slideshow .Footer
 {
-  height: 101px;
-  height: calc((101 * 100%) / 491);
+  height: 100px;
+  height: calc((100 * 100%) / 700);
   width: 100%;
 
   align-items: center;
@@ -1426,12 +1352,28 @@ About Me Div
   width: calc(100% / 3);
   height: 100%;
 }
-#Projects_Div .Project_Panel .Slideshow .Footer #Previous_Button_Div button
+
+#Projects_Div .Project_Panel .Slideshow .Footer .Button_Container
 {
-  margin: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
-  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Footer .Button_Container button
+{
+  /*margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;*/
+  display: block;
+  margin: auto;
 }
 
 #Projects_Div .Project_Panel .Slideshow .Footer #Slideshow_Counter_Div
@@ -1458,13 +1400,6 @@ About Me Div
   width: 33.33%;
   width: calc(100% / 3);
   height: 100%;
-}
-#Projects_Div .Project_Panel .Slideshow .Footer #Next_Button_Div button
-{
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
-  position: relative;
 }
 
 #Projects_Div .Project_Panel .Slideshow #Display_Div .Slides_Project_1
@@ -1522,7 +1457,7 @@ About Me Div
   border-radius: var(--radius-10);
   border-style: solid;
   width: 95%;
-  height: 700px;
+  height: 1000px;
   margin: auto;  
   paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
@@ -1533,8 +1468,8 @@ About Me Div
 #Awards_Div .Award_Panel .Upper_Part
 {
   width: 100%;
-  height: 400px;
-  height: calc((400 * 100%) / 700); 
+  height: 500px;
+  height: calc((500 * 100%) / 1000); 
   border-bottom: 3px hsl(39, 97%, 30%) solid;
 }
 
@@ -1560,63 +1495,11 @@ About Me Div
   align-items: center;
 }
 
-#Awards_Div .Award_Panel .Upper_Part .Right_Side .Row .Icon
-{
-  float: left;
-  width: 100px;
-  width: 12%;
-  height: 100%;
-  align-items: center;
-}
-
-#Awards_Div .Award_Panel .Right_Side .Row .Section_1
-{
-  float: left;
-  width: 60%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-left: 1%;
-}
-
-
-#Awards_Div .Award_Panel .Upper_Part .Right_Side .Row .Icon .Icon_Container
-{
-  width: auto;
-  height: auto;
-  margin: 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-}
-
-#Awards_Div .Award_Panel .Upper_Part .Right_Side .Row .Icon .Icon_Container img
-{
-  max-height: 60px;
-}
-
-#Awards_Div .Award_Panel .Right_Side .Row .Section_2
-{
-  float: right;
-  width: 27%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-#Awards_Div .Award_Panel .Right_Side .Row .Section_2 img
-{
-  align-items: center;
-  margin: auto;
-  max-height: 60px;
-}
 
 #Awards_Div .Award_Panel .Description_Area
 {
-  height: 300px;
-  height: calc((300 * 100%) / 700); 
+  height: 500px;
+  height: calc((500 * 100%) / 1000); 
 }
 
 #Awards_Div .Award_Panel .Upper_Part .Right_Side #Time_Row,
@@ -1643,7 +1526,7 @@ About Me Div
   border-radius: var(--radius-10);
   border-style: solid;
   width: 95%;
-  height: 550px;
+  height: 800px;
   margin: auto;  
   paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
@@ -1654,7 +1537,8 @@ About Me Div
 #Professional_Experiences_Div .PE_Panel .Upper_Part
 {
   width: 100%;
-  height: 55%;  
+  height: 300px;
+  height: calc((300 * 100%) / 800);
   border-bottom: 3px hsl(39, 97%, 30%) solid;
 }
 
@@ -1681,57 +1565,6 @@ About Me Div
   align-items: center;
 }
 
-#Professional_Experiences_Div .PE_Panel .Upper_Part .Right_Side .Row .Icon
-{
-  float: left;
-  width: 10%;
-  height: 100%;
-  align-items: center;
-}
-
-
-#Professional_Experiences_Div .PE_Panel .Upper_Part .Right_Side .Row .Section_1
-{
-  float: left;
-  width: 60%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-left: 1%;
-}
-
-#Professional_Experiences_Div .PE_Panel .Upper_Part .Right_Side .Row .Icon .Icon_Container
-{
-  width: auto;
-  height: auto;
-  margin: 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-}
-
-#Professional_Experiences_Div .PE_Panel .Upper_Part .Right_Side .Row .Icon .Icon_Container img
-{
-  max-height: 60px;
-}
-
-#Professional_Experiences_Div .PE_Panel .Right_Side .Row .Section_2
-{
-  float: right;
-  width: 29%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-#Professional_Experiences_Div .PE_Panel .Right_Side .Row .Section_2 img
-{
-  align-items: center;
-  margin: auto;
-  max-height: 60px;
-}
 
 #Professional_Experiences_Div .PE_Panel .Right_Side #Company_Row
 {
@@ -1740,7 +1573,8 @@ About Me Div
 
 #Professional_Experiences_Div .PE_Panel .Description_Area
 {
-  height: 45%;
+  height: 500px;
+  height: calc((500 * 100%) / 800);
 }
 
 
