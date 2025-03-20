@@ -12,81 +12,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.5" />
   <title>Manar Ajhar - Game Developer</title>
 
-  <!-- 
-    - favicon
-  -->
-  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
 
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="Assets/css/Experience Panels Styles.css" type="text/css">
+  <link rel="stylesheet" href="Assets/css/Resizing Window Style.css" type="text/css">
 
-  <!-- <script type="text/javascript" src="Assets/Slideshow Function.js">
-
-  </script> -->
-  <!-- 
-    - google font link
-  -->
-
-  <script>
-
-    
-window.onload= function()
-  {
-    showDivs(1, 0);
-  }
-
-var slideIndex = 1;
-showDivs(slideIndex, 0);
-
-function plusDivs(n, SGII) {
-  showDivs(slideIndex += n, SGII);
-}
-
-function showDivs(n, SGII) {
-  var i;
-  var _name = "Slides_Project_" + (SGII + 1);
-  var x = document.getElementsByClassName(_name);
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex - 1].style.display = "block";
-
-  var _name2 = "Project_" + (SGII + 1);
-
-  var _text = x[slideIndex - 1].getElementsByClassName("Slideshow_Description")[0].innerText;
-
-  document.getElementById(_name2).getElementsByClassName("Slideshow_Counter_P")[0].innerText = "" + (slideIndex) + " / " + x.length;
-
-  document.getElementById(_name2).getElementsByClassName("Slideshow_Description_Area")[0].getElementsByClassName("Text_Container")[0].innerText = _text;
-}
-
-function SetSubnavToVisible(input)
-{
-  var element = document.getElementById(input);
-
-  element.style.visibility = "visible";
-
-  var otherElements = document.getElementsByClassName("subnavbar");
-
-  for(var _i = 0; _i < otherElements.length; _i++)
-  {
-    if(otherElements[_i] != element)
-    {
-      otherElements[_i].style.visibility = "hidden";
-    }
-  }
-}
-
-function SetSubnavToHidden(input)
-{
-
-}
-
-    </script>
+  <script src="Assets/Slideshow Script.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -142,15 +73,15 @@ function SetSubnavToHidden(input)
               <li>
                 <a href="#Skills_PLs">Programming Languages</a>
               </li>
-              <li>
+              <!--<li>
                 <a>Programming Skills</a>
-              </li>
+              </li>-->
               <li>
                 <a href="#Skills_Languages">Languages</a>
               </li>
-              <li>
+              <!--<li>
                 <a>Other Skills</a>
-              </li>
+              </li>-->
             </ul>
       
           </div>
@@ -345,7 +276,7 @@ function SetSubnavToHidden(input)
                         <div class="skills-progress" style="width: 87.5%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 87.5), hsl(105, 100%, 50%) 100%); border-right-color: hsl(105, 100%, 25%)"></div>
                       </div>
                     </div>
-                    <div class="Section_2" style="text-align: right; vertical-align: middle;">
+                    <div class="Section_2">
                       3.50
                     </div>
                   </div>
@@ -438,7 +369,7 @@ function SetSubnavToHidden(input)
                         <div class="skills-progress" style="width: 79.5%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 79.5), hsl(95.4, 100%, 50%) 100%); border-right-color: hsl(95.4, 100%, 25%)"></div>
                       </div>
                     </div>
-                    <div class="Section_2" style="text-align: right; vertical-align: middle;">
+                    <div class="Section_2">
                       3.18
                     </div>
                   </div>
@@ -531,7 +462,7 @@ function SetSubnavToHidden(input)
                         <div class="skills-progress" style="width: 80.75%; background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 255, 0) calc(5000% / 80.75), hsl(96.9, 100%, 50%) 100%); border-right-color: hsl(96.9, 100%, 25%)"></div>
                       </div>
                     </div>
-                    <div class="Section_2" style="text-align: right; vertical-align: middle;">
+                    <div class="Section_2">
                       3.23
                     </div>
                   </div>
