@@ -261,7 +261,6 @@ li { list-style: none; }
   height: auto;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: 10px;
 }
 
 #Header_Div .navbar ul li .subnavbar li
@@ -1860,12 +1859,12 @@ About Me Div
 
   #Header_Div #Professions_Div
   {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   #Header_Div .navbar li
   {
-    margin-left: 2.0px;
+    margin-left: 5.0px;
     margin-right: 5.0px;
     width: auto;
     font-size: 20px;
@@ -1873,8 +1872,8 @@ About Me Div
 
   #Header_Div .navbar li .subnavbar ul li
   {
-    margin-left: 5.0px;
-    margin-right: 5.0px;
+    margin-left: 3.0px;
+    margin-right: 3.0px;
     width: auto;
     font-size: 20px;
   }
