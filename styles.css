@@ -212,6 +212,19 @@ li { list-style: none; }
 {
   float: left;
   border-radius: var(--radius-10);
+  text-align: center;
+  width: auto;
+  margin-left: 15.0px;
+  margin-right: 15.0px;
+  font-size: 30px;
+}
+
+
+#Header_Div ul li a{
+  -webkit-text-stroke-width: 3px;
+  paint-order: stroke fill;
+  border-radius: var(--radius-10);
+  width: auto;
 }
 
 #Header_Div .navbar
@@ -248,13 +261,21 @@ li { list-style: none; }
   height: auto;
   padding-top: 5px;
   padding-bottom: 5px;
+  font-size: 10px;
+}
+
+#Header_Div .navbar ul li .subnavbar li
+{
+  margin-left: 10px;
+
+  margin-right: 10px;
+
+  font-size: 25px;
 }
 
 #Header_Div .navbar .Yellow_Section .subnavbar
 {
   background-color: hsla(0, 0%, 25%, 0.0);
-
-  /*background-image: linear-gradient(180deg, hsla(0, 0%, 25%, 0.9) 0%, hsla(60, 100%, 13%, 0.9) 100%);*/
 
   background-image: linear-gradient(180deg, hsla(0, 0%, 25%, 0.9) 0%, hsla(0, 0%, 25%, 0.9) 20%, hsla(60, 100%, 18%, 0.9) 100%);
 }
@@ -262,8 +283,6 @@ li { list-style: none; }
 #Header_Div .navbar .Orange_Section .subnavbar
 {  
   background-color: hsla(0, 0%, 25%, 0.0);
-
-  /*background-image: linear-gradient(180deg, hsla(0, 0%, 25%, 0.9) 0%, hsla(30, 100%, 13%, 0.9) 100%);*/
 
   background-image: linear-gradient(180deg, hsla(0, 0%, 25%, 0.9) 0%, hsla(0, 0%, 25%, 0.9) 20%, hsla(30, 100%, 18%, 0.9) 100%);
 }
@@ -483,21 +502,6 @@ body {
   justify-content: center;
   display: flex;
   height: auto;
-}
-
-.navbar ul li{
-  margin-left: 37.5px;
-  margin-right: 37.5px;
-  text-align: center;
-  width: auto;
-}
-
-
-.navbar ul li a{
-  -webkit-text-stroke-width: 3px;
-  paint-order: stroke fill;
-  border-radius: var(--radius-10);
-  width: auto;
 }
 
 .navbar ul li:hover{
@@ -740,6 +744,34 @@ About Me Div
   border-color: var(--orange);
   color: var(--orange);
   -webkit-text-stroke-color: var(--orange-border);
+}
+
+#Experiences .Table ul li .Upper_Part .Left_Sides .Name_Table
+{
+  height: 10%;
+  position: relative;
+  width: 100%;
+}
+
+#Experiences .Table ul li .Upper_Part .Left_Side .Name_Table .Index
+{
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  align-content: center;
+  height: 100%;
+  position: relative;
+  width: 10%;
+}
+
+#Experiences .Table ul li .Upper_Part .Left_Side .Name_Table .Name
+{
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  position: relative;
+  width: 80%;
 }
 
 #Experiences .Icon_Container img:hover + .Span_Hover
@@ -1774,19 +1806,19 @@ About Me Div
 
   #Header_Div .navbar #Blue_Button
   {
-    margin-left: 125.0px;
+    margin-left: 100.0px;
   }
 }
 
 @media screen and (max-width: 1300px) {
 
-  #Header_Div .navbar li
+  /*#Header_Div .navbar li
   {
     margin-left: 15.0px;
     margin-right: 15.0px;
     width: auto;
     font-size: 25px;
-  }
+  }*/
 
   #Experiences .Project_Panel .Footer #Slideshow_Counter_Div .Slideshow_Counter_P
   {
