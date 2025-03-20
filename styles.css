@@ -1860,16 +1860,24 @@ About Me Div
 
   #Header_Div #Professions_Div
   {
-    font-size: 15px;
+    font-size: 25px;
   }
 
-  #Header_Div .navbar li
+  /*#Header_Div .navbar li
   {
-    margin-left: 0.0px;
-    margin-right: 0.0px;
+    margin-left: 2.0px;
+    margin-right: 5.0px;
     width: auto;
-    font-size: 10px;
+    font-size: 17px;
   }
+
+  #Header_Div .navbar li .subnavbar ul li
+  {
+    margin-left: 5.0px;
+    margin-right: 5.0px;
+    width: auto;
+    font-size: 15px;
+  }*/
 
   #Header_Div .navbar #Blue_Button
   {
