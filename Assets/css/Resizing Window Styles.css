@@ -1,0 +1,240 @@
+@media screen and (min-width: 960px) {
+
+    #Header_Div .navbar #Blue_Button
+    {
+      margin-left: 100.0px;
+    }
+  }
+  
+  @media screen and (max-width: 1300px) {
+  
+    /*#Header_Div .navbar li
+    {
+      margin-left: 15.0px;
+      margin-right: 15.0px;
+      width: auto;
+      font-size: 25px;
+    }*/
+  
+    #Experiences .Project_Panel .Footer #Slideshow_Counter_Div .Slideshow_Counter_P
+    {
+      font-size: 30px;
+    }
+  
+    #Info_Div .Table .Row2 text
+    {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 960px) {
+  
+    #Header_Div #Name_Div
+    {
+      font-size: 40px;
+    }
+  
+    #Header_Div #Professions_Div
+    {
+      font-size: 20px;
+    }
+  
+    #Header_Div .navbar li
+    {
+      margin-left: 5.0px;
+      margin-right: 5.0px;
+      width: auto;
+      font-size: 20px;
+    }
+  
+    #Header_Div .navbar li .subnavbar ul li
+    {
+      margin-left: 2.0px;
+      margin-right: 2.0px;
+      width: auto;
+      font-size: 17px;
+    }
+  
+    #Header_Div .navbar #Blue_Button
+    {
+      margin-left: 0.0px;
+    }
+  
+    .Icon_Container .Span_Hover
+    {
+      font-size: 13px;
+    }
+  
+    .Span_Hover
+    {
+      font-size: 13px;
+    }
+  
+    #Info_Div .Table .Row2 text
+    {
+      font-size: 10px;
+    }
+  
+    #Info_Div .Table .Column .Row1 .Span_Hover
+    {
+      margin-top: 100px;
+    }
+  
+    #Info_Div .Table #Birthday .Row1 .Span_Hover
+    {
+      margin-top: 88px;
+    }
+  
+    #Info_Div .Table #Visa .Row1 .Span_Hover
+    {
+      margin-top: 80px;
+    }
+  
+    #Info_Div .Table img {
+      max-width: 50px;
+    }
+  
+    #Experiences .Table
+    {
+      font-size: 10px;
+    }
+  
+    #Experiences .Table .Upper_Part .Right_Side .Row .Section_2 .Icon_Container img
+    {
+      height: 20px;
+    }
+  
+    #Experiences #Awards_Div .Award_Panel .Row .Section_1
+    {
+      width: auto;
+      margin-left: 4%;
+    }
+
+    #Skills ul li .Skill_Panel .Upper_Part
+    {
+        height: 66.67%;
+        height: calc(200% / 3);
+    }
+
+    #Skills ul li .Skill_Panel .Middle_Part
+    {
+        height: 33.33%;
+        height: calc(100% / 3);
+    }
+
+    #Skills ul li .Skill_Panel .Middle_Part .Container
+    {
+        width: 100%;
+        height: auto;
+        background-color: aqua;
+    }
+
+    #Skills ul li .Skill_Panel .Upper_Part .Skill_Name
+    {
+        height: 50%;
+        width: 100%;
+        margin: 0;
+    }
+
+    #Skills ul li .Skill_Panel .Upper_Part .Skill_Name p
+    {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #Skills ul li .Skill_Panel .Upper_Part .Skill_Data
+    {
+        height: 50%;
+        width: 100%;
+        margin: 0%;
+    }
+
+    #Skills ul li .Skill_Panel .Upper_Part .Skill_Data p
+    {
+        -webkit-text-stroke-width: 3px;
+        font-size: 50px;
+    }
+  
+    /*#Contact_Div .Table a img,
+    #Info_Div .Table .Row1 img,
+    #Experiences ul li .Icon .Icon_Container img,
+    #Experiences ul li .Section_2 img
+    {
+      transform: scale(0.5);
+    }*/
+  
+    #Experiences .Project_Panel .Footer #Previous_Button_Div button img,
+    #Experiences .Project_Panel .Footer #Next_Button_Div button img
+    {
+      transform: scale(0.5);
+    }
+  
+    #Contact_Div .Table a img,
+    #Experiences ul li .Icon .Icon_Container img
+    {
+      transform: scale(0.5);
+    }
+  
+    #Experiences .Table ul li .Education_Panel .Right_Side .Section_1
+    {
+      width: auto;
+      max-width: 140px;
+      margin-left: 6%;
+    }
+  
+    #Experiences .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_1
+    {
+      width: 65%;
+    }
+  
+    #Experiences .Table ul li .Education_Panel .Right_Side #GPA_Row .Section_2
+    {
+      width: 13%;
+      margin-right: 2%;
+    }
+  
+    #Awards_Div .Table ul li .Award_Panel .Upper_Part .Right_Side .Section_1
+    {
+      width: auto;
+    }
+  
+    #Professional_Experiences_Div .Table ul li .PE_Panel .Upper_Part .Right_Side .Section_1
+    {
+      width: auto;
+      max-width: 155px;
+    }
+  
+    #Skills .Skill_Name p img
+    {
+      max-width: 150px;
+      max-height: 50px;
+    }
+  
+    #Experiences .Table .Upper_Part .Right_Side .Row .Icon .Icon_Container .Span_Hover
+    {
+      margin-right: 50px;
+    }
+  
+    #Experiences .Table .Upper_Part .Right_Side #Company_Row .Icon .Icon_Container .Span_Hover,
+    #Experiences .Table .Upper_Part .Right_Side #Category_Row .Icon .Icon_Container .Span_Hover,
+    #Experiences .Table .Upper_Part .Right_Side #Time_Row .Icon .Icon_Container .Span_Hover,  
+    #Experiences .Table .Upper_Part .Right_Side #Event_Row .Icon .Icon_Container .Span_Hover
+    {
+      margin-right: 60px;
+    }
+  
+    #Experiences .Table .Upper_Part .Right_Side #GPA_Row .Icon .Icon_Container .Span_Hover
+    {
+      margin-right: 65px;
+    }
+  }
+  
+  @media screen and (max-width: 537px) {
+  
+    #Experiences ul li .Award_Panel .Upper_Part .Right_Side .Section_1
+    {
+      width: 60%;
+      margin-left: 5%;
+    }
+  }
