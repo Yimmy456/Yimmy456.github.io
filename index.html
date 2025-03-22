@@ -17,7 +17,30 @@
   <link rel="stylesheet" href="Assets/css/Experience Panels Styles.css" type="text/css">
   <link rel="stylesheet" href="Assets/css/Resizing Window Styles.css" type="text/css">
 
+  <link rel="icon" type="icon/x-image" href="Assets/images/Tab Icon.png">
+
   <script src="Assets/Slideshow Script.js"></script>
+
+  <script>
+
+    function HideOrShowDesc(GroupInput, NumberInput)
+    {
+      var _name = "" + GroupInput + "_Panel_" + NumberInput;
+
+      var _panel = document.getElementById(_name);
+
+      var _descriptionArea = _panel.getElementsByClassName("Description_Area")[0].getElementsByClassName("Text_Container")[0];
+
+      if(_descriptionArea.style.display === "block")
+      {
+        _descriptionArea.style.display = "none";
+      }
+      else{
+        _descriptionArea.style.display = "block";
+      }
+    }
+
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -198,7 +221,7 @@
         <div class="Table">
           <ul>
             <li class=".Experience_Item">
-              <div class="Education_Panel">
+              <div class="Education_Panel" id="Education_Panel_1">
                 <div class="Upper_Part">
                 <div class="Left_Side">
                   <div class = "Name_Table">
@@ -283,10 +306,18 @@
 
                 </div>
                 </div>
-                <div class="Description_Area"><div class="Header_Div_L4"><h4>Description</h4></div>
-                <div class="Text_Container">
-                  Hello, there.
-                </div>
+                <div class="Description_Area">
+                  <div class="Header_Div_L4">
+                    <h4>Description</h4>
+                  </div>
+                  <div class="Text_Container">
+                    Hello, there.
+                  </div>
+                  <div class="Toggle_Button_Div">
+                    <div class="Button_Container">
+                      <button onclick="HideOrShowDesc('Education', '1')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </li>
@@ -729,7 +760,7 @@
         <div class="Table">
           <ul>
             <li>
-              <div class="PE_Panel">
+              <div class="PE_Panel" id="PE_Panel_1">
                 <div class="Upper_Part">
                   <div class="Left_Side">
                     <div class = "Name_Table">
@@ -779,6 +810,138 @@
                       <div class="Section_2">
                         <div class="Icon_Container">
                           <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UK.png" alt="UK" title="the United Kingdom"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Description_Area">
+                  <div class="Header_Div_L4">
+                    <h4>Description</h4>
+                  </div>
+                  <div class="Text_Container">
+                    Hello, there.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="PE_Panel" id="PE_Panel_2">
+                <div class="Upper_Part">
+                  <div class="Left_Side">
+                    <div class = "Name_Table">
+                      <div class="Index">2.</div>              
+                      <div class="Name"><div class="Header_Div_L3"><h3>Cashier</h3></div></div>
+                      <div id="Index"></div>  
+                    </div>
+                  </div>
+                  <div class="Right_Side">
+                    <div class="Row" id="Duration_Row">
+                      <div class="Icon">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Made Icons/Calendar Icon.png" alt="Duration" title="Duration">                                                                                                                          
+                          <span class="Span_Hover">Duration</span>
+                        </div>
+                      </div>
+                      <div class="Section_1">
+                        September 2018 - August 2021
+                      </div>
+                    </div>
+                    <div class="Row" id="Company_Row">
+                      <div class="Icon">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Made Icons/Company Icon.png" alt="Company" title="Company">                                                                                                
+                          <span class="Span_Hover">Company</span>
+                        </div>
+                      </div>
+                      <div class="Section_1">
+                        Walmart
+                      </div>
+                      <div class="Section_2">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Logos/Walmart_logo.png" alt="Newcastle University" title="Newcastle University">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="Row" id="Location_Row">
+                      <div class="Icon">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Made Icons/Location Icon (Orange).png" alt="Location" title="Location">                                                                                                
+                          <span class="Span_Hover">Location</span>
+                        </div>
+                      </div>
+                      <div class="Section_1">
+                        Oakville, Ontario, Canada
+                      </div>
+                      <div class="Section_2">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/Canada.png" alt="Canada" title="Canada"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Description_Area">
+                  <div class="Header_Div_L4">
+                    <h4>Description</h4>
+                  </div>
+                  <div class="Text_Container">
+                    Hello, there.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="PE_Panel" id="PE_Panel_3">
+                <div class="Upper_Part">
+                  <div class="Left_Side">
+                    <div class = "Name_Table">
+                      <div class="Index">3.</div>              
+                      <div class="Name"><div class="Header_Div_L3"><h3>Game Developer and Research Assistant</h3></div></div>
+                      <div id="Index"></div>  
+                    </div>
+                  </div>
+                  <div class="Right_Side">
+                    <div class="Row" id="Duration_Row">
+                      <div class="Icon">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Made Icons/Calendar Icon.png" alt="Duration" title="Duration">                                                                                                                          
+                          <span class="Span_Hover">Duration</span>
+                        </div>
+                      </div>
+                      <div class="Section_1">
+                        October 2023 - Present
+                      </div>
+                    </div>
+                    <div class="Row" id="Company_Row">
+                      <div class="Icon">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Made Icons/Company Icon.png" alt="Company" title="Company">                                                                                                
+                          <span class="Span_Hover">Company</span>
+                        </div>
+                      </div>
+                      <div class="Section_1">
+                        University of Sharjah
+                      </div>
+                      <div class="Section_2">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Logos/UoS Logo.png" alt="University of Sharjah" title="University of Sharjah">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="Row" id="Location_Row">
+                      <div class="Icon">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Made Icons/Location Icon (Orange).png" alt="Location" title="Location">                                                                                                
+                          <span class="Span_Hover">Location</span>
+                        </div>
+                      </div>
+                      <div class="Section_1">
+                        Sharjah, the United Arab Emirates
+                      </div>
+                      <div class="Section_2">
+                        <div class="Icon_Container">
+                          <img src="Assets/images/Downloaded Icons/Flags/Flags with Grey Glow/UAE.png" alt="UAE" title="the United Arab Emirates"/>
                         </div>
                       </div>
                     </div>

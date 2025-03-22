@@ -247,7 +247,8 @@
   #Professional_Experiences_Div .Table ul li .PE_Panel .Upper_Part .Right_Side .Section_1
   {
     width: auto;
-    max-width: 155px;
+    max-width: 200px;
+    background-color: aqua;
   }
 
   #Skills .Skill_Name p img
@@ -313,5 +314,11 @@
   #Experiences .Table
   {
     font-size: 10px;
+  }
+
+  #Professional_Experiences_Div .Table ul li .PE_Panel .Upper_Part .Right_Side .Section_1
+  {
+    max-width: 155px;
+    background-color: aqua;
   }
 }
