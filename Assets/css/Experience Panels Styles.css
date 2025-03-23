@@ -12,13 +12,22 @@
   color: var(--white);
 }
 
+#Experiences .Education_Panel .Description_Area
+#Experiences .Project_Panel .Description_Area
+#Experiences .Award_Panel .Description_Area
+#Experiences .PE_Panel .Description_Area
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
 #Experiences .Education_Panel .Description_Area .Header_Div_L4,
 #Experiences .Project_Panel .Description_Area .Header_Div_L4,
 #Experiences .Award_Panel .Description_Area .Header_Div_L4,
 #Experiences .PE_Panel .Description_Area .Header_Div_L4
 {
   height: 100px;
-  background-color: blue;
   display: block;
 }
 
@@ -40,11 +49,12 @@
 #Experiences .PE_Panel .Description_Area .Toggle_Button_Div
 {
   height: 100px;
-  background-color: aqua;
 }
 
 #Experiences .Education_Panel .Description_Area .Toggle_Button_Div .Button_Container,
-#Experiences .Project_Panel .Description_Area .Toggle_Button_Div .Button_Container
+#Experiences .Project_Panel .Description_Area .Toggle_Button_Div .Button_Container,
+#Experiences .Award_Panel .Description_Area .Toggle_Button_Div .Button_Container,
+#Experiences .PE_Panel .Description_Area .Toggle_Button_Div .Button_Container
 {
   width: auto;
   height: auto;
@@ -84,7 +94,9 @@
 }
 
 #Experiences .Education_Panel .Description_Area .Toggle_Button_Div .Button_Container button img,
-#Experiences .Project_Panel .Description_Area .Toggle_Button_Div .Button_Container button img
+#Experiences .Project_Panel .Description_Area .Toggle_Button_Div .Button_Container button img,
+#Experiences .Award_Panel .Description_Area .Toggle_Button_Div .Button_Container button img,
+#Experiences .PE_Panel .Description_Area .Toggle_Button_Div .Button_Container button img
 {
   max-height: 90px;
   display: block;
@@ -341,13 +353,6 @@
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-
-#Education_Div .Education_Panel .Description_Area
-{
-  width: 100%;
-  height: auto;
-}
-
 #Education_Div .Title_Icon
 {
   margin: auto;
@@ -403,9 +408,6 @@
 
 #Projects_Div .Project_Panel .Description_Area
 {
-  margin: auto;
-  height: auto;
-  width: 100%;
   border-bottom: 3px;
   border-bottom-style: solid;
   border-bottom-color: hsl(39, 97%, 30%);
@@ -637,7 +639,7 @@
   border-radius: var(--radius-10);
   border-style: solid;
   width: 95%;
-  height: 1000px;
+  height: auto;
   margin: auto;  
   paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
@@ -649,7 +651,6 @@
 {
   width: 100%;
   height: 500px;
-  height: calc((500 * 100%) / 1000); 
   border-bottom: 3px hsl(39, 97%, 30%) solid;
 }
 
@@ -673,13 +674,6 @@
   width: 100%;
   height: 20%;
   align-items: center;
-}
-
-
-#Awards_Div .Award_Panel .Description_Area
-{
-  height: 500px;
-  height: calc((500 * 100%) / 1000); 
 }
 
 #Awards_Div .Award_Panel .Upper_Part .Right_Side #Time_Row,
@@ -739,7 +733,7 @@
     border-radius: var(--radius-10);
     border-style: solid;
     width: 95%;
-    height: 800px;
+    height: auto;
     margin: auto;  
     paint-order: stroke fill;  
     -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
@@ -751,7 +745,6 @@
   {
     width: 100%;
     height: 300px;
-    height: calc((300 * 100%) / 800);
     border-bottom: 3px hsl(39, 97%, 30%) solid;
   }
   
@@ -782,22 +775,4 @@
   #Professional_Experiences_Div .PE_Panel .Right_Side #Company_Row
   {
     background-color: rgba(0, 0, 0, 0.25);
-  }
-  
-  #Professional_Experiences_Div .PE_Panel .Description_Area
-  {
-    height: 500px;
-    height: calc((500 * 100%) / 800);
-  }
-  
-  
-  #Professional_Experiences_Div .PE_Panel .Description_Area .Header_Div_L4
-  {
-    height: 20%;
-  }
-  
-  #Professional_Experiences_Div .PE_Panel .Description_Area .Text_Container
-  {
-    height: 80%;
-    overflow-y: auto;
   }

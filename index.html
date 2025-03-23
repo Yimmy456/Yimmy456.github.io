@@ -19,63 +19,9 @@
 
   <link rel="icon" type="icon/x-image" href="Assets/images/Tab Icon.png">
 
-  <script src="Assets/Slideshow Script.js"></script>
-
-  <script>
-
-    function HideOrShowDesc(GroupInput, NumberInput)
-    {
-      var _name = "" + GroupInput + "_Panel_" + NumberInput;
-
-      var _panel = document.getElementById(_name);
-
-      var _descriptionArea = _panel.getElementsByClassName("Description_Area")[0].getElementsByClassName("Text_Container")[0];
-
-      var _headerArea = _panel.getElementsByClassName("Description_Area")[0].getElementsByClassName("Header_Div_L4")[0];
-
-      if(_descriptionArea.style.display === "block")
-      {
-        _descriptionArea.style.display = "none";
-
-        _headerArea.style.display = "none";
-      }
-      else{
-        _descriptionArea.style.display = "block";
-
-        _headerArea.style.display = "block";
-      }
-    }
-
-    function HideOrShowSlideshow(GroupInput, NumberInput)
-    {
-      var _name = "" + GroupInput + "_Panel_" + NumberInput;
-
-      var _panel = document.getElementById(_name);
-
-      var _slideshowArea = _panel.getElementsByClassName("Slideshow")[0].getElementsByClassName("Upper_Part_2")[0];
-
-      var _headerArea = _panel.getElementsByClassName("Slideshow")[0].getElementsByClassName("Header_Div_L4")[0];
-
-      var _footerArea = _panel.getElementsByClassName("Slideshow")[0].getElementsByClassName("Footer")[0];
-
-      if(_slideshowArea.style.display === "block")
-      {
-        _slideshowArea.style.display = "none";
-
-        _headerArea.style.display = "none";
-
-        _footerArea.style.display = "none";
-      }
-      else{
-        _slideshowArea.style.display = "block";
-
-        _headerArea.style.display = "block";
-
-        _footerArea.style.display = "block";
-      }
-    }
-
-  </script>
+  <script src="Assets/JavaScript/Slideshow Script.js"></script>
+  <script src="Assets/JavaScript/Hide Or Show Toggle Script.js"></script>  
+  <script src="Assets/JavaScript/On Window Load Script.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -713,7 +659,7 @@
         <div class="Table">
           <ul>
             <li>
-              <div class="Award_Panel">
+              <div class="Award_Panel" id="Award_Panel_1">
                 <div class="Upper_Part">
                   <div class="Left_Side">
                     <div class = "Name_Table">
@@ -802,6 +748,11 @@
                   <div class="Text_Container">
                     Hello, there.
                   </div>
+                  <div class="Toggle_Button_Div">
+                    <div class="Button_Container">
+                      <button onclick="HideOrShowDesc('Award', '1')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                    </div>
+                  </div>    
                 </div>
               </div>
             </li>
@@ -877,6 +828,11 @@
                   <div class="Text_Container">
                     Hello, there.
                   </div>
+                  <div class="Toggle_Button_Div">
+                    <div class="Button_Container">
+                      <button onclick="HideOrShowDesc('PE', '1')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                    </div>
+                  </div>  
                 </div>
               </div>
             </li>
@@ -943,6 +899,11 @@
                   <div class="Text_Container">
                     Hello, there.
                   </div>
+                  <div class="Toggle_Button_Div">
+                    <div class="Button_Container">
+                      <button onclick="HideOrShowDesc('PE', '2')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                    </div>
+                  </div> 
                 </div>
               </div>
             </li>
@@ -1009,6 +970,11 @@
                   <div class="Text_Container">
                     Hello, there.
                   </div>
+                  <div class="Toggle_Button_Div">
+                    <div class="Button_Container">
+                      <button onclick="HideOrShowDesc('PE', '3')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                    </div>
+                  </div> 
                 </div>
               </div>
             </li>

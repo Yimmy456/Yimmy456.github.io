@@ -1,8 +1,3 @@
-window.onload= function()
-{
-  showDivs(1, 0);
-}
-
 var slideIndex = 1;
 showDivs(slideIndex, 0);
 

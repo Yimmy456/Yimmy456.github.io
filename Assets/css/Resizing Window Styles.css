@@ -201,6 +201,14 @@
     font-size: 50px;
   }
 
+  #Experiences .Education_Panel .Description_Area .Toggle_Button_Div button img,
+  #Experiences .Project_Panel .Description_Area .Toggle_Button_Div button img,
+  #Experiences .Award_Panel .Description_Area .Toggle_Button_Div button img,
+  #Experiences .PE_Panel .Description_Area .Toggle_Button_Div button img
+  {
+    transform: scale(0.5);
+  }
+
   /*#Contact_Div .Table a img,
   #Info_Div .Table .Row1 img,
   #Experiences ul li .Icon .Icon_Container img,
@@ -210,7 +218,8 @@
   }*/
 
   #Experiences .Project_Panel .Footer #Previous_Button_Div button img,
-  #Experiences .Project_Panel .Footer #Next_Button_Div button img
+  #Experiences .Project_Panel .Footer #Next_Button_Div button img,
+  #Experiences .Project_Panel .Slideshow .Toggle_Button_Div button img
   {
     transform: scale(0.5);
   }
