@@ -500,8 +500,9 @@
 #Projects_Div .Project_Panel .Slideshow .Upper_Part_2 .Slideshow_Description_Area .Text_Container
 {
   width: 99%;
-  height: 95%;
+  height: 85%;
   margin: auto;
+  overflow-y: auto;
 }
 
 #Projects_Div .Project_Panel .Slideshow .Footer
