@@ -31,12 +31,18 @@
 
       var _descriptionArea = _panel.getElementsByClassName("Description_Area")[0].getElementsByClassName("Text_Container")[0];
 
+      var _headerArea = _panel.getElementsByClassName("Description_Area")[0].getElementsByClassName("Header_Div_L4")[0];
+
       if(_descriptionArea.style.display === "block")
       {
         _descriptionArea.style.display = "none";
+
+        _headerArea.style.display = "none";
       }
       else{
         _descriptionArea.style.display = "block";
+
+        _headerArea.style.display = "block";
       }
     }
 
@@ -323,7 +329,7 @@
             </li>
             
             <li class=".Experience_Item">
-              <div class="Education_Panel">
+              <div class="Education_Panel" id="Education_Panel_2">
                 <div class="Upper_Part">
                 <div class="Left_Side">
                   <div class = "Name_Table">
@@ -410,13 +416,18 @@
                 <div class="Description_Area"><div class="Header_Div_L4"><h4>Description</h4></div>
                 <div class="Text_Container">
                   Hello, there.
-                </div>                
+                </div>
+                <div class="Toggle_Button_Div">
+                  <div class="Button_Container">
+                    <button onclick="HideOrShowDesc('Education', '2')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                  </div>
+                </div>               
                 </div>
               </div>
             </li>
             
             <li class=".Experience_Item">
-              <div class="Education_Panel">
+              <div class="Education_Panel" id="Education_Panel_3">
                 <div class="Upper_Part">
                 <div class="Left_Side">
                   <div class = "Name_Table">
@@ -504,6 +515,11 @@
                 <div class="Text_Container">
                   Hello, there.
                 </div>
+                <div class="Toggle_Button_Div">
+                  <div class="Button_Container">
+                    <button onclick="HideOrShowDesc('Education', '3')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                  </div>
+                </div>  
               </div>
               </div>
             </li>  
