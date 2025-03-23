@@ -34,13 +34,17 @@
   display: block;
 }
 
-#Experiences .Education_Panel .Description_Area .Toggle_Button_Div
+#Experiences .Education_Panel .Description_Area .Toggle_Button_Div,
+#Experiences .Project_Panel .Description_Area .Toggle_Button_Div,
+#Experiences .Award_Panel .Description_Area .Toggle_Button_Div,
+#Experiences .PE_Panel .Description_Area .Toggle_Button_Div
 {
   height: 100px;
   background-color: aqua;
 }
 
-#Experiences .Education_Panel .Description_Area .Toggle_Button_Div .Button_Container
+#Experiences .Education_Panel .Description_Area .Toggle_Button_Div .Button_Container,
+#Experiences .Project_Panel .Description_Area .Toggle_Button_Div .Button_Container
 {
   width: auto;
   height: auto;
@@ -53,7 +57,34 @@
   justify-content: center;
 }
 
-#Experiences .Education_Panel .Description_Area .Toggle_Button_Div .Button_Container button img
+#Experiences .Project_Panel .Slideshow .Toggle_Button_Div
+{
+  width: 100%;
+  height: 100px;
+}
+
+#Experiences .Project_Panel .Slideshow .Toggle_Button_Div .Button_Container
+{
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#Experiences .Project_Panel .Slideshow .Toggle_Button_Div .Button_Container button img
+{
+  max-height: 90px;
+  display: block;
+  margin: auto;
+}
+
+#Experiences .Education_Panel .Description_Area .Toggle_Button_Div .Button_Container button img,
+#Experiences .Project_Panel .Description_Area .Toggle_Button_Div .Button_Container button img
 {
   max-height: 90px;
   display: block;
@@ -328,12 +359,6 @@
   Projects Div
 */
 
-#Projects_Div li
-{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 #Projects_Div .Project_Panel
 {
   background-color: rgb(252, 181, 48);
@@ -342,16 +367,21 @@
   border-radius: var(--radius-10);
   border-style: solid;
   width: 95%;
-  height: 1600px;
+  height: auto;
   margin: auto;  
   paint-order: stroke fill;  
   -webkit-text-stroke: hsl(39, 97%, 30%) 3px;
 }
 
+#Projects_Div li
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 #Projects_Div .Project_Panel .Upper_Part
 {
   height: 400px;
-  height: calc((400 * 100%) / 1600);
   border-bottom: 3px;
   border-bottom-style: solid;
   border-bottom-color: hsl(39, 97%, 30%);
@@ -374,8 +404,7 @@
 #Projects_Div .Project_Panel .Description_Area
 {
   margin: auto;
-  height: 500px;  
-  height: calc((500 * 100%) / 1600);
+  height: auto;
   width: 100%;
   border-bottom: 3px;
   border-bottom-style: solid;
@@ -409,36 +438,36 @@
 #Projects_Div .Project_Panel .Slideshow
 {  
   margin: auto;
+  height: auto;
+  /*
   height: 700px;  
-  height: calc((700 * 100%) / 1600);
+  height: calc((700 * 100%) / 1700);*/
 }
 
-#Projects_Div .Project_Panel .Slideshow .Container
-{
-  margin: auto;
-  width: 99%;
-  height: 100%;
-  overflow: hidden;
-}
 
 #Projects_Div .Project_Panel .Slideshow .Header_Div_L4
 {
-  height: 100px;  
-  height: calc((100 * 100%) / 700);
+  height: 100px;
   width: 100%;
   margin: auto;
-
 }
 
 #Projects_Div .Project_Panel .Slideshow .Upper_Part_2
 {
   height: 500px;
-  height: calc((500 * 100%) / 700);
   width: 100%;
 
   border-top: 2px solid hsla(0, 0%, 0%, 0.25);
 
   border-bottom: 2px solid hsla(0, 0%, 0%, 0.25);
+}
+
+#Projects_Div .Project_Panel .Slideshow #Display_Div .Container
+{
+  margin: auto;
+  width: 99%;
+  height: 100%;
+  overflow: hidden;
 }
 
 
@@ -476,12 +505,14 @@
 #Projects_Div .Project_Panel .Slideshow .Footer
 {
   height: 100px;
-  height: calc((100 * 100%) / 700);
   width: 100%;
 
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+  
+  border-bottom: dashed 2px rgba(0, 0, 0, 0.25);
 }
 
 #Projects_Div .Project_Panel .Slideshow .Footer #Previous_Button_Div

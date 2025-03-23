@@ -46,6 +46,35 @@
       }
     }
 
+    function HideOrShowSlideshow(GroupInput, NumberInput)
+    {
+      var _name = "" + GroupInput + "_Panel_" + NumberInput;
+
+      var _panel = document.getElementById(_name);
+
+      var _slideshowArea = _panel.getElementsByClassName("Slideshow")[0].getElementsByClassName("Upper_Part_2")[0];
+
+      var _headerArea = _panel.getElementsByClassName("Slideshow")[0].getElementsByClassName("Header_Div_L4")[0];
+
+      var _footerArea = _panel.getElementsByClassName("Slideshow")[0].getElementsByClassName("Footer")[0];
+
+      if(_slideshowArea.style.display === "block")
+      {
+        _slideshowArea.style.display = "none";
+
+        _headerArea.style.display = "none";
+
+        _footerArea.style.display = "none";
+      }
+      else{
+        _slideshowArea.style.display = "block";
+
+        _headerArea.style.display = "block";
+
+        _footerArea.style.display = "block";
+      }
+    }
+
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -532,7 +561,7 @@
         </div>
         <div class="Table">
           <ul id="Projects_List">
-          <li class="Project_Item" id="Project_1">
+          <li class="Project_Item" id="Project_Panel_1">
             <div class="Project_Panel">
               <div class="Upper_Part">
                 <div class="Left_Side">
@@ -608,6 +637,11 @@
                 <div class="Text_Container">                 
                   Hello, there.
                 </div>
+                <div class="Toggle_Button_Div">
+                  <div class="Button_Container">
+                    <button onclick="HideOrShowDesc('Project', '1')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                  </div>
+                </div> 
               </div>
               <div class="Slideshow">
                 <div class="Header_Div_L4">
@@ -657,6 +691,11 @@
                     <div class="Button_Container">
                       <button onclick="plusDivs(1, 0)"><img src="Assets/images/Made Buttons/Next Button/Next Button 2.png" alt="Next Button"/></button>
                     </div>
+                  </div>
+                </div>
+                <div class="Toggle_Button_Div">
+                  <div class="Button_Container">
+                    <button onclick="HideOrShowSlideshow('Project', '1')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
                   </div>
                 </div>
               </div>

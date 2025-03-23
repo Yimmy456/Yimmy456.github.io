@@ -29,7 +29,7 @@ function showDivs(n, SGII)
 
     x[slideIndex - 1].style.display = "block";
 
-    var _name2 = "Project_" + (SGII + 1);
+    var _name2 = "Project_Panel_" + (SGII + 1);
 
     var _text = x[slideIndex - 1].getElementsByClassName("Slideshow_Description")[0].innerText;
 
