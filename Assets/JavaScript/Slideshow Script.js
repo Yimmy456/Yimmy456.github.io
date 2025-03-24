@@ -49,3 +49,37 @@ function SetSubnavToVisible(input)
         }
     }
 }
+
+function ChangeButtonImageOnHoverPnN(_nameInput, _buttonInput, _hoverInput)
+{
+    var _panel = document.getElementById(_nameInput);
+
+    var _buttonVar
+
+    if(_buttonInput == '-1')
+    {
+        _buttonVar = _panel.getElementsByClassName("Slideshow")[0].getElementsByClassName("Footer")[0].getElementsByClassName("Previous_Button_Div")[0].getElementsByClassName("Button_Image")[0];
+
+        if(_hoverInput == '1')
+        {
+            _buttonVar.src = "Assets/images/Made Buttons/Previous Button/Previous Button 2 with Red Glow.png";
+        }
+        else
+        {
+            _buttonVar.src = "Assets/images/Made Buttons/Previous Button/Previous Button 2 (899 x 429 px).png";
+        }
+    }
+    else
+    {
+        _buttonVar = _panel.getElementsByClassName("Slideshow")[0].getElementsByClassName("Footer")[0].getElementsByClassName("Next_Button_Div")[0].getElementsByClassName("Button_Image")[0];
+
+        if(_hoverInput == '1')
+        {
+            _buttonVar.src = "Assets/images/Made Buttons/Next Button/Next Button 2 with Green Glow.png";
+        }
+        else
+        {
+            _buttonVar.src = "Assets/images/Made Buttons/Next Button/Next Button 2 (899 x 429 px).png";
+        }
+    }
+}

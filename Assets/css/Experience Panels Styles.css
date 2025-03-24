@@ -67,6 +67,52 @@
   justify-content: center;
 }
 
+#Education_Div .Education_Panel .Upper_Part,
+#Projects_Div .Project_Panel .Upper_Part,
+#Awards_Div .Award_Panel .Upper_Part,
+#Professional_Experiences_Div .PE_Panel .Upper_Part
+{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#Education_Div .Education_Panel .Upper_Part .Left_Side,
+#Projects_Div .Project_Panel .Upper_Part .Left_Side,
+#Awards_Div .Award_Panel .Upper_Part .Left_Side,
+#Professional_Experiences_Div .PE_Panel .Upper_Part .Left_Side
+{
+  float: Left;
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+
+#Education_Div .Education_Panel .Upper_Part .Right_Side,
+#Projects_Div .Project_Panel .Upper_Part .Right_Side,
+#Awards_Div .Award_Panel .Upper_Part .Right_Side,
+#Professional_Experiences_Div .PE_Panel .Upper_Part .Right_Side
+{
+  float: right;
+  width: 60%;
+  height: auto;
+  margin: auto;
+  vertical-align: middle;  
+  justify-content: center;
+}
+
+#Education_Div .Education_Panel .Upper_Part .Right_Side .Row,
+#Projects_Div .Project_Panel .Upper_Part .Right_Side .Row,
+#Awards_Div .Award_Panel .Upper_Part .Right_Side .Row,
+#Professional_Experiences_Div .PE_Panel .Upper_Part .Right_Side .Row
+{
+  float: left;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  margin: auto;
+}
+
 #Experiences .Project_Panel .Slideshow .Toggle_Button_Div
 {
   width: 100%;
@@ -93,10 +139,27 @@
   margin: auto;
 }
 
+#Experiences .Project_Panel .Slideshow .Toggle_Button_Div .Button_Container img
+{
+  max-height: 90px;
+  display: block;
+  margin: auto;
+}
+
 #Experiences .Education_Panel .Description_Area .Toggle_Button_Div .Button_Container button img,
 #Experiences .Project_Panel .Description_Area .Toggle_Button_Div .Button_Container button img,
 #Experiences .Award_Panel .Description_Area .Toggle_Button_Div .Button_Container button img,
 #Experiences .PE_Panel .Description_Area .Toggle_Button_Div .Button_Container button img
+{
+  max-height: 90px;
+  display: block;
+  margin: auto;
+}
+
+#Experiences .Education_Panel .Description_Area .Toggle_Button_Div .Button_Container img,
+#Experiences .Project_Panel .Description_Area .Toggle_Button_Div .Button_Container img,
+#Experiences .Award_Panel .Description_Area .Toggle_Button_Div .Button_Container img,
+#Experiences .PE_Panel .Description_Area .Toggle_Button_Div .Button_Container img
 {
   max-height: 90px;
   display: block;
@@ -216,7 +279,7 @@
 
 #Experiences .Table .Upper_Part .Right_Side .Row .Section_2 .Icon_Container img
 {
-  max-height: 50px;
+  max-height: 60px;
 }
 
 #Projects_Div .Project_Panel .Right_Side #Company_Row .Section_2,
@@ -306,25 +369,6 @@
   display: flex;
 }
 
-
-#Education_Div .Education_Panel .Right_Side
-{
-  width: 60%;
-  height: 100%;
-  float: left;
-  margin: auto;
-  vertical-align: middle;  
-  justify-content: center;
-}
-
-#Education_Div .Education_Panel .Right_Side .Row
-{
-  width: 100%;
-  height: 20%;
-  float: left;
-  margin: auto;
-}
-
 #Education_Div .Education_Panel .Right_Side #GPA_Row .Section_1
 {
   width: 69%;
@@ -392,20 +436,6 @@
   border-bottom-color: hsl(39, 97%, 30%);
 }
 
-#Projects_Div .Project_Panel .Upper_Part .Left_Side
-{
-  float: left;
-  width: 40%;
-  height: 100%;
-}
-
-#Projects_Div .Project_Panel .Upper_Part .Right_Side
-{
-  float: left;
-  width: 60%;
-  height: 100%;
-}
-
 #Projects_Div .Project_Panel .Description_Area
 {
   border-bottom: 3px;
@@ -416,13 +446,6 @@
 #Projects_Div .Project_Panel .Slides_Project_1 p
 {
   display: none;
-}
-
-#Projects_Div .Project_Panel .Right_Side .Row
-{
-  width: 100%;
-  height: 25%;  
-  margin: auto;
 }
 
 #Projects_Div .Project_Panel h3
@@ -518,7 +541,7 @@
   border-bottom: dashed 2px rgba(0, 0, 0, 0.25);
 }
 
-#Projects_Div .Project_Panel .Slideshow .Footer #Previous_Button_Div
+#Projects_Div .Project_Panel .Slideshow .Footer .Previous_Button_Div
 {
   float: left;
   width: 33.33%;
@@ -563,7 +586,7 @@
   transform: translateY(-50%);
 }
 
-#Projects_Div .Project_Panel .Slideshow .Footer #Next_Button_Div
+#Projects_Div .Project_Panel .Slideshow .Footer .Next_Button_Div
 {
   float: left;
   width: 33.33%;
@@ -603,8 +626,8 @@
   display: none;
 }
 
-#Previous_Button_Div button img,
-#Next_Button_Div button img
+.Previous_Button_Div button img,
+.Next_Button_Div button img
 {
   height: 80px;
 }
@@ -655,35 +678,25 @@
   border-bottom: 3px hsl(39, 97%, 30%) solid;
 }
 
-#Awards_Div .Award_Panel .Upper_Part .Left_Side
+/*#Awards_Div .Award_Panel .Upper_Part .Left_Side
 {
   width: 35%;
   height: 100%;
   float: left;
-}
+}*/
 
-#Awards_Div .Award_Panel .Upper_Part .Right_Side
+/*#Awards_Div .Award_Panel .Upper_Part .Right_Side
 {
   width: 65%;
   height: 100%;
   float: right;
-}
-
-#Awards_Div .Award_Panel .Upper_Part .Right_Side .Row
-{
-  float: left;
-  width: 100%;
-  height: 20%;
-  align-items: center;
-}
+}*/
 
 #Awards_Div .Award_Panel .Upper_Part .Right_Side #Time_Row,
 #Awards_Div .Award_Panel .Upper_Part .Right_Side #Location_Row
 {
   background-color: rgba(0, 0, 0, 0.25);
 }
-
-
 
 /*
   Experiences Div
@@ -748,30 +761,6 @@
     height: 300px;
     border-bottom: 3px hsl(39, 97%, 30%) solid;
   }
-  
-  #Professional_Experiences_Div .PE_Panel .Upper_Part .Left_Side
-  {
-    width: 35%;
-    height: 100%;
-    float: left;
-  }
-  
-  #Professional_Experiences_Div .PE_Panel .Upper_Part .Right_Side
-  {
-    width: 65%;
-    height: 100%;
-    float: right;
-  }
-  
-  #Professional_Experiences_Div .PE_Panel .Upper_Part .Right_Side .Row
-  {
-    float: left;
-    width: 100%;
-    height: 33.33%;
-    height: calc(100% / 3);
-    align-items: center;
-  }
-  
   
   #Professional_Experiences_Div .PE_Panel .Right_Side #Company_Row
   {

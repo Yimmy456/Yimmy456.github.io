@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="Assets/css/Experience Panels Styles.css" type="text/css">
   <link rel="stylesheet" href="Assets/css/Resizing Window Styles.css" type="text/css">
 
-  <link rel="icon" type="icon/x-image" href="Assets/images/Tab Icon.png">
+  <link rel="icon" type="icon/x-image" href="Assets/images/Tab Icon as Square.png">
 
   <script src="Assets/JavaScript/Slideshow Script.js"></script>
   <script src="Assets/JavaScript/Hide Or Show Toggle Script.js"></script>  
@@ -296,9 +296,10 @@
                   </div>
                   <div class="Toggle_Button_Div">
                     <div class="Button_Container">
-                      <button onclick="HideOrShowDesc('Education', '1')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                      <button class="Toggle_Button" onclick="HideOrShowDesc('Education', '1')" onmouseover="ChangeButtonImageDesc('Education', '1', '1')" onmouseout="ChangeButtonImageDesc('Education', '1', '0')"><img class="Toggle_Button_Image" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"></button>
+                      <!--<img class="Toggle_Button_Image" onclick="HideOrShowDesc('Education', '1')" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"> -->
                     </div>
-                  </div>
+                  </div>  
                 </div>
               </div>
             </li>
@@ -394,7 +395,8 @@
                 </div>
                 <div class="Toggle_Button_Div">
                   <div class="Button_Container">
-                    <button onclick="HideOrShowDesc('Education', '2')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                    <button class="Toggle_Button" onclick="HideOrShowDesc('Education', '2')" onmouseover="ChangeButtonImageDesc('Education', '2', '1')" onmouseout="ChangeButtonImageDesc('Education', '2', '0')"><img class="Toggle_Button_Image" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"></button>
+                    <!--<img class="Toggle_Button_Image" onclick="HideOrShowDesc('Education', '2')" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"> -->
                   </div>
                 </div>               
                 </div>
@@ -492,9 +494,10 @@
                 </div>
                 <div class="Toggle_Button_Div">
                   <div class="Button_Container">
-                    <button onclick="HideOrShowDesc('Education', '3')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                    <button class="Toggle_Button" onclick="HideOrShowDesc('Education', '3')" onmouseover="ChangeButtonImageDesc('Education', '3', '1')" onmouseout="ChangeButtonImageDesc('Education', '3', '0')"><img class="Toggle_Button_Image" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"></button>
+                    <!--<img class="Toggle_Button_Image" onclick="HideOrShowDesc('Education', '3')" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"> -->
                   </div>
-                </div>  
+                </div> 
               </div>
               </div>
             </li>  
@@ -585,9 +588,10 @@
                 </div>
                 <div class="Toggle_Button_Div">
                   <div class="Button_Container">
-                    <button onclick="HideOrShowDesc('Project', '1')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                    <button class="Toggle_Button" onclick="HideOrShowDesc('Project', '1')" onmouseover="ChangeButtonImageDesc('Project', '1', '1')" onmouseout="ChangeButtonImageDesc('Project', '1', '0')"><img class="Toggle_Button_Image" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"></button>
+                    <!--<img class="Toggle_Button_Image" onclick="HideOrShowDesc('Project', '1')" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"> -->
                   </div>
-                </div> 
+                </div>
               </div>
               <div class="Slideshow">
                 <div class="Header_Div_L4">
@@ -675,23 +679,24 @@
                   </div>
                 </div>
                 <div class="Footer">
-                  <div id="Previous_Button_Div">
+                  <div class="Previous_Button_Div">
                     <div class="Button_Container">
-                      <button onclick="plusDivs(-1, 0)"><img src="Assets/images/Made Buttons/Previous Button/Previous Button 2.png" alt="Previous Button"/></button>
+                      <button onclick="plusDivs(-1, 0)" onmouseover="ChangeButtonImageOnHoverPnN('Project_Panel_1', '-1', '1')" onmouseout="ChangeButtonImageOnHoverPnN('Project_Panel_1', '-1', '0')"><img class="Button_Image" src="Assets/images/Made Buttons/Previous Button/Previous Button 2 (899 x 429 px).png" alt="Previous Button"/></button>
                     </div>
                   </div>
                   <div id="Slideshow_Counter_Div">
                     <p class="Slideshow_Counter_P">1 / 4</p>
                   </div>
-                  <div id="Next_Button_Div">
+                  <div class="Next_Button_Div">
                     <div class="Button_Container">
-                      <button onclick="plusDivs(1, 0)"><img src="Assets/images/Made Buttons/Next Button/Next Button 2.png" alt="Next Button"/></button>
+                      <button onclick="plusDivs(1, 0)" onmouseover="ChangeButtonImageOnHoverPnN('Project_Panel_1', '1', '1')" onmouseout="ChangeButtonImageOnHoverPnN('Project_Panel_1', '1', '0')"><img class="Button_Image" src="Assets/images/Made Buttons/Next Button/Next Button 2 (899 x 429 px).png" alt="Next Button"/></button>
                     </div>
                   </div>
                 </div>
                 <div class="Toggle_Button_Div">
                   <div class="Button_Container">
-                    <button onclick="HideOrShowSlideshow('Project', '1')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                    <button class="Toggle_Button" onclick="HideOrShowSlideshow('Project', '1')" onmouseover="ChangeButtonImageSlideshow('Project', '1', '1')" onmouseout="ChangeButtonImageSlideshow('Project', '1', '0')"><img class="Toggle_Button_Image" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Slideshow Button.png"></button>
+                    <!--<img class="Toggle_Button_Image" onclick="HideOrShowDesc('Project', '1')" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"> -->
                   </div>
                 </div>
               </div>
@@ -800,9 +805,10 @@
                   </div>
                   <div class="Toggle_Button_Div">
                     <div class="Button_Container">
-                      <button onclick="HideOrShowDesc('Award', '1')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                      <button class="Toggle_Button" onclick="HideOrShowDesc('Award', '1')" onmouseover="ChangeButtonImageDesc('Award', '1', '1')" onmouseout="ChangeButtonImageDesc('Award', '1', '0')"><img class="Toggle_Button_Image" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"></button>
+                      <!--<img class="Toggle_Button_Image" onclick="HideOrShowDesc('Education', '1')" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"> -->
                     </div>
-                  </div>    
+                  </div> 
                 </div>
               </div>
             </li>
@@ -880,9 +886,10 @@
                   </div>
                   <div class="Toggle_Button_Div">
                     <div class="Button_Container">
-                      <button onclick="HideOrShowDesc('PE', '1')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                      <button class="Toggle_Button" onclick="HideOrShowDesc('PE', '1')" onmouseover="ChangeButtonImageDesc('PE', '1', '1')" onmouseout="ChangeButtonImageDesc('PE', '1', '0')"><img class="Toggle_Button_Image" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"></button>
+                      <!--<img class="Toggle_Button_Image" onclick="HideOrShowDesc('PE', '1')" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"> -->
                     </div>
-                  </div>  
+                  </div> 
                 </div>
               </div>
             </li>
@@ -951,7 +958,8 @@
                   </div>
                   <div class="Toggle_Button_Div">
                     <div class="Button_Container">
-                      <button onclick="HideOrShowDesc('PE', '2')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                      <button class="Toggle_Button" onclick="HideOrShowDesc('PE', '2')" onmouseover="ChangeButtonImageDesc('PE', '2', '1')" onmouseout="ChangeButtonImageDesc('PE', '2', '0')"><img class="Toggle_Button_Image" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"></button>
+                      <!--<img class="Toggle_Button_Image" onclick="HideOrShowDesc('PE', '2')" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"> -->
                     </div>
                   </div> 
                 </div>
@@ -1022,7 +1030,8 @@
                   </div>
                   <div class="Toggle_Button_Div">
                     <div class="Button_Container">
-                      <button onclick="HideOrShowDesc('PE', '3')"><img src="Assets/images/Made Buttons/Next Button/Next Button.png"></button>
+                      <button class="Toggle_Button" onclick="HideOrShowDesc('PE', '3')" onmouseover="ChangeButtonImageDesc('PE', '3', '1')" onmouseout="ChangeButtonImageDesc('PE', '3', '0')"><img class="Toggle_Button_Image" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"></button>
+                      <!--<img class="Toggle_Button_Image" onclick="HideOrShowDesc('PE', '3')" src="Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png"> -->
                     </div>
                   </div> 
                 </div>
