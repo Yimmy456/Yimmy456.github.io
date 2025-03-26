@@ -1088,10 +1088,22 @@ About Me Div
   margin-left: 50px;
 }
 
-#Contact_Div a img
+#Contact_Div img
+{
+  max-height: 60px;
+  position: relative;
+}
+
+#Contact_Div .Button_Image
 {
   max-height: 60px;
   position: absolute;
+}
+
+#Contact_Div .Button_Image_Cover
+{
+  max-height: 60px;
+  position: relative;
 }
 
 
@@ -1118,13 +1130,18 @@ About Me Div
 
 #Contact_Div .Table .Icon_Container
 {
-  width: 120px;
-  height: 30px;
-  margin: 0;
+  margin: auto;
   position: relative;
   align-items: center;
   justify-content: center;
   display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#Contact_Div .Table .Icon_Container a
+{
+  position: absolute;
 }
 
 #Contact_Div .Table .Icon_Container .Button_Image_Cover
