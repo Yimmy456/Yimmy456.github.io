@@ -940,7 +940,7 @@ About Me Div
 
 /*Contact Div*/
 
-#Contact_Div
+/*#Contact_Div
 {
   height: 600px;
 }
@@ -1058,7 +1058,7 @@ About Me Div
   transform: translate(10px, -90px);
   z-index: 500;
   position: absolute;
-}
+}*/
 
 /*#Contact_Div .Table #YouTube a .Span_Hover
 {
@@ -1072,194 +1072,136 @@ About Me Div
   font-style: normal;
 }
 
-#Experiences .Table ul li .Toggle_Button_Div
+
+
+#Contact_Div
 {
-  height: 100px;
+  height: 600px;
 }
 
-#Experiences .Table ul li .Toggle_Button_Div .Button_Container
+#Contact_Div .Span_Hover
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-color: var(--purple);
+  color: var(--purple);
+  -webkit-text-stroke-color: var(--purple-border);
+  margin-top: -85px;
+  margin-left: 50px;
+}
+
+#Contact_Div a img
+{
+  max-height: 60px;
+  position: absolute;
+}
+
+
+#Contact_Div .Table
+{
   margin: auto;
-  cursor: pointer;
-}
-
-#Experiences .Table ul li .Toggle_Button_Div .Button_Container
-{
-  position: relative;
-  width: calc((899 * 100px) / 429);
-  display: block;
-}
-
-#Experiences .Table ul li .Toggle_Button_Div .Button_Container .Button_Image_Blur
-{
-  position: absolute;
+  width: 60%;
   height: 100px;
-  opacity: 0%;
-  transition: 1s;
+  background-color: hsl(278, 91%, 70%);
+  border-color: hsl(278, 91%, 35%);
+  border-width: 3px;
+  border-style: solid;
+  border-radius: var(--radius-10);
+  overflow: hidden;
 }
 
-#Experiences .Table ul li .Toggle_Button_Div .Button_Container:hover .Button_Image_Blur
+#Contact_Div .Table .Column
 {
-  opacity: 100%;
-}
-
-#Experiences .Table ul li .Toggle_Button_Div .Button_Container .Button_Image
-{
-  position: absolute;
-  height: 100px;
-}
-
-/*Previous and Next Buttons*/
-
-#Experiences .Table ul li .Previous_Button_Div
-{
-  height: 100px;
-  width: calc(100% / 3);
-  float: left;
-}
-
-#Experiences .Table ul li .Previous_Button_Div .Button_Container
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  position: relative;
-  width: calc((899 * 100px) / 429);
-  cursor: pointer;
-}
-
-#Experiences .Table ul li .Previous_Button_Div .Button_Container .Button_Image_Blur
-{
-  position: absolute;
-  height: 100px;
-  opacity: 0%;
-  transition: 1s;
-}
-
-#Experiences .Table ul li .Previous_Button_Div .Button_Container:hover .Button_Image_Blur
-{
-  opacity: 100%;
-}
-
-#Experiences .Table ul li .Previous_Button_Div .Button_Container .Button_Image
-{
-  position: absolute;
-  height: 100px;
-}
-
-#Experiences .Table ul li #Slideshow_Counter_Div
-{
-  float: left;
-  width: calc(100% / 3);
   height: 100%;
+  width: 20%;
+  float: left;
   text-align: center;
-  vertical-align: middle;
 }
 
-#Experiences .Table ul li #Slideshow_Counter_Div p
+#Contact_Div .Table .Icon_Container
 {
+  width: 120px;
+  height: 30px;
+  margin: 0;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#Contact_Div .Table .Icon_Container .Button_Image_Cover
+{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#Contact_Div .Table .Icon_Container:hover .Button_Image_Cover
+{
+  opacity: 0;
+}
+
+#Contact_Div .Table .Icon_Container:hover + .Span_Hover
+{
+  animation: effect 1s infinite 1s;
+}
+
+#Contact_Div #Email_Div
+{
+  background-color: rgb(162, 0, 255);
+  height: 500px;
+  width: 80%;
   margin: auto;
+  margin-bottom: 20px;
+  border: hsl(278, 100%, 25%) 3px solid;
+  border-radius: var(--radius-10);
+  overflow: hidden;
+  justify-content: center;
+  justify-items: center;
+}
+
+#Contact_Div #Email_Div #Text_Area
+{
+  width: 50%;
+  height: 100%;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  border-right: hsl(278, 100%, 25%) 1px solid;
+}
+
+#Contact_Div #Email_Div #Text_Area textarea
+{
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  margin: auto;
+  resize: none;
+  font-size: 20px;
+  position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#Experiences .Table ul li .Next_Button_Div
+#Contact_Div #Email_Div #Context_Area
 {
-  height: 100px;
-  width: calc(100% / 3);
-  float: left;
+  width: 50%;
+  height: 100%;
+  float: right;
 }
 
-#Experiences .Table ul li .Next_Button_Div .Button_Container
+#Contact_Div #Email_Div #Context_Area input
 {
-  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
   justify-content: center;
-  align-items: center;
   margin: auto;
-  position: relative;
-  width: calc((899 * 100px) / 429);
-  cursor: pointer;
+  margin-top: 10px;
 }
 
-#Experiences .Table ul li .Next_Button_Div .Button_Container .Button_Image_Blur
+#Contact_Div .Table a .Span_Hover
 {
+  transform: translate(10px, -90px);
+  z-index: 500;
   position: absolute;
-  height: 100px;
-  opacity: 0%;
-  transition: 1s;
 }
 
-#Experiences .Table ul li .Next_Button_Div .Button_Container:hover .Button_Image_Blur
-{
-  opacity: 100%;
-}
-
-#Experiences .Table ul li .Next_Button_Div .Button_Container .Button_Image
-{
-  position: absolute;
-  height: 100px;
-}
-
-/*.Previous_Button_Div
-{
-  position: relative;
-  height: 100%;
-  width: calc(100% / 3);
-}
-
-.Previous_Button_Div .Button_Container
-{
-  position: relative;
-  justify-content: center;
-  display: flex;
-}
-
-.Previous_Button_Div .Button_Container button
-{
-  position: absolute;
-  width: 200px;
-}
-
-.Previous_Button_Div .Button_Container button .Button_Image
-{
-  position: absolute;
-  width: 200px;
-}
-
-.Previous_Button_Div .Button_Container button .Button_Image_Blur
-{
-  position: absolute;
-  opacity: 0%;
-  width: 200px;  
-  transition: all 0.5s;
-}
-
-.Previous_Button_Div .Button_Container button:hover .Button_Image_Blur
-{
-  opacity: 100%;
-}
-
-#Projects_Div .Project_Panel .Slideshow .Footer #Slideshow_Counter_Div
-{
-  float: left;
-  width: 33.33%;
-  width: calc(100% / 3);
-  height: 100%;
-  text-align: center;
-  vertical-align: middle;
-  position: relative;
-}
-
-#Projects_Div .Project_Panel .Slideshow .Footer .Next_Button_Div
-{
-  float: left;
-  width: 33.33%;
-  width: calc(100% / 3);
-  height: 100%;
-  position: relative;
-}*/

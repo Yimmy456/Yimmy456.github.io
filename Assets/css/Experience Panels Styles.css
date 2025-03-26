@@ -283,6 +283,142 @@
   justify-content: center;
 }
 
+/*Toggle Buttons*/
+
+#Experiences .Table ul li .Toggle_Button_Div
+{
+  height: 100px;
+}
+
+#Experiences .Table ul li .Toggle_Button_Div .Button_Container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+#Experiences .Table ul li .Toggle_Button_Div .Button_Container
+{
+  position: relative;
+  width: calc((899 * 100px) / 429);
+  display: block;
+}
+
+#Experiences .Table ul li .Toggle_Button_Div .Button_Container .Button_Image_Blur
+{
+  position: absolute;
+  height: 100px;
+  opacity: 0%;
+  transition: 1s;
+}
+
+#Experiences .Table ul li .Toggle_Button_Div .Button_Container:hover .Button_Image_Blur
+{
+  opacity: 100%;
+}
+
+#Experiences .Table ul li .Toggle_Button_Div .Button_Container .Button_Image
+{
+  position: absolute;
+  height: 100px;
+}
+
+/*Previous and Next Buttons*/
+
+#Experiences .Table ul li .Previous_Button_Div
+{
+  height: 100px;
+  width: calc(100% / 3);
+  float: left;
+}
+
+#Experiences .Table ul li .Previous_Button_Div .Button_Container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  width: calc((899 * 100px) / 429);
+  cursor: pointer;
+}
+
+#Experiences .Table ul li .Previous_Button_Div .Button_Container .Button_Image_Blur
+{
+  position: absolute;
+  height: 100px;
+  opacity: 0%;
+  transition: 1s;
+}
+
+#Experiences .Table ul li .Previous_Button_Div .Button_Container:hover .Button_Image_Blur
+{
+  opacity: 100%;
+}
+
+#Experiences .Table ul li .Previous_Button_Div .Button_Container .Button_Image
+{
+  position: absolute;
+  height: 100px;
+}
+
+#Experiences .Table ul li #Slideshow_Counter_Div
+{
+  float: left;
+  width: calc(100% / 3);
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#Experiences .Table ul li #Slideshow_Counter_Div p
+{
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#Experiences .Table ul li .Next_Button_Div
+{
+  height: 100px;
+  width: calc(100% / 3);
+  float: left;
+}
+
+#Experiences .Table ul li .Next_Button_Div .Button_Container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  width: calc((899 * 100px) / 429);
+  cursor: pointer;
+}
+
+#Experiences .Table ul li .Next_Button_Div .Button_Container .Button_Image_Blur
+{
+  position: absolute;
+  height: 100px;
+  opacity: 0%;
+  transition: 1s;
+}
+
+#Experiences .Table ul li .Next_Button_Div .Button_Container:hover .Button_Image_Blur
+{
+  opacity: 100%;
+}
+
+#Experiences .Table ul li .Next_Button_Div .Button_Container .Button_Image
+{
+  position: absolute;
+  height: 100px;
+}
+
+
 /*Education Div*/
 
 
