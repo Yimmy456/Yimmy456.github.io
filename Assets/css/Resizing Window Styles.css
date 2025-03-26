@@ -253,11 +253,11 @@
     width: auto;
   }
 
-  #Professional_Experiences_Div .Table ul li .PE_Panel .Upper_Part .Right_Side .Section_1
+  /*#Professional_Experiences_Div .Table ul li .PE_Panel .Upper_Part .Right_Side .Section_1
   {
     width: auto;
-    max-width: 100px;
-  }
+    max-width: 200px;
+  }*/
 
   #Skills .Skill_Name p img
   {

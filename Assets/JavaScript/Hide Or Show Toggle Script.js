@@ -107,7 +107,7 @@ function HideOrShowSlideshow2(GroupInput, NumberInput, ShowBooleanInput)
 
     _headerArea.style.display = "none";
 
-    _footerArea.style.display = "none";    
+    _footerArea.style.display = "none";
 
     ChangeButtonImageInSlideshow(_name, '1');
   }
@@ -116,47 +116,60 @@ function HideOrShowSlideshow2(GroupInput, NumberInput, ShowBooleanInput)
 
     _headerArea.style.display = "block";
 
-    _footerArea.style.display = "block";    
+    _footerArea.style.display = "block";   
 
     ChangeButtonImageInSlideshow(_name, '0');
   }
 }
 
+
 function ChangeButtonImageInDescription(_nameInput, _statusInput)
 {
-  var _panel = document.getElementById(_nameInput).getElementsByClassName("Description_Area")[0].getElementsByClassName("Toggle_Button_Div")[0].getElementsByClassName("Toggle_Button_Image")[0];
+  var _panel = document.getElementById(_nameInput).getElementsByClassName("Description_Area")[0].getElementsByClassName("Toggle_Button_Div")[0].getElementsByClassName("Button_Image")[0];
+
+  var _panel2 = document.getElementById(_nameInput).getElementsByClassName("Description_Area")[0].getElementsByClassName("Toggle_Button_Div")[0].getElementsByClassName("Button_Image_Blur")[0];
 
   if(_statusInput == '1')
   {
     _panel.src = "Assets/images/Made Buttons/Dropdown Buttons/Dropdown Description Button.png";
+
+    _panel2.src = "Assets/images/Made Buttons/Dropdown Buttons/Dropdown Description Button Blur.png";
   }
   else{
     _panel.src = "Assets/images/Made Buttons/Hiding Buttons/Hiding Description Button.png";
+
+    _panel2.src = "Assets/images/Made Buttons/Hiding Buttons/Hiding Button Blur.png";
   }
 }
 
 function ChangeButtonImageInSlideshow(_nameInput, _statusInput)
 {
-  var _panel = document.getElementById(_nameInput).getElementsByClassName("Slideshow")[0].getElementsByClassName("Toggle_Button_Div")[0].getElementsByClassName("Toggle_Button_Image")[0];
+  var _panel = document.getElementById(_nameInput).getElementsByClassName("Slideshow")[0].getElementsByClassName("Toggle_Button_Div")[0].getElementsByClassName("Button_Image")[0];
+
+  var _panel2 = document.getElementById(_nameInput).getElementsByClassName("Slideshow")[0].getElementsByClassName("Toggle_Button_Div")[0].getElementsByClassName("Button_Image_Blur")[0];
 
   if(_statusInput == '1')
   {
     _panel.src = "Assets/images/Made Buttons/Dropdown Buttons/Dropdown Slideshow Button (Teal).png";
+
+    _panel2.src = "Assets/images/Made Buttons/Dropdown Buttons/Dropdown Slideshow Button Blur (Teal).png";
   }
   else{
     _panel.src = "Assets/images/Made Buttons/Hiding Buttons/Hiding Slideshow Button.png";
+
+    _panel2.src = "Assets/images/Made Buttons/Hiding Buttons/Hiding Button Blur.png";
   }
 }
 
-function ChangeButtonImageDesc(_groupInput, _indexInput, _hoverInput)
+function ChangeButtonImageDesc(_groupInput, _indexInput, _BlurInput)
 {
   var _name = "" + _groupInput + "_Panel_" + _indexInput;
 
-  var _panel = document.getElementById(_name).getElementsByClassName("Description_Area")[0].getElementsByClassName("Toggle_Button_Div")[0].getElementsByClassName("Toggle_Button_Image")[0];
+  var _panel = document.getElementById(_name).getElementsByClassName("Description_Area")[0].getElementsByClassName("Toggle_Button_Div")[0].getElementsByClassName("Button_Image")[0];
 
   var _descriptionArea =  document.getElementById(_name).getElementsByClassName("Description_Area")[0].getElementsByClassName("Text_Container")[0];
 
-  if(_hoverInput == '1')
+  if(_BlurInput == '1')
   {
     if(_descriptionArea.style.display === "block")
     {
@@ -178,32 +191,43 @@ function ChangeButtonImageDesc(_groupInput, _indexInput, _hoverInput)
   }
 }
 
-function ChangeButtonImageSlideshow(_groupInput, _indexInput, _hoverInput)
+function ChangeButtonImageSlideshow(_groupInput, _indexInput, _BlurInput)
 {
   var _name = "" + _groupInput + "_Panel_" + _indexInput;
 
-  var _panel = document.getElementById(_name).getElementsByClassName("Slideshow")[0].getElementsByClassName("Toggle_Button_Div")[0].getElementsByClassName("Toggle_Button_Image")[0];
+  var _panel = document.getElementById(_name).getElementsByClassName("Slideshow")[0].getElementsByClassName("Toggle_Button_Div")[0].getElementsByClassName("Button_Image")[0];
+
+  var _panel2 = document.getElementById(_name).getElementsByClassName("Slideshow")[0].getElementsByClassName("Toggle_Button_Div")[0].getElementsByClassName("Button_Image_Blur")[0];
+
 
   var _descriptionArea =  document.getElementById(_name).getElementsByClassName("Slideshow")[0].getElementsByClassName("Upper_Part_2")[0];
 
-  if(_hoverInput == '1')
+  if(_BlurInput == '1')
     {
       if(_descriptionArea.style.display === "block")
       {
-        _panel.src = "Assets/images/Made Buttons/Hiding Buttons/Hiding Slideshow Button Glow.png";
+        _panel.src = "Assets/images/Made Buttons/Hiding Buttons/Hiding Slideshow Button.png";
+
+        _panel2.src = "Assets/images/Made Buttons/Hiding Buttons/Hiding Button Blur.png";
       }
       else{
-        _panel.src = "Assets/images/Made Buttons/Dropdown Buttons/Dropdown Slideshow Button Glow (Teal).png";
+        _panel.src = "Assets/images/Made Buttons/Dropdown Buttons/Dropdown Slideshow Button (Teal).png";
+
+        _panel2.src = "Assets/images/Made Buttons/Dropdown Buttons/Dropdown Slideshow Button Blur (Teal).png";
       }
     } 
     else
     {
       if(_descriptionArea.style.display === "block")
       {
-        _panel.src = "Assets/images/Made Buttons/Hiding Buttons/Hiding Slideshow Button.png";
+        _panel.src = "Assets/images/Made Buttons/Hiding Buttons/Hiding Slideshow Button.png";        
+
+        _panel2.src = "Assets/images/Made Buttons/Hiding Buttons/Hiding Button Blur.png";
       }
       else{
         _panel.src = "Assets/images/Made Buttons/Dropdown Buttons/Dropdown Slideshow Button (Teal).png";
+
+        _panel2.src = "Assets/images/Made Buttons/Dropdown Buttons/Dropdown Slideshow Button Blur (Teal).png";
       }
     }
 }
