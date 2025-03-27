@@ -138,7 +138,8 @@ h5{
   box-sizing: border-box;
 }
 
-li { list-style: none; }
+
+.navbar li { list-style: none; }
 
 #Blue_Button
 {
@@ -1222,3 +1223,6 @@ About Me Div
   position: absolute;
 }
 
+.Slides ul{
+  list-style-type: circle;
+}
