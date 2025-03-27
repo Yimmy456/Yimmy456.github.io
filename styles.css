@@ -1215,9 +1215,9 @@ About Me Div
   margin-top: 10px;
 }
 
-#Contact_Div .Table .Span_Hover
+#Contact_Div .Table a .Span_Hover
 {
-  transform: translate(0px, 60px);
+  transform: translate(10px, -90px);
   z-index: 500;
   position: absolute;
 }
