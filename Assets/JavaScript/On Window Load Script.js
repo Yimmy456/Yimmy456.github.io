@@ -1,6 +1,6 @@
 window.onload= function()
 {
-  showDivs(1, 0);
+  showDivs(1, 'Project_Panel_1');
 
   HideOrShowDesc2('Education', '1', '0');
   HideOrShowDesc2('Education', '2', '0');

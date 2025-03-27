@@ -1,36 +1,38 @@
 var slideIndex = 1;
-showDivs(slideIndex, 0);
+showDivs(slideIndex, 'Project_Panel_1');
 
-function plusDivs(n, SGII) {
-showDivs(slideIndex += n, SGII);
+function plusDivs(n, Container_Name) {
+    showDivs(slideIndex += n, Container_Name);
 }
 
-function showDivs(n, SGII)
+function showDivs(n, Container_Name)
 {
     var i;
 
-    var _name = "Slides_Project_" + (SGII + 1);
+    var x = document.getElementById(Container_Name);
 
-    var x = document.getElementsByClassName(_name);
+    var y = x.getElementsByClassName("Slideshow")[0];
 
-    if (n > x.length) {slideIndex = 1}
+    var _slides = y.getElementsByClassName("Slides");
 
-    if (n < 1) {slideIndex = x.length}
-    
-    for (i = 0; i < x.length; i++)
+    if(n > _slides.length) {slideIndex = 1;}
+
+    if(n < 1) {slideIndex = _slides.length;}
+
+    for(i = 0; i < _slides.length; i++)
     {
-        x[i].style.display = "none";  
+        _slides[i].style.display = "none";
     }
 
-    x[slideIndex - 1].style.display = "block";
+    _slides[slideIndex - 1].style.display = "block";
 
-    var _name2 = "Project_Panel_" + (SGII + 1);
+    _slides[slideIndex - 1].getElementsByClassName("Slideshow_Description")[0].style.display = "none";
 
-    var _text = x[slideIndex - 1].getElementsByClassName("Slideshow_Description")[0].innerText;
+    var _text = _slides[slideIndex - 1].getElementsByClassName("Slideshow_Description")[0].innerText;
 
-    document.getElementById(_name2).getElementsByClassName("Slideshow_Counter_P")[0].innerText = "" + (slideIndex) + " / " + x.length;
+    y.getElementsByClassName("Slideshow_Counter_P")[0].innerText = "" + (slideIndex) + " / " + _slides.length;
 
-    document.getElementById(_name2).getElementsByClassName("Slideshow_Description_Area")[0].getElementsByClassName("Text_Container")[0].innerText = _text;
+    y.getElementsByClassName("Slideshow_Description_Area")[0].getElementsByClassName("Text_Container")[0].innerText = _text;
 }
 
 function SetSubnavToVisible(input)
