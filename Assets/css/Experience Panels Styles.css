@@ -657,9 +657,15 @@
   justify-content: center;
 }
 
+#Projects_Div .Project_Panel .Slideshow .Upper_Part_2 .Slideshow_Description_Area a
+{
+  display: inline-block;
+}
+
 #Projects_Div .Project_Panel .Slideshow .Upper_Part_2 .Slideshow_Description_Area .Header_Div_L5
 {
   height: 15%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
 }
 
 #Projects_Div .Project_Panel .Slideshow .Upper_Part_2 .Slideshow_Description_Area .Text_Container
@@ -668,6 +674,12 @@
   height: 85%;
   margin: auto;
   overflow-y: auto;
+}
+
+#Projects_Div .Project_Panel .Slideshow .Upper_Part_2 .Slideshow_Description_Area .Text_Container ul li
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #Projects_Div .Project_Panel .Slideshow .Footer
@@ -681,6 +693,17 @@
 
   
   border-bottom: dashed 2px rgba(0, 0, 0, 0.25);
+}
+
+.Slideshow_Description_Area ul
+{
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.Slideshow_Description_Area ul li::marker
+{
+  color: hsl(30, 100%, 50%);
 }
 
 /*#Projects_Div .Project_Panel .Slideshow .Footer .Previous_Button_Div

@@ -28,11 +28,11 @@ function showDivs(n, Container_Name)
 
     _slides[slideIndex - 1].getElementsByClassName("Slideshow_Description")[0].style.display = "none";
 
-    var _text = _slides[slideIndex - 1].getElementsByClassName("Slideshow_Description")[0].innerText;
+    var _text = _slides[slideIndex - 1].getElementsByClassName("Slideshow_Description")[0].innerHTML;
 
     y.getElementsByClassName("Slideshow_Counter_P")[0].innerText = "" + (slideIndex) + " / " + _slides.length;
 
-    y.getElementsByClassName("Slideshow_Description_Area")[0].getElementsByClassName("Text_Container")[0].innerText = _text;
+    y.getElementsByClassName("Slideshow_Description_Area")[0].getElementsByClassName("Text_Container")[0].innerHTML = _text;
 }
 
 function SetSubnavToVisible(input)
