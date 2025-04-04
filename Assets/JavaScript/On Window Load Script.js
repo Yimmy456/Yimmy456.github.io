@@ -14,5 +14,7 @@ window.onload= function()
   HideOrShowDesc2('PE', '2', '0');
   HideOrShowDesc2('PE', '3', '0');
 
+  HideOrShowDesc2('Course', '1', '0');
+
   HideOrShowSlideshow2('Project', '1', '0');
 }
