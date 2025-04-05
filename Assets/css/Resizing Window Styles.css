@@ -26,6 +26,11 @@
   {
     font-size: 20px;
   }
+
+  #Skills .Skill_Name p img
+  {
+    max-width: 250px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -261,7 +266,7 @@
 
   #Skills .Skill_Name p img
   {
-    max-width: 150px;
+    max-width: 200px;
     max-height: 50px;
   }
 
