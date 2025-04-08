@@ -466,7 +466,7 @@
 
 #Education_Div .Education_Panel .Upper_Part
 {
-  height: 600px;
+  height: 700px;
   border-bottom: 3px;
   border-bottom-style: solid;
   border-bottom-color: hsl(39, 97%, 30%);
@@ -964,6 +964,6 @@
   #Courses_Div .Course_Panel .Upper_Part
   {
     width: 100%;
-    height: 400px;
+    height: 500px;
     border-bottom: 3px hsl(39, 97%, 30%) solid;
   }
