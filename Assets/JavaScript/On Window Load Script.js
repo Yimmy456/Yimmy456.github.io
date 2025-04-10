@@ -1,12 +1,14 @@
 window.onload= function()
 {
   showDivs(1, 'Project_Panel_1');
+  showDivs(1, 'Project_Panel_2');
 
   HideOrShowDesc2('Education', '1', '0');
   HideOrShowDesc2('Education', '2', '0');
   HideOrShowDesc2('Education', '3', '0');
 
   HideOrShowDesc2('Project', '1', '0');
+  HideOrShowDesc2('Project', '2', '0');
 
   HideOrShowDesc2('Award', '1', '0');
 
@@ -17,4 +19,5 @@ window.onload= function()
   HideOrShowDesc2('Course', '1', '0');
 
   HideOrShowSlideshow2('Project', '1', '0');
+  HideOrShowSlideshow2('Project', '2', '0');
 }
