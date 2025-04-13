@@ -785,6 +785,7 @@
 #Experiences #Projects_Div .Project_Panel .Slideshow .Upper_Part_2 #Display_Div .Container img
 {
   max-width: 90%;
+  max-height: 500px;
   margin: auto;
 }
 
