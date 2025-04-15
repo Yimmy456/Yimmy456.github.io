@@ -1130,9 +1130,28 @@
                   <h4>Description</h4>
                 </div> 
                 <div class="Text_Container">
-                  During my time at Queen's University, I was enrolled in a course in another University, called Athabasca University. The reason for my enrollment was to because I had failed a course. Therefore, to compensate for this, one solution was to enroll in a program while simultaneosly to my master's project during the spring and summer. The name of the course that I was enrolled in is "Human Computer Interaction". For more information, <a href="https://www.athabascau.ca/syllabi/comp/comp482.html">click here</a>.
+                  <p>During my time at Queen's University, I was enrolled in a course in another University, called Athabasca University. The reason for my enrollment was to because I had failed a course. Therefore, to compensate for this, one solution was to enroll in a program while simultaneosly to my master's project during the spring and summer. The name of the course that I was enrolled in is "Human Computer Interaction". For more information, <a style="display: inline-block;" href="https://www.athabascau.ca/syllabi/comp/comp482.html">click here</a>.</p>
                   <br>
-                  When I was taking this course, we had to do a final project for it. 
+                  <p>When I was taking this course, we had to do a final project for it. Initially, I wanted to make a mixed reality (MR) application in Unity that takes advantage of Nintendo Switch's Joy-Con controllers. These controllers were a perfect combination between XR controllers and traditional controllers. Unfortunately, capabilities of the Joy-Cons outside of their purposed console were very thin. Even open-source tools did not provide much help. Thus, I had to revert to a more traditional game controller, specifically the DualShock 4.</p>
+                  <br>
+                  <p>Basically, the application is about changing the propeties of a virtual cube in an MR environment. The most accessible way to create an MR scene was to have a phone be used as a headset. To make the experience complete, however, I also had to use a special type of headset, one that can be used for turning smartphone into one. The additional headset component is displayed and described in the slideshow.</p>
+                  <br>
+                  <p>The user can change the cube's:
+                  <ol style="list-style: decimal inside; text-indent: 20px;">
+                    <li>Color;</li>
+                    <li>Opacity;</li>
+                    <li>Position;</li>
+                    <li>Rotation; or</li>
+                    <li>Size.</li>
+                  </ol>
+                  Additionally, the user can also "grab" the cube and move it from one spot to another. Besides the cube, the user is also given two UI canvases:
+                  <ol style="list-style: decimal inside; text-indent: 20px;">
+                    <li>One is to change the visual properties (color and opacity) of the cube; and</li>
+                    <li>The other is to change the geomterical properties (position, rotation, and size) of the cube.</li>
+                  </ol>
+                  Any changes that happen in the canvas(es) will reflect onto the cube. The canvases will be described further in the slideshow.</p>
+                  <br>
+                  <p>Another technology that was used to make this small application is called "Raycasting". In Unity, a raycast is a straight, invisible line that starts from a certain point (In this project's case, it would be the very middle of the user's view.) and continues either infinity or to a certain distance until it hits an entity. To demonstrate that raycasting works, there is a red circle in the center of the user's view. If the raycasting line detects something that the user can interact with, the red circle will turn green.</p>
                 </div>
                 <div class="Toggle_Button_Div">
                   <div class="Button_Container" onclick="HideOrShowDesc('Project', '3')">
@@ -1156,40 +1175,61 @@
                         </div>
                       </div>
                       <div class="Slides">
-                        <img src="Assets/images/Slideshow Images/Project Screenshots/Project 3/Poster_V2_MockUp.png"/>
+                        <img src="Assets/images/Slideshow Images/Project Screenshots/Project 6/VRG Headset.jpg"/>
                         <div class="Slideshow_Description">
-                          This is the advertising poster of the game. It was done by the artist of our group.
+                          This is the headset for smartphones that I used for the project. Conveptually, it is similar to Google's Cardboard. A user can insert his/her iPhone or Android phone into the headset and use this combination as a virtual reality (VR) headset. I bought the product from Amazon Canada. For more information about the product, <a style="display: inline-block;" href="https://www.amazon.ca/dp/B0C9W1M8PD?ref=cm_sw_r_cso_wa_apan_dp_BR0JSSMN6BQQEA090QNK&ref_=cm_sw_r_cso_wa_apan_dp_BR0JSSMN6BQQEA090QNK&social_share=cm_sw_r_cso_wa_apan_dp_BR0JSSMN6BQQEA090QNK&previewDoh=1">click here</a>.
                         </div>
                       </div>
                       <div class="Slides">
-                        <img src="Assets/images/Slideshow Images/Project Screenshots/Project 3/Marble Attacking.webp"/>
+                        <img src="Assets/images/Slideshow Images/Project Screenshots/Project 6/Color Canvas.png"/>
                         <div class="Slideshow_Description">
-                          This is a general view of the game. As you can see, there are:
-                          <ul>
-                            <li>2 marbles;</li>                            
-                            <li>An arrow that fades from yellow to red;</li>
-                            <li>Amber particles around the red marble;</li>
-                            <li>The following UI elements:</li>
-                            <ul style="text-indent: 50px;">
-                              <li>A white over the red marble;</li>
-                              <li>3 buttons on the bottom-right corner:</li>
-                              <ul style="text-indent: 100px;">
-                                <li>A blue button with a shield icon (Defense Button);</li>                                
-                                <li>A green button with an arrow icon pointing to the top (Jump Button); and</li>                                                                
-                                <li>A red button with a fire icon (Attack Button); and</li>
-                              </ul>                              
-                              <li>A white button on the bottom-left corner with an arrow pointing to the right (Move Button);</li>                              
-                              <li>A timer on the very top-middle of the screen;</li>
-                              <li>2 big, full hearts and a small, empty heart on the top-left corner of the screen; and</li>
-                              <li>A ranking system on the top-right corner of the screen.</li>
-                            </ul>
-                          </ul>
+                          <p>This is the color canvas. It has 4 sliders, 12 buttons for preset colors, and a square to show the current color. The coloring scheme follows the RGBA coloring rule. RGBA stands for "Red-Green-Blue-Alpha".</p><br>
+                          <p>The sliders give the user more flexibility and precision on what color and opacity that he/she might like to pick. Each of the sliders works as follows:
+                            <ol style="list-style: inside decimal; text-indent: 20px;">
+                              <li>"Red" is used to change the level of the red color;</li>
+                              <li>"Green" is used to change the level of the green color;</li>
+                              <li>"Blue" is used to change the level of the blue color; and</li>
+                              <li>"Alpha" is used to change the opacity level.</li>
+                            </ol>
+                          </p><br>
+                          <p>Another option to select colors is to use the preset colors provided. In the very middle of the canvas, there is the "Select Preset" button. At first, the colored buttons around it would be hidden. When the user presses it (via raycasting), the colored buttons will appear. When a colored button is clicked on, its color will be the selected color of the cube. Also, the first three sliders will change their values to match that for the selected color, and the value of the "Alpha" slider will be set to 100%.</p><br>
+                          <p>As you can see the buttons are displayed like a prefect circle. Programatically, this is done using a "for" loop. The number of iterations of the loop equals the total number of colors provided. In this case, it is 12. The procedure of each loop is as follows:
+                            <ol style="list-style: inside decimal; text-indent: 20px;">
+                              <li>We get the angle of direction for each iteration, using the following function: &Theta;<sub>i</sub> = ((i * 360) / n), where:
+                                <ol style="list-style: inside lower-alpha; text-indent: 40px;">
+                                  <li>"i" is the integer number of the current iteration (It increases by one in every iteration.);</li>                                  
+                                  <li>"&Theta;<sub>i</sub>" is the angle of the current iteration;</li>
+                                  <li>"n" is the total number of iterations (Also, an integer, 12 in this case.); and</li>
+                                  <li>360 is the angle of a full circle.</li>
+                                </ol>
+                              </li>
+                              <li>We get the sine and cosine values of &Theta;<sub>i</sub> to know the button's directions in the x and y axes, respectively.</li>
+                              <li>We multiply the sine and cosine values with a magnitude (or a radius). I set the radius to 5.</li>
+                            </ol>
+                          </p>
                         </div>
                       </div>
                       <div class="Slides">
-                        <img src="Assets/images/Slideshow Images/Project Screenshots/Project 3/Marble Defending.webp"/>
+                        <img src="Assets/images/Slideshow Images/Project Screenshots/Project 6/Transform Canvas.png"/>
                         <div class="Slideshow_Description">
-                          This is a view of the marbles defending themselves. Notice the red and pink marbles being surrounded by blue particles, which indicate that they are defending themselves (The red marble is the marble of the current player). Also, take a look on how the blue frame of the blue button (Shield Button) has disappeared. It will gradually re-appear and refill by a certain number of seconds.
+                          <p>This is the geometry canvas (Or Transform canvas). It has the following components:
+                            <ol style="text-indent: 20px; list-style: inside decimal;">
+                              <li>A Dropdown List;</li>
+                              <li>Three Tick Boxes;</li>
+                              <li>"-" and "+" Buttons;</li>
+                              <li>A Sensitivity Slider;</li>
+                              <li>A "Reset" Button; and</li>
+                              <li>A Display Panel;</li>
+                            </ol>
+                          </p>
+                          <br>
+                          <p>The dropdown list provides the options of what geometrical property of the cube would the user want to modify. The options are:
+                            <ol>
+                              <li>Position (Default Option);</li>
+                              <li>Rotation; and</li>
+                              <li>Size.</li>
+                            </ol>
+                          </p>
                         </div>
                       </div>
                       <div class="Slides">
