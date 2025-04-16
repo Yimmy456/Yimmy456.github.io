@@ -1169,9 +1169,9 @@
                     <div class="Container" style="height: 100%;">
                       <div class="Slides">
                         <iframe  width="640px" height="480px"
-                        src="https://youtube.com/embed/yMM0bVm3qNA"></iframe>                           
+                        src="https://youtube.com/embed/bA2IHhpYrpU"></iframe>                           
                         <div class="Slideshow_Description">
-                          This is a "trailer" of the project, which was done by another team member of the project. In the video, I'm the guy with the red T-shirt that says "NYC".
+                          This is a video demonstrating the project in action.
                         </div>
                       </div>
                       <div class="Slides">
@@ -1193,7 +1193,7 @@
                             </ol>
                           </p><br>
                           <p>Another option to select colors is to use the preset colors provided. In the very middle of the canvas, there is the "Select Preset" button. At first, the colored buttons around it would be hidden. When the user presses it (via raycasting), the colored buttons will appear. When a colored button is clicked on, its color will be the selected color of the cube. Also, the first three sliders will change their values to match that for the selected color, and the value of the "Alpha" slider will be set to 100%.</p><br>
-                          <p>As you can see the buttons are displayed like a prefect circle. Programatically, this is done using a "for" loop. The number of iterations of the loop equals the total number of colors provided. In this case, it is 12. The procedure of each loop is as follows:
+                          <p>As you can see in the image, the buttons are displayed like a prefect circle around the "Select Preset" button. Programatically, this is done using a "for" loop. The number of iterations of the loop equals the total number of colors provided. In this case, it is 12. The procedure of each loop is as follows:
                             <ol style="list-style: inside decimal; text-indent: 20px;">
                               <li>We get the angle of direction for each iteration, using the following function: &Theta;<sub>i</sub> = ((i * 360) / n), where:
                                 <ol style="list-style: inside lower-alpha; text-indent: 40px;">
@@ -1212,7 +1212,7 @@
                       <div class="Slides">
                         <img src="Assets/images/Slideshow Images/Project Screenshots/Project 6/Transform Canvas.png"/>
                         <div class="Slideshow_Description">
-                          <p>This is the geometry canvas (Or Transform canvas). It has the following components:
+                          <p>This is the geometry canvas (Or Transform canvas). It has the following components (or UI elements):
                             <ol style="text-indent: 20px; list-style: inside decimal;">
                               <li>A Dropdown List;</li>
                               <li>Three Tick Boxes;</li>
@@ -1221,15 +1221,29 @@
                               <li>A "Reset" Button; and</li>
                               <li>A Display Panel;</li>
                             </ol>
+                            Except of the last component, all of the UI elements in the canvas are interactable via the same raycast line that is used to interact with the color canvas and the cube itself.
                           </p>
                           <br>
                           <p>The dropdown list provides the options of what geometrical property of the cube would the user want to modify. The options are:
-                            <ol>
+                            <ol style="text-indent: 20px; list-style: inside decimal;">
                               <li>Position (Default Option);</li>
                               <li>Rotation; and</li>
                               <li>Size.</li>
                             </ol>
-                          </p>
+                            The user can only modify one of the three properties at a time.
+                          </p><br>
+                          <p>The three tick boxes tell in which axis or axes would the user want to modify the germetrical property of the cube. Each tick box correspond to a specific axis. They are:
+                            <ol style="list-style: decimal inside; text-indent: 20px;">
+                              <li>x-axis (In Red, Right and Left Axis);</li>
+                              <li>y-axis (In Green, Up and Down Axis); and</li>
+                              <li>z-axis (In Blue, Forward and Backwards Axis).</li>
+                            </ol>
+                            When modifying the geometrical property of the cube, specifically via the canvas, it will be modified within the axes where their tick boxes are checked.
+                          </p><br>
+                          <p>The cyan "+" button and red "-" button are used to respectively increase or decrease the values of the selected geometrical property of the cube. When pressing either button, the changes are based on the selected property in the dropbox, the selected axes in the tick boxes, and the value of the sensitivity slider. Mentioned slider is used for controlling the quantity/amount of change per press of either button.
+                          </p><br>
+                          <p>The "Reset" button is for resetting the geometrical properties of the cube back to their original values.</p><br>
+                          <p>Lastly, the panel in the middle shows the geomterical values of the cube. The panel updates with the changes that happen onto the cube. The panel is presented like a table, where the rows represent the geometrical properties and the columns represent the axes.</p>
                         </div>
                       </div>
                       <div class="Slides">
