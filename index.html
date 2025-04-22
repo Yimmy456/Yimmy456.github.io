@@ -23,6 +23,8 @@
   <script src="Assets/JavaScript/Hide Or Show Toggle Script.js"></script>  
   <script src="Assets/JavaScript/On Window Load Script.js"></script>
 
+  <script async="true" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/MathJax.js?config=AM_CHTML"> </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -1198,13 +1200,24 @@
                               <li>We get the angle of direction for each iteration, using the following function: &Theta;<sub>i</sub> = ((i * 360) / n), where:
                                 <ol style="list-style: inside lower-alpha; text-indent: 40px;">
                                   <li>"i" is the integer number of the current iteration (It increases by one in every iteration.);</li>                                  
-                                  <li>"&Theta;<sub>i</sub>" is the angle of the current iteration;</li>
+                                  <li>"&Theta;<sub>i</sub>" is the angle of the current iteration ("&Theta;" is a greek symbol, and it is pronounced "Theta".);</li>
                                   <li>"n" is the total number of iterations (Also, an integer, 12 in this case.); and</li>
-                                  <li>360 is the angle of a full circle.</li>
+                                  <li>360 is the angle of a full circle in degrees (In radians, it would be 2&pi;, instead.).
+                                    <ul>
+                                      <li>"&pi;" is also a greek symbol, and it is pronounced "PI". It is a constant value roughly equal to 3.1415926535.</li>
+                                    </ul>
+                                  </li>
                                 </ol>
                               </li>
-                              <li>We get the sine and cosine values of &Theta;<sub>i</sub> to know the button's directions in the x and y axes, respectively.</li>
-                              <li>We multiply the sine and cosine values with a magnitude (or a radius). I set the radius to 5.</li>
+                              <li>We get the sine and cosine values of &Theta;<sub>i</sub> to know the button's directions in the x and y axes, respectively.
+                                <ol style="list-style: inside lower-alpha; text-indent: 40px;">
+                                  <li>dir<sub>i.x</sub> = sin(&Theta;<sub>i</sub>);</li>
+                                  <li>dir<sub>i.y</sub> = cos(&Theta;<sub>i</sub>).</li>                               
+                                </ol></li>
+                              <li>We multiply the sine and cosine values with a magnitude (or a radius). I set the radius to 5.
+                                <li>pos<sub>i.x</sub> = dir<sub>i.x</sub> * 5;</li>
+                                <li>pos<sub>i.y</sub> = dir<sub>i.y</sub> * 5.</li>
+                              </li>
                             </ol>
                           </p>
                         </div>
